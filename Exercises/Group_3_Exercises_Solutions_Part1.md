@@ -8,7 +8,6 @@
 ## Table of Contents
 1. [Multiple Choice Solutions](#multiple-choice-solutions)
 2. [True/False Solutions](#truefalse-solutions)
-3. [Short Answer Solutions (Sections 1-3)](#short-answer-solutions-sections-1-3)
 
 ---
 
@@ -23,10 +22,10 @@
 **Explanation:**
 - Every machine instruction has four essential elements:
   1. Operation Code (Opcode) - what operation to perform
-  2. Source Operand Reference - where to get input operands
-  3. Result Operand Reference - where to store the result
-  4. Next Instruction Reference - where to get the next instruction
-- These four elements define what the instruction does and how it fits into program execution.
+  2. Source Operand Reference - where to get inputs
+  3. Result Operand Reference - where to store output
+  4. Next Instruction Reference - where to get next instruction
+- These four elements are necessary for complete instruction specification.
 
 ---
 
@@ -35,10 +34,10 @@
 **Answer: b) What operation to perform**
 
 **Explanation:**
-- The opcode (operation code) is a binary code that specifies the operation
-- Examples: ADD, SUBTRACT, LOAD, STORE, JUMP, BRANCH
+- Opcode (operation code) identifies the specific operation
+- Examples: ADD, SUBTRACT, LOAD, STORE, JUMP
 - It tells the processor what action to take
-- The opcode does not specify where operands are or where results go (those are separate fields)
+- Does not specify operands or results (those are separate fields)
 
 ---
 
@@ -47,10 +46,10 @@
 **Answer: c) Three**
 
 **Explanation:**
-- Three-address format: `OP destination, source1, source2`
-- Example: `ADD R1, R2, R3` means R1 = R2 + R3
-- Three addresses: destination, source1, source2
-- This format is common in RISC architectures like MIPS
+- Three-address format: `OP dest, src1, src2`
+- Example: `ADD R1, R2, R3` (R1 = R2 + R3)
+- Specifies: destination address, source address 1, source address 2
+- Total: 3 addresses explicitly specified in the instruction
 
 ---
 
@@ -60,10 +59,10 @@
 
 **Explanation:**
 - Zero-address instructions don't specify operands explicitly
-- Operands are taken from the top of a stack
-- Results are pushed back onto the stack
+- Operands are on a stack (implicit)
 - Example: `ADD` pops two values, adds them, pushes result
-- Used in stack-based architectures and some virtual machines
+- Stack-based architecture (like Java Virtual Machine)
+- Reduces instruction size but requires stack management
 
 ---
 
@@ -73,11 +72,11 @@
 
 **Explanation:**
 - Zero-address: No address fields needed (operands on stack)
-- One-address: One address field
-- Two-address: Two address fields
-- Three-address: Three address fields
-- Fewer address fields = fewer bits needed in instruction
-- However, zero-address may require more instructions to accomplish the same task
+- One-address: 1 address field
+- Two-address: 2 address fields
+- Three-address: 3 address fields
+- Fewer address fields = fewer bits needed
+- However, zero-address may need more instructions to accomplish same task
 
 ---
 
@@ -91,10 +90,10 @@
 - The four main types of operands are:
   1. Addresses - memory locations
   2. Numbers - integers, floating-point
-  3. Characters - ASCII, Unicode
+  3. Characters - text data
   4. Logical Data - bits, flags
 - Instructions are not operands - they are the operations themselves
-- Instructions operate on operands, but instructions are not a type of operand
+- Instructions operate on operands
 
 ---
 
@@ -103,11 +102,11 @@
 **Answer: b) Real numbers with decimal points**
 
 **Explanation:**
-- Floating-point numbers represent real numbers (numbers with fractional parts)
-- Examples: 3.14159, -0.5, 1.23e10
-- They use scientific notation: sign × mantissa × 2^exponent
+- Floating-point represents real numbers (numbers with fractional parts)
+- Examples: 3.14, -0.5, 1.23e10
 - Can represent very large and very small numbers
-- Different from integers which represent whole numbers only
+- Uses scientific notation (mantissa × base^exponent)
+- Different from integers which are whole numbers only
 
 ---
 
@@ -117,9 +116,10 @@
 
 **Explanation:**
 - Arithmetic operations perform mathematical calculations
-- ADD, SUBTRACT, MULTIPLY, DIVIDE are all arithmetic operations
-- They operate on numeric operands
-- Data Transfer moves data, Logical performs bitwise operations, I/O handles input/output
+- ADD, SUBTRACT, MULTIPLY, DIVIDE are all arithmetic
+- Operate on numeric operands
+- Produce numeric results
+- Different from logical operations (AND, OR) which operate on bits
 
 ---
 
@@ -128,9 +128,10 @@
 **Answer: b) Data Transfer**
 
 **Explanation:**
-- Data Transfer operations move data between locations
-- Examples: LOAD (memory to register), STORE (register to memory), MOVE (register to register)
-- They don't modify the data, just copy it
+- Data Transfer operations move/copy data
+- Examples: LOAD, STORE, MOVE, PUSH, POP
+- Transfer data between: registers, memory, I/O
+- Do not modify data, just move it
 - Essential for getting data to where it's needed
 
 ---
@@ -141,10 +142,11 @@
 
 **Explanation:**
 - Transfer of Control operations change program flow
-- Branch: conditional jump (if condition is true, jump)
-- Jump: unconditional jump (always jump)
-- They change the Program Counter (PC) to a new address
-- Essential for loops, conditionals, and procedure calls
+- Branch: conditional jump (if condition is true)
+- Jump: unconditional jump
+- Call: procedure/function call
+- Return: return from procedure
+- These change the Program Counter (PC)
 
 ---
 
@@ -156,10 +158,11 @@
 
 **Explanation:**
 - MIPS uses three instruction formats:
-  1. R-format (Register format) - for register-to-register operations
-  2. I-format (Immediate format) - for immediate operations, loads, stores, branches
-  3. J-format (Jump format) - for jump instructions
-- This simplicity makes MIPS easy to decode and pipeline
+  1. R-format (Register format) - register operations
+  2. I-format (Immediate format) - immediate, load, store, branch
+  3. J-format (Jump format) - jump instructions
+- All instructions fit into one of these three formats
+- This simplicity aids pipelining and hardware design
 
 ---
 
@@ -169,10 +172,10 @@
 
 **Explanation:**
 - MIPS uses fixed-length 32-bit instructions
-- All instructions are exactly 32 bits (4 bytes)
-- This simplifies instruction fetch and decoding
-- Makes pipelining easier (all instructions same size)
-- Contrasts with variable-length instruction sets (like x86)
+- All instructions are exactly 32 bits
+- Simplifies instruction fetch and decode
+- Makes pipelining easier (no variable-length instruction complexity)
+- Trade-off: some bits may be unused in some instructions
 
 ---
 
@@ -183,9 +186,9 @@
 **Explanation:**
 - MIPS = Microprocessor without Interlocked Pipeline Stages
 - RISC = Reduced Instruction Set Computer
-- Characteristics: Simple instructions, fixed length, load-store architecture
-- Designed for efficient pipelining
-- Contrasts with CISC (Complex Instruction Set Computer)
+- Characteristics: simple instructions, fixed length, load-store architecture
+- Contrast with CISC (Complex Instruction Set Computer) like x86
+- RISC philosophy: simpler hardware, let compiler do more work
 
 ---
 
@@ -198,7 +201,7 @@
 - Each memory address refers to 1 byte (8 bits)
 - Words are 32 bits = 4 bytes
 - Word addresses must be aligned (multiple of 4)
-- Allows access to individual bytes, halfwords, words
+- Allows fine-grained memory access
 
 ---
 
@@ -208,10 +211,10 @@
 
 **Explanation:**
 - MIPS word = 32 bits = 4 bytes
-- This is the natural data size for MIPS operations
+- This is the natural data size for MIPS
 - Registers are 32 bits
 - Most operations work on 32-bit words
-- Some MIPS variants use 64-bit (MIPS64)
+- Some MIPS variants support 64-bit (MIPS64)
 
 ---
 
@@ -222,11 +225,11 @@
 **Answer: c) Register-to-register operations**
 
 **Explanation:**
-- R-format is used for operations between registers
+- R-format (Register format) is for operations between registers
 - Examples: ADD, SUBTRACT, AND, OR (register versions)
-- Format: `op rs rt rd shamt funct`
-- No immediate values or memory addresses
-- Fastest operations (no memory access)
+- Format: `OP rd, rs, rt` where all operands are registers
+- No memory access, no immediate values
+- Fastest operations (all data in registers)
 
 ---
 
@@ -235,15 +238,10 @@
 **Answer: b) 6 bits**
 
 **Explanation:**
-- R-format structure:
-  - op: 6 bits
-  - rs: 5 bits
-  - rt: 5 bits
-  - rd: 5 bits
-  - shamt: 5 bits
-  - funct: 6 bits
-- When opcode is 0, funct field specifies the actual operation
-- 6 bits allows 64 different operations
+- R-format structure: op (6) + rs (5) + rt (5) + rd (5) + shamt (5) + funct (6) = 32 bits
+- funct field is 6 bits (allows 64 different operations)
+- Used when opcode is 0 (special opcode for R-format)
+- Specifies the actual operation (ADD, SUB, AND, etc.)
 
 ---
 
@@ -252,12 +250,12 @@
 **Answer: b) Load, store, and immediate operations**
 
 **Explanation:**
-- I-format is used for:
-  - Immediate arithmetic: `addi`, `ori`, `andi`
-  - Load instructions: `lw`, `lh`, `lb`
-  - Store instructions: `sw`, `sh`, `sb`
-  - Branch instructions: `beq`, `bne`, `blt`
-- Format: `op rs rt immediate`
+- I-format (Immediate format) is used for:
+  - Load instructions: `lw` (load word)
+  - Store instructions: `sw` (store word)
+  - Immediate arithmetic: `addi` (add immediate)
+  - Branch instructions: `beq`, `bne` (branch if equal/not equal)
+- Contains a 16-bit immediate value or offset
 
 ---
 
@@ -266,12 +264,10 @@
 **Answer: b) 16 bits**
 
 **Explanation:**
-- I-format structure:
-  - op: 6 bits
-  - rs: 5 bits
-  - rt: 5 bits
-  - immediate: 16 bits
-- 16-bit immediate is signed (can represent -32768 to +32767)
+- I-format structure: op (6) + rs (5) + rt (5) + immediate (16) = 32 bits
+- Immediate field is 16 bits
+- Can represent values from -32,768 to 32,767 (signed)
+- Or 0 to 65,535 (unsigned)
 - For larger values, need multiple instructions
 
 ---
@@ -281,11 +277,10 @@
 **Answer: c) Jump instructions**
 
 **Explanation:**
-- J-format is used for jump instructions (`j`, `jal`)
-- Format: `op address`
-  - op: 6 bits
-  - address: 26 bits
-- 26-bit address is combined with PC to form 32-bit jump target
+- J-format (Jump format) is for unconditional jump instructions
+- Examples: `j` (jump), `jal` (jump and link)
+- Format: op (6) + address (26) = 32 bits
+- 26-bit address field for jump target
 - Used for long-distance jumps
 
 ---
@@ -298,11 +293,11 @@
 
 **Explanation:**
 - MIPS is a load-store architecture
-- Only `lw`, `sw`, `lh`, `sh`, `lb`, `sb` instructions access memory
+- Only `lw` (load word) and `sw` (store word) access memory
 - Arithmetic operations work only on registers
-- Must load data from memory to registers before operating
-- Must store results from registers to memory after operating
-- This simplifies the architecture and enables efficient pipelining
+- Must load data from memory to registers first
+- Then perform operations on registers
+- Then store results back to memory if needed
 
 ---
 
@@ -314,8 +309,8 @@
 - `lw` = load word (32 bits = 4 bytes)
 - Format: `lw rt, offset(base)`
 - Effective address = contents of base register + offset
-- `lw $t0, 8($s0)` loads word from address ($s0 + 8) into $t0
-- The offset (8) is added to the base register ($s0) value
+- `lw $t0, 8($s0)` loads word from address = ($s0) + 8
+- Loads 4 bytes (one word) into register $t0
 
 ---
 
@@ -326,9 +321,10 @@
 **Explanation:**
 - MIPS requires word alignment
 - Word addresses must be multiples of 4 (0, 4, 8, 12, ...)
-- This simplifies hardware design
-- Misaligned accesses cause exceptions
-- Halfwords must be aligned to 2-byte boundaries
+- Hardware enforces this - misaligned access causes exception
+- Byte addresses: 0, 1, 2, 3, 4, 5, 6, 7, ...
+- Word addresses: 0, 4, 8, 12, ...
+- Simplifies hardware design
 
 ---
 
@@ -338,10 +334,13 @@
 
 **Explanation:**
 - Format: `sw rt, offset(base)`
-- `sw $t1, 12($s2)` stores $t1 to address ($s2 + 12)
-- Base register is $s2 (provides base address)
-- Offset is 12 (added to base)
+- `sw $t1, 12($s2)` means:
+  - Store register $t1 to memory
+  - Base register is $s2
+  - Offset is 12
+  - Effective address = ($s2) + 12
 - $t1 is the source register (data to store)
+- $s2 is the base register (address calculation)
 
 ---
 
@@ -352,11 +351,11 @@
 **Explanation:**
 - MIPS uses big endian by default
 - Big endian: most significant byte at lowest address
-- Example: 0x12345678 stored as:
-  - Address 0: 0x12 (MSB)
-  - Address 1: 0x34
-  - Address 2: 0x56
-  - Address 3: 0x78 (LSB)
+- Example: 0x12345678 stored at address 100:
+  - Address 100: 0x12 (MSB)
+  - Address 101: 0x34
+  - Address 102: 0x56
+  - Address 103: 0x78 (LSB)
 - Some MIPS implementations support both (bi-endian)
 
 ---
@@ -368,10 +367,10 @@
 **Answer: c) The operand is part of the instruction**
 
 **Explanation:**
-- Immediate addressing: operand value is encoded in the instruction
+- Immediate addressing: operand value is in the instruction itself
 - Example: `addi $t0, $t1, 100` - 100 is immediate value
 - No memory access needed for operand
-- Fastest addressing mode
+- Fastest (value already available)
 - Limited range (16 bits in MIPS)
 
 ---
@@ -381,11 +380,11 @@
 **Answer: b) The address is part of the instruction**
 
 **Explanation:**
-- Direct addressing: memory address is encoded in instruction
-- Instruction contains the actual address
+- Direct addressing: memory address is in the instruction
+- Instruction contains the actual memory address
 - Example: `LOAD R1, 1000` - address 1000 is in instruction
 - One memory access to get operand
-- Limited address range (size of address field)
+- Limited address range (can only address part of memory)
 
 ---
 
@@ -396,8 +395,8 @@
 **Explanation:**
 - Register indirect: register holds the memory address
 - Example: `LOAD R1, (R2)` - R2 contains address, load from that address
-- Two steps: read register, then access memory
-- Flexible - address can be computed
+- Two steps: read register to get address, then access memory
+- More flexible than direct (address can be computed)
 - Common in MIPS: `lw $t0, 0($s0)` uses $s0 as base address
 
 ---
@@ -408,11 +407,12 @@
 
 **Explanation:**
 - Displacement (base + offset) addressing:
-  - Base register provides base address
-  - Offset (immediate value) is added
+  - Base register contains base address
+  - Offset is constant in instruction
   - Effective address = base + offset
-- Example: `lw $t0, 8($s0)` - address = $s0 + 8
-- Very common in MIPS for array access, stack frames
+- Example: `lw $t0, 8($s0)` - EA = ($s0) + 8
+- Very common in MIPS
+- Good for arrays and structures
 
 ---
 
@@ -422,10 +422,11 @@
 
 **Explanation:**
 - MIPS supports three addressing modes:
-  1. Base or Displacement: `lw $t0, offset($s0)`
-  2. PC-Relative: `beq $t0, $t1, label` (PC + offset)
-  3. Pseudodirect: `j target` (PC[31:28] || address || 00)
-- This simplicity is a key MIPS design principle
+  1. Base or Displacement: base register + offset (for load/store)
+  2. PC-Relative: PC + offset (for branches)
+  3. Pseudodirect: PC[31:28] || address (for jumps)
+- Simplicity is a MIPS design principle
+- Other architectures support more modes, but MIPS keeps it simple
 
 ---
 
@@ -437,10 +438,10 @@
 
 **Explanation:**
 - MIPS calling convention uses registers for arguments
-- $a0, $a1, $a2, $a3 for first 4 arguments
-- Additional arguments passed on stack
-- Fast (no memory access)
-- Limited to 4 register arguments
+- First 4 arguments: $a0, $a1, $a2, $a3
+- Additional arguments go on stack
+- Fast (register access) for common case (≤4 arguments)
+- Part of MIPS design: make common case fast
 
 ---
 
@@ -450,10 +451,11 @@
 
 **Explanation:**
 - `jal` (jump and link) instruction:
-  - Jumps to procedure address
-  - Saves return address in $ra (return address register)
-- Procedure returns using `jr $ra` (jump register)
-- If procedure calls another procedure, must save $ra on stack
+  - Jumps to procedure
+  - Saves return address in $ra (register 31)
+- Return with `jr $ra` (jump register)
+- Fast (register) for common case
+- Must save $ra if procedure makes nested calls
 
 ---
 
@@ -465,8 +467,8 @@
 - MIPS uses $v0 and $v1 for return values
 - $v0 for single return value (most common)
 - $v1 for second return value (if needed)
-- Fast (register-based)
-- Convention, not hardware requirement
+- Fast register access
+- Part of standard MIPS calling convention
 
 ---
 
@@ -478,8 +480,8 @@
 - $sp (register 29) is the stack pointer
 - Points to top of stack
 - Stack grows downward (toward lower addresses)
-- Modified by `addi $sp, $sp, -size` to allocate stack frame
-- Restored by `addi $sp, $sp, size` to deallocate
+- Decremented when pushing, incremented when popping
+- Must be preserved across procedure calls
 
 ---
 
@@ -489,11 +491,12 @@
 
 **Explanation:**
 - Stack frame (activation record) contains:
-  - Saved registers (callee-saved: $s0-$s7, $ra)
   - Local variables
-  - Return address (if function calls another)
-  - Space for outgoing arguments (if more than 4)
-- Layout varies by compiler and function needs
+  - Saved registers (if callee-saved registers used)
+  - Return address (if $ra needs saving)
+  - Saved frame pointer (if $fp used)
+  - Space for outgoing arguments (if >4 arguments)
+- Organized layout for procedure execution
 
 ---
 
@@ -504,9 +507,9 @@
 **Answer: True**
 
 **Explanation:**
-- Opcode is essential - it tells the processor what operation to perform
-- Without opcode, processor doesn't know what to do
-- All instructions have an opcode field
+- Opcode is essential - tells processor what to do
+- Without opcode, processor doesn't know what operation to perform
+- Every instruction must have an opcode field
 
 ---
 
@@ -527,9 +530,10 @@
 **Answer: False**
 
 **Explanation:**
-- Zero-address (stack-based) is not common in modern processors
-- Most modern processors use two-address or three-address formats
-- Zero-address used in some virtual machines (Java VM) but not in hardware
+- Zero-address (stack-based) is not most common
+- Most modern processors use 2-address or 3-address formats
+- Zero-address used in some specialized architectures (JVM, some embedded)
+- General-purpose processors typically use register-based addressing
 
 ---
 
@@ -539,9 +543,9 @@
 
 **Explanation:**
 - More addresses = longer instructions (more bits)
-- But may require fewer instructions total
+- But may need fewer instructions (more efficient)
 - Fewer addresses = shorter instructions but may need more instructions
-- Affects code size, memory bandwidth, and execution efficiency
+- Affects code size, memory bandwidth, execution time
 
 ---
 
@@ -551,9 +555,9 @@
 
 **Explanation:**
 - ASCII: 7-bit encoding (128 characters)
+- Extended ASCII: 8-bit (256 characters)
 - Unicode: multi-byte encoding (supports many languages)
-- Characters stored as numeric codes
-- Processors treat characters as numbers
+- Characters stored as numeric codes in memory
 
 ---
 
@@ -562,12 +566,12 @@
 **Answer: True**
 
 **Explanation:**
-- Logical (bitwise) operations:
-  - AND: bitwise and
-  - OR: bitwise or
-  - NOT: bitwise complement
-  - XOR: exclusive or
-- Operate on individual bits
+- Logical operations operate on bits
+- AND: bitwise AND
+- OR: bitwise OR
+- NOT: bitwise complement
+- XOR: exclusive OR
+- Used for bit manipulation, masking, flags
 
 ---
 
@@ -576,10 +580,10 @@
 **Answer: False**
 
 **Explanation:**
-- Some architectures use memory-mapped I/O (no special I/O instructions)
-- I/O devices mapped to memory addresses
-- Regular load/store instructions access I/O
-- MIPS uses memory-mapped I/O
+- Some architectures use special I/O instructions (isolated I/O)
+- Other architectures use memory-mapped I/O (I/O devices appear as memory)
+- MIPS uses memory-mapped I/O (no special I/O instructions)
+- Depends on architecture design
 
 ---
 
@@ -588,12 +592,10 @@
 **Answer: True**
 
 **Explanation:**
-- Conversion operations transform data:
-  - Integer to floating-point
-  - Signed to unsigned
-  - Byte to word
-  - ASCII to binary
-- Essential for data type compatibility
+- Conversion operations transform data
+- Examples: integer to floating-point, signed to unsigned, byte to word
+- Necessary when data formats don't match operation requirements
+- May involve format changes, sign extension, etc.
 
 ---
 
@@ -602,11 +604,12 @@
 **Answer: True**
 
 **Explanation:**
-- Fixed 32-bit length simplifies:
-  - Instruction fetch
-  - Decoding
-  - Pipelining
-- All instructions same size = predictable
+- All MIPS instructions are 32 bits
+- Fixed length simplifies:
+  - Instruction fetch (always fetch 32 bits)
+  - Instruction decode (know where fields are)
+  - Pipelining (uniform instruction size)
+- Trade-off: some bits may be unused
 
 ---
 
@@ -615,10 +618,10 @@
 **Answer: True**
 
 **Explanation:**
-- Load-store architecture: only memory access instructions touch memory
-- Arithmetic works only on registers
-- Must explicitly load/store data
-- Simplifies pipeline design
+- Load-store architecture: only `lw` and `sw` access memory
+- Arithmetic operations work only on registers
+- Must load data to registers first, operate, then store if needed
+- Simplifies hardware, enables pipelining
 
 ---
 
@@ -627,15 +630,15 @@
 **Answer: False**
 
 **Explanation:**
-- MIPS has register usage conventions:
-  - $zero: always 0
-  - $at: assembler temporary
-  - $v0-$v1: return values
-  - $a0-$a3: arguments
-  - $s0-$s7: saved (callee-saved)
-  - $t0-$t9: temporary (caller-saved)
-  - $sp, $ra, $gp: special purpose
-- Conventions, not hardware restrictions
+- MIPS has register usage conventions
+- Some registers have specific purposes:
+  - $zero (always 0)
+  - $at (assembler temporary)
+  - $sp (stack pointer)
+  - $ra (return address)
+  - $a0-$a3 (arguments)
+  - $v0-$v1 (return values)
+- While technically general-purpose, conventions exist for compatibility
 
 ---
 
@@ -644,10 +647,11 @@
 **Answer: True**
 
 **Explanation:**
-- Word = 4 bytes
+- Word = 32 bits = 4 bytes
 - Word addresses must be multiples of 4
-- Hardware enforces alignment
-- Misaligned access causes exception
+- Valid: 0, 4, 8, 12, 16, ...
+- Invalid: 1, 2, 3, 5, 6, 7, ...
+- Hardware enforces alignment (exception if misaligned)
 
 ---
 
@@ -656,10 +660,10 @@
 **Answer: True**
 
 **Explanation:**
-- When opcode = 0, it's an R-format instruction
+- R-format uses opcode = 0 (special value)
 - funct field (6 bits) specifies actual operation
 - Allows many R-format operations with same opcode
-- Example: op=0, funct=32 = ADD
+- Examples: ADD (funct=32), SUB (funct=34), AND (funct=36)
 
 ---
 
@@ -668,12 +672,11 @@
 **Answer: True**
 
 **Explanation:**
-- I-format used for:
-  - Immediate arithmetic: `addi`, `ori`
-  - Load: `lw`, `lh`, `lb`
-  - Store: `sw`, `sh`, `sb`
-  - Branch: `beq`, `bne`
-- All use same format, different opcodes
+- I-format is versatile:
+  - Arithmetic: `addi`, `andi`, `ori` (immediate operations)
+  - Memory: `lw`, `sw` (load/store)
+  - Control: `beq`, `bne` (branches)
+- All use same format but different opcodes
 
 ---
 
@@ -682,10 +685,10 @@
 **Answer: True**
 
 **Explanation:**
-- J-format: 6-bit opcode + 26-bit address
-- 26-bit address combined with PC to form 32-bit target
-- Used for `j` and `jal` instructions
-- Allows jumps within 256MB region
+- J-format: op (6) + address (26) = 32 bits
+- 26-bit address field
+- Combined with PC[31:28] to form 32-bit jump target
+- Allows jumping to any address in same 256MB region
 
 ---
 
@@ -694,10 +697,10 @@
 **Answer: True**
 
 **Explanation:**
-- MIPS design principle: simplicity
+- MIPS design principle: simplicity and regularity
 - All instructions use one of three formats
-- Makes decoding simple and regular
-- Easier to pipeline
+- Makes instruction decode simple and regular
+- Hardware knows format based on opcode
 
 ---
 
@@ -706,11 +709,10 @@
 **Answer: True**
 
 **Explanation:**
-- MIPS is load-store architecture
+- Load-store architecture
 - Arithmetic works only on registers
-- Must load memory to register first
-- Then perform arithmetic
-- Then store result back if needed
+- Must: load memory → register, operate on registers, store register → memory
+- This is by design (simplifies hardware, enables pipelining)
 
 ---
 
@@ -720,10 +722,10 @@
 
 **Explanation:**
 - `lw $t0, 0($s0)` means:
-  - Effective address = $s0 + 0 = $s0
-  - Load word from that address into $t0
-- Base register $s0 provides address
-- Offset 0 means no displacement
+  - Load word into $t0
+  - From address = ($s0) + 0 = address in $s0
+- Base register $s0 contains the address
+- Offset is 0 (no displacement)
 
 ---
 
@@ -734,8 +736,9 @@
 **Explanation:**
 - MIPS requires word alignment
 - Word addresses must be multiples of 4
-- Unaligned access causes exception
-- Hardware enforces this
+- Unaligned access causes exception (error)
+- Hardware enforces this restriction
+- Simplifies hardware design
 
 ---
 
@@ -745,9 +748,11 @@
 
 **Explanation:**
 - Big endian: MSB at lowest address
-- Example: 0x12345678
-  - Address 0: 0x12 (MSB)
-  - Address 3: 0x78 (LSB)
+- Example: 0x12345678 at address 100:
+  - 100: 0x12 (MSB)
+  - 101: 0x34
+  - 102: 0x56
+  - 103: 0x78 (LSB)
 - MIPS default is big endian
 
 ---
@@ -757,11 +762,10 @@
 **Answer: True**
 
 **Explanation:**
-- Immediate: operand in instruction
-- No memory access needed
-- No register read needed
-- Fastest addressing mode
-- But limited range
+- Immediate: operand in instruction (no memory/register access needed)
+- Fastest: value already available during instruction fetch
+- No additional memory or register read required
+- Limited range (16 bits in MIPS)
 
 ---
 
@@ -770,11 +774,11 @@
 **Answer: True**
 
 **Explanation:**
-- Registers are fastest storage (in CPU)
-- Memory access is slower (off-chip, through bus)
-- Register operations: 1 cycle
-- Memory operations: multiple cycles
-- Registers are preferred for speed
+- Registers are fastest storage (inside CPU)
+- Memory is slower (external, bus access)
+- Register access: 1 cycle typically
+- Memory access: multiple cycles (cache, main memory)
+- This is why load-store architecture loads to registers first
 
 ---
 
@@ -786,8 +790,8 @@
 - Branch instructions use PC-relative addressing
 - Target = PC + 4 + (offset × 4)
 - Offset is 16-bit signed immediate
-- Allows branches within ±32KB (in instructions)
-- Position-independent code
+- Allows branching within ±32KB of current instruction
+- Enables position-independent code
 
 ---
 
@@ -796,10 +800,12 @@
 **Answer: True**
 
 **Explanation:**
-- Displacement: effective address = base + offset
-- Base from register, offset from instruction
-- Very common in MIPS: `lw $t0, offset($s0)`
-- Useful for arrays, stack frames, structures
+- Displacement (base + offset):
+  - Base register contains base address
+  - Offset is constant in instruction
+  - Effective address = base + offset
+- Used in MIPS for load/store: `lw $t0, offset($base)`
+- Very common and flexible
 
 ---
 
@@ -808,10 +814,11 @@
 **Answer: True**
 
 **Explanation:**
-- `jal` = jump and link
-- Jumps to procedure address
-- Saves return address in $ra
-- Procedure returns with `jr $ra`
+- `jal` (jump and link):
+  - Jumps to target address
+  - Saves return address in $ra (PC + 4)
+- Return with `jr $ra` (jump register)
+- Standard MIPS procedure call mechanism
 
 ---
 
@@ -821,9 +828,10 @@
 
 **Explanation:**
 - MIPS stack grows downward
-- Allocate: `addi $sp, $sp, -size` (decrease $sp)
-- Deallocate: `addi $sp, $sp, size` (increase $sp)
-- Common convention (also used in x86)
+- Push: decrement $sp, then store
+- Pop: load, then increment $sp
+- Stack pointer points to top of stack
+- Common convention (also used in x86, ARM)
 
 ---
 
@@ -832,23 +840,28 @@
 **Answer: True**
 
 **Explanation:**
-- Callee-saved registers: $s0-$s7, $ra
-- If callee uses them, must save on stack
-- Must restore before returning
-- Caller can assume they're unchanged
+- Callee-saved registers ($s0-$s7):
+  - Callee (called function) must save/restore if used
+  - Caller can assume values unchanged
+- Caller-saved registers ($t0-$t9):
+  - Caller must save if needed after call
+  - Callee can modify freely
+- Convention ensures register values preserved across calls
 
 ---
 
 **T/F 7.4** The frame pointer ($fp) points to the top of the current stack frame.
 
-**Answer: False**
+**Answer: True**
 
 **Explanation:**
-- $fp (frame pointer) points to fixed location in stack frame
-- Typically points to saved $fp of previous frame
+- $fp (frame pointer, register 30) points to fixed location in stack frame
+- Points to saved $fp of previous frame (or start of current frame)
 - Allows easy access to local variables and arguments
-- $sp points to top of stack (changes during function)
+- $sp may change during function execution, but $fp stays fixed
+- Not always used (some code uses $sp with offsets)
 
 ---
 
 *[Continued in Part 2 with Short Answer Solutions...]*
+

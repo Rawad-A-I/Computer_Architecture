@@ -1,0 +1,3123 @@
+{
+  "group": 3,
+  "totalCards": 162,
+  "sections": [
+    {
+      "section": "Detailed Study Guide",
+      "subsections": [
+        {
+          "subsection": "General",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "3-Detailed-Study-Guide--Detailed-Study-Guide",
+              "title": "Detailed Study Guide",
+              "front": "Detailed Study Guide",
+              "back": "1. [Introduction: What is an Instruction Set?](#introduction-what-is-an-instruction-set)\n2. [Elements of a Machine Instruction](#elements-of-a-machine-instruction)\n3. [Number of Addresses in Instructions](#number-of-addresses-in-instructions)\n4. [Types of Operands](#types-of-operands)\n5. [Types of Operations](#types-of-operations)\n6. [Instruction Set Design Considerations](#instruction-set-design-considerations)\n7. [Design Trade-offs](#design-trade-offs)\n8. [Key Concepts Summary](#key-concepts-summary)\n9. [Practice Problems and Examples](#practice-problems-and-examples)",
+              "type": "list",
+              "section": "Detailed Study Guide",
+              "subsection": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Introduction: What is an Instruction Set?",
+      "subsections": [
+        {
+          "subsection": "Definition",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Introduction--What-is-an-Instruction-Set--Definition-Instruction-Set",
+              "title": "Instruction Set",
+              "front": "Instruction Set",
+              "back": "The vocabulary of commands understood by a given computer architecture.",
+              "type": "definition",
+              "section": "Introduction: What is an Instruction Set?",
+              "subsection": "Definition"
+            },
+            {
+              "id": "3-Introduction--What-is-an-Instruction-Set--Definition-Key-Characteristics",
+              "title": "Key Characteristics",
+              "front": "Key Characteristics",
+              "back": "1. Different computers have different instruction sets\n2. But many aspects are common across architectures\n3. All computers are built from similar underlying principles\n4. All computers must provide a few basic operations",
+              "type": "list",
+              "section": "Introduction: What is an Instruction Set?",
+              "subsection": "Definition"
+            }
+          ]
+        },
+        {
+          "subsection": "Common Goals",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "3-Introduction--What-is-an-Instruction-Set--Common-Goals-Design-Objectives",
+              "title": "Design Objectives",
+              "front": "Design Objectives",
+              "back": "1. **Easy to build hardware:** Simple instructions are easier to implement\n2. **Easy to build compiler:** Instructions should map well from high-level languages\n3. **Maximize performance:** Fast execution\n4. **Minimize cost:** Affordable to manufacture\n5. **Minimize energy:** Power-efficient operation",
+              "type": "list",
+              "section": "Introduction: What is an Instruction Set?",
+              "subsection": "Common Goals"
+            },
+            {
+              "id": "3-Introduction--What-is-an-Instruction-Set--Common-Goals-Modern-Trend",
+              "title": "Modern Trend",
+              "front": "Modern Trend",
+              "back": "Many modern computers have **simple instruction sets** (RISC - Reduced Instruction Set Computer).",
+              "type": "definition",
+              "section": "Introduction: What is an Instruction Set?",
+              "subsection": "Common Goals"
+            },
+            {
+              "id": "3-Introduction--What-is-an-Instruction-Set--Common-Goals-Key-Insight",
+              "title": "Key Insight",
+              "front": "Key Insight",
+              "back": "The instruction set is the **interface** between software and hardware. It defines what operations the processor can perform and how programs specify those operations.",
+              "type": "definition",
+              "section": "Introduction: What is an Instruction Set?",
+              "subsection": "Common Goals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Elements of a Machine Instruction",
+      "subsections": [
+        {
+          "subsection": "Four Essential Elements",
+          "cardCount": 17,
+          "cards": [
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-1--Operation-Code--Opcode-",
+              "title": "1. Operation Code (Opcode)",
+              "front": "1. Operation Code (Opcode)",
+              "back": "",
+              "type": "concept",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "Specifies the operation to be performed.",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Examples",
+              "title": "Examples",
+              "front": "Examples",
+              "back": "1. ADD: Addition\n2. SUB: Subtraction\n3. MUL: Multiplication\n4. LOAD: Load from memory\n5. STORE: Store to memory\n6. JUMP: Unconditional branch\n7. BRANCH: Conditional branch\n8. I/O: Input/Output operations",
+              "type": "list",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Representation",
+              "title": "Representation",
+              "front": "Representation",
+              "back": "1. Binary code (machine language)\n2. Each operation has a unique binary pattern\n3. Opcode field in instruction word",
+              "type": "list",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "Opcode: 000000 (6 bits) = ADD operation Opcode: 100011 (6 bits) = LOAD WORD operation",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-2--Source-Operand-Reference",
+              "title": "2. Source Operand Reference",
+              "front": "2. Source Operand Reference",
+              "back": "",
+              "type": "concept",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "Specifies one or more source operands (inputs for the operation).",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Operation may involve one or more source operands\n2. Unary operations: 1 source operand (e.g., NOT, NEGATE)\n3. Binary operations: 2 source operands (e.g., ADD, SUBTRACT)\n4. Some operations have no source operands (e.g., NOP - No Operation)",
+              "type": "list",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "ADD R1, R2, R3 │ │ └─► Source operand 2 (R3) │ └─────► Source operand 1 (R2) └─────────► Destination (R1)",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-3--Result-Operand-Reference",
+              "title": "3. Result Operand Reference",
+              "front": "3. Result Operand Reference",
+              "back": "",
+              "type": "concept",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "Specifies where the result of the operation should be stored.",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Not all operations produce results (e.g., BRANCH, JUMP)\n2. Result may be stored in:\n3. Register\n4. Memory location\n5. Condition codes (flags)\n6. Multiple locations",
+              "type": "list",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "ADD R1, R2, R3 └─► Result stored in R1",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-4--Next-Instruction-Reference",
+              "title": "4. Next Instruction Reference",
+              "front": "4. Next Instruction Reference",
+              "back": "",
+              "type": "concept",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "Tells the processor where to fetch the next instruction.",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. In most architectures, this is **implicit** (from Program Counter)\n2. PC is automatically incremented after each instruction\n3. Only explicit for:\n4. Branch instructions (conditional)\n5. Jump instructions (unconditional)\n6. Subroutine calls\n7. Returns from subroutines",
+              "type": "list",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            },
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "Normal: PC = PC + 4 (next sequential instruction) Branch: PC = target_address (if condition true) Jump: PC = target_address (always)",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Four Essential Elements"
+            }
+          ]
+        },
+        {
+          "subsection": "Complete Instruction Structure",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "3-Elements-of-a-Machine-Instruction-Complete-Instruction-Structure-Note",
+              "title": "Note",
+              "front": "Note",
+              "back": "Actual structure varies by instruction type and architecture.",
+              "type": "definition",
+              "section": "Elements of a Machine Instruction",
+              "subsection": "Complete Instruction Structure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Number of Addresses in Instructions",
+      "subsections": [
+        {
+          "subsection": "Maximum Number Needed",
+          "cardCount": 4,
+          "cards": [
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "What is the maximum number of addresses one might need in an instruction?",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Maximum Number Needed"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Analysis",
+              "title": "Analysis",
+              "front": "Analysis",
+              "back": "1. **Source Operands:**\n2. Arithmetic/logic operations are unary (1 source) or binary (2 sources)\n3. Maximum: **2 addresses** for source operands\n4. **Result Storage:**\n5. Result must be stored somewhere\n6. Maximum: **1 address** for destination\n7. **Next Instruction:**\n8. Address of next instruction\n9. Maximum: **1 address** (usually implicit)",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Maximum Number Needed"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Theoretical-Maximum",
+              "title": "Theoretical Maximum",
+              "front": "Theoretical Maximum",
+              "back": "3 addresses (2 sources + 1 destination)",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Maximum Number Needed"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Practical-Maximum",
+              "title": "Practical Maximum",
+              "front": "Practical Maximum",
+              "back": "3 addresses (next instruction usually implicit via PC)",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Maximum Number Needed"
+            }
+          ]
+        },
+        {
+          "subsection": "Instruction Address Categories",
+          "cardCount": 32,
+          "cards": [
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Zero-Address-Instructions",
+              "title": "Zero-Address Instructions",
+              "front": "Zero-Address Instructions",
+              "back": "",
+              "type": "concept",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+              "title": "Concept",
+              "front": "Concept",
+              "back": "Instructions that don't explicitly specify addresses.",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Application",
+              "title": "Application",
+              "front": "Application",
+              "back": "**Stack-based architecture**",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+              "title": "How It Works",
+              "front": "How It Works",
+              "back": "1. Operands are on a **stack** (Last-In-First-Out)\n2. Top two stack elements are in processor registers\n3. Operations work on top of stack\n4. Results pushed back onto stack",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Stack-Operations",
+              "title": "Stack Operations",
+              "front": "Stack Operations",
+              "back": "1. **PUSH:** Push value onto stack\n2. **POP:** Pop value from stack\n3. **ADD:** Pop two values, add them, push result\n4. **MULTIPLY:** Pop two values, multiply, push result",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example---Postfix-Notation",
+              "title": "Example - Postfix Notation",
+              "front": "Example - Postfix Notation",
+              "back": "Expression: (A + B) × C Postfix: A B + C × Instructions: PUSH A # Stack: [A] PUSH B # Stack: [A, B] ADD # Pop B, Pop A, Add, Push result # Stack: [A+B] PUSH C # Stack: [A+B, C] MULTIPLY # Pop C, Pop (A+B), Multiply, Push result # Stack: [(A+B)×C]",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. Short instructions (no address fields)\n2. Simple hardware\n3. Good for expression evaluation",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. Requires postfix notation\n2. More instructions needed\n3. Stack management overhead",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-One-Address-Instructions",
+              "title": "One-Address Instructions",
+              "front": "One-Address Instructions",
+              "back": "",
+              "type": "concept",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+              "title": "Concept",
+              "front": "Concept",
+              "back": "One explicit address, one implicit (accumulator).",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+              "title": "How It Works",
+              "front": "How It Works",
+              "back": "1. One operand specified explicitly (in instruction)\n2. Other operand is implicit (in **Accumulator register - AC**)\n3. Result stored in accumulator",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "LOAD A # AC = A ADD B # AC = AC + B STORE C # C = AC",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-To-compute--C---A---B",
+              "title": "To compute: C = A + B",
+              "front": "To compute: C = A + B",
+              "back": "LOAD A # AC = A ADD B # AC = A + B STORE C # C = A + B",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Accumulator is implicit source and destination\n2. Only one general-purpose register (AC)\n3. Common in early computers",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. Short instructions\n2. Simple hardware\n3. Fewer bits needed",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. Limited flexibility\n2. More instructions needed\n3. Accumulator becomes bottleneck",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Two-Address-Instructions",
+              "title": "Two-Address Instructions",
+              "front": "Two-Address Instructions",
+              "back": "",
+              "type": "concept",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+              "title": "Concept",
+              "front": "Concept",
+              "back": "Two explicit addresses.",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+              "title": "How It Works",
+              "front": "How It Works",
+              "back": "1. First address: Source operand 1\n2. Second address: Source operand 2 AND destination\n3. One address serves dual purpose",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "ADD A, B # A = A + B # B is source, A is source and destination",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-To-compute--C---A---B",
+              "title": "To compute: C = A + B",
+              "front": "To compute: C = A + B",
+              "back": "MOVE C, A # C = A (copy A to C) ADD C, B # C = C + B (add B to C)",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. More flexible than one-address\n2. Common in many architectures\n3. One operand modified in place",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. Moderate instruction length\n2. Good flexibility\n3. Efficient for many operations",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. One operand is destroyed\n2. May need extra MOVE instructions",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Three-Address-Instructions",
+              "title": "Three-Address Instructions",
+              "front": "Three-Address Instructions",
+              "back": "",
+              "type": "concept",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+              "title": "Concept",
+              "front": "Concept",
+              "back": "Three explicit addresses.",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+              "title": "How It Works",
+              "front": "How It Works",
+              "back": "1. First address: Source operand 1\n2. Second address: Source operand 2\n3. Third address: Destination (separate from sources)",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "ADD C, A, B # C = A + B # A and B unchanged",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-To-compute--C---A---B",
+              "title": "To compute: C = A + B",
+              "front": "To compute: C = A + B",
+              "back": "ADD C, A, B # Single instruction!",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Most flexible\n2. No operands destroyed\n3. Common in modern RISC architectures",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. Maximum flexibility\n2. No operand destruction\n3. Fewer instructions needed\n4. Easier for compilers",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. Longer instructions (more bits)\n2. More complex hardware\n3. More register ports needed",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Instruction Address Categories"
+            }
+          ]
+        },
+        {
+          "subsection": "Modern Practice",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Modern-Practice-Most-contemporary-machines-employ-a-mixture",
+              "title": "Most contemporary machines employ a mixture",
+              "front": "Most contemporary machines employ a mixture",
+              "back": "1. **Two-address instructions:** For most operations\n2. **Three-address instructions:** For arithmetic/logical operations\n3. **One-address instructions:** For special cases (stack operations)\n4. **Zero-address instructions:** Rarely used (stack machines)",
+              "type": "list",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Modern Practice"
+            },
+            {
+              "id": "3-Number-of-Addresses-in-Instructions-Modern-Practice-Reason",
+              "title": "Reason",
+              "front": "Reason",
+              "back": "Balance between flexibility and instruction size.",
+              "type": "definition",
+              "section": "Number of Addresses in Instructions",
+              "subsection": "Modern Practice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Types of Operands",
+      "subsections": [
+        {
+          "subsection": "Overview",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Types-of-Operands-Overview-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "The data types that machine instructions operate on.",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Overview"
+            },
+            {
+              "id": "3-Types-of-Operands-Overview-Key-Point",
+              "title": "Key Point",
+              "front": "Key Point",
+              "back": "Machine instructions operate on **data**, and different types of data require different handling.",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Overview"
+            }
+          ]
+        },
+        {
+          "subsection": "Four Main Categories",
+          "cardCount": 20,
+          "cards": [
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-1--Addresses",
+              "title": "1. Addresses",
+              "front": "1. Addresses",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "1. Pointing to data locations\n2. Specifying instruction locations (for branches/jumps)\n3. Array indexing\n4. Pointer operations",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Typically same size as address bus width\n2. 32-bit systems: 32-bit addresses\n3. 64-bit systems: 64-bit addresses\n4. Unsigned integers",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Uses",
+              "title": "Uses",
+              "front": "Uses",
+              "back": "1. Memory addressing\n2. Array indexing\n3. Pointer arithmetic\n4. Function calls (return addresses)",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "LOAD R1, [1000] # Address: 1000 BRANCH label # Address: label",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-2--Numbers",
+              "title": "2. Numbers",
+              "front": "2. Numbers",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Types",
+              "title": "Types",
+              "front": "Types",
+              "back": "1. **Signed integers:** Two's complement representation\n2. Range: -2^(n-1) to 2^(n-1) - 1 (for n bits)\n3. Example: 8-bit signed: -128 to +127\n4. **Unsigned integers:** Binary representation\n5. Range: 0 to 2^n - 1 (for n bits)\n6. Example: 8-bit unsigned: 0 to 255\n7. **IEEE 754 standard:** Most common format\n8. **Single precision:** 32 bits (1 sign + 8 exponent + 23 mantissa)\n9. **Double precision:** 64 bits (1 sign + 11 exponent + 52 mantissa)\n10. **Special values:** Infinity, NaN (Not a Number)",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. Arithmetic: ADD, SUBTRACT, MULTIPLY, DIVIDE\n2. Comparison: Compare, test for zero\n3. Conversion: Integer ↔ Floating-point",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "ADD R1, R2, R3 # Integer addition FADD F1, F2, F3 # Floating-point addition",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-3--Characters",
+              "title": "3. Characters",
+              "front": "3. Characters",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "Text data represented as character codes.",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Common-Encodings",
+              "title": "Common Encodings",
+              "front": "Common Encodings",
+              "back": "1. **ASCII:** 7-bit (128 characters), extended to 8-bit (256 characters)\n2. 'A' = 65 (0x41)\n3. 'a' = 97 (0x61)\n4. '0' = 48 (0x30)\n5. **Unicode/UTF-8:** Multi-byte encoding for international characters\n6. Variable length (1-4 bytes per character)\n7. Supports millions of characters",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. Comparison: Compare strings\n2. Conversion: Character ↔ Number\n3. Manipulation: Concatenate, extract",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "LOAD R1, 'A' # Load ASCII code 65 COMPARE R1, R2 # Compare characters",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-4--Logical-Data",
+              "title": "4. Logical Data",
+              "front": "4. Logical Data",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "Bit-level data treated as logical values.",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Each bit is independent\n2. No arithmetic meaning\n3. Used for:\n4. Boolean operations\n5. Bit masks\n6. Flags\n7. Packed data",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **AND:** Bitwise AND\n2. **OR:** Bitwise OR\n3. **XOR:** Bitwise exclusive OR\n4. **NOT:** Bitwise complement\n5. **SHIFT:** Left/right shift\n6. **ROTATE:** Circular shift",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "AND R1, R2, R3 # R1 = R2 AND R3 (bitwise) OR R1, R2, R3 # R1 = R2 OR R3 (bitwise) XOR R1, R2, R3 # R1 = R2 XOR R3 (bitwise) SHIFT R1, R2, 3 # R1 = R2 << 3 (left shift by 3)",
+              "type": "definition",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operands-Four-Main-Categories-Use-Cases",
+              "title": "Use Cases",
+              "front": "Use Cases",
+              "back": "1. Setting/clearing flags\n2. Extracting bit fields\n3. Packing multiple values into one word\n4. Cryptography operations",
+              "type": "list",
+              "section": "Types of Operands",
+              "subsection": "Four Main Categories"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Types of Operations",
+      "subsections": [
+        {
+          "subsection": "Overview",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Types-of-Operations-Overview-Key-Point",
+              "title": "Key Point",
+              "front": "Key Point",
+              "back": "The number of different opcodes varies widely from machine to machine, but the same general types of operations are found on all machines.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Overview"
+            },
+            {
+              "id": "3-Types-of-Operations-Overview-Categorization",
+              "title": "Categorization",
+              "front": "Categorization",
+              "back": "Operations can be grouped into several categories.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Overview"
+            }
+          ]
+        },
+        {
+          "subsection": "Seven Main Categories",
+          "cardCount": 34,
+          "cards": [
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-1--Data-Transfer",
+              "title": "1. Data Transfer",
+              "front": "1. Data Transfer",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Move data between locations.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **LOAD:** Transfer from memory to register\n2. **STORE:** Transfer from register to memory\n3. **MOVE:** Transfer between registers\n4. **PUSH:** Push onto stack\n5. **POP:** Pop from stack\n6. **EXCHANGE:** Swap two operands",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Most common type of operation\n2. No data transformation (just movement)\n3. May involve address calculation",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "LOAD R1, [1000] # R1 = memory[1000] STORE R1, [2000] # memory[2000] = R1 MOVE R2, R1 # R2 = R1",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-2--Arithmetic",
+              "title": "2. Arithmetic",
+              "front": "2. Arithmetic",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Perform mathematical calculations.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **ADD:** Addition\n2. **SUBTRACT:** Subtraction\n3. **MULTIPLY:** Multiplication\n4. **DIVIDE:** Division\n5. **MODULO:** Remainder\n6. **INCREMENT:** Add 1\n7. **DECREMENT:** Subtract 1\n8. **NEGATE:** Two's complement negation\n9. **ABSOLUTE VALUE:** |x|",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Types",
+              "title": "Types",
+              "front": "Types",
+              "back": "1. **Integer arithmetic:** Operates on integers\n2. **Floating-point arithmetic:** Operates on floating-point numbers\n3. **Fixed-point arithmetic:** Operates on fixed-point numbers",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "ADD R1, R2, R3 # R1 = R2 + R3 SUB R1, R2, R3 # R1 = R2 - R3 MUL R1, R2, R3 # R1 = R2 × R3 DIV R1, R2, R3 # R1 = R2 ÷ R3",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-3--Logical",
+              "title": "3. Logical",
+              "front": "3. Logical",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Perform bitwise logical operations.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **AND:** Bitwise AND\n2. **OR:** Bitwise OR\n3. **XOR:** Bitwise exclusive OR\n4. **NOT:** Bitwise complement (one's complement)\n5. **NAND:** Bitwise NAND\n6. **NOR:** Bitwise NOR",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Uses",
+              "title": "Uses",
+              "front": "Uses",
+              "back": "1. Bit manipulation\n2. Masking\n3. Setting/clearing flags\n4. Boolean logic",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "AND R1, R2, R3 # R1 = R2 AND R3 OR R1, R2, R3 # R1 = R2 OR R3 XOR R1, R2, R3 # R1 = R2 XOR R3 NOT R1, R2 # R1 = NOT R2",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-4--Conversion",
+              "title": "4. Conversion",
+              "front": "4. Conversion",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Convert data from one format to another.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **Integer to Floating-point:** Convert integer to float\n2. **Floating-point to Integer:** Convert float to integer (truncate/round)\n3. **Sign Extension:** Extend signed number to more bits\n4. **Zero Extension:** Extend unsigned number to more bits\n5. **Byte Swap:** Change byte order (endianness)",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "INT_TO_FLOAT F1, R1 # F1 = (float) R1 FLOAT_TO_INT R1, F1 # R1 = (int) F1 SIGN_EXTEND R1, R2 # Extend R2 (8-bit) to R1 (32-bit)",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-5--I-O--Input-Output-",
+              "title": "5. I/O (Input/Output)",
+              "front": "5. I/O (Input/Output)",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Transfer data between processor and I/O devices.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **IN:** Read from I/O port\n2. **OUT:** Write to I/O port\n3. **READ:** Read from I/O device\n4. **WRITE:** Write to I/O device",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. May be memory-mapped (treated like memory)\n2. May use special I/O instructions\n3. Often involves device addressing",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "IN R1, PORT5 # R1 = input from port 5 OUT PORT5, R1 # Output R1 to port 5",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-6--System-Control",
+              "title": "6. System Control",
+              "front": "6. System Control",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Control processor and system operation.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **HALT:** Stop processor\n2. **NOP:** No operation (do nothing)\n3. **WAIT:** Wait for interrupt\n4. **INTERRUPT ENABLE/DISABLE:** Control interrupts\n5. **PRIVILEGE MODE:** Change processor mode\n6. **CACHE CONTROL:** Flush/invalidate cache\n7. **TLB CONTROL:** Translation Lookaside Buffer operations",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Usually privileged (OS/kernel only)\n2. Control system behavior\n3. Not available to user programs",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "HALT # Stop processor NOP # No operation EI # Enable interrupts DI # Disable interrupts",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-7--Transfer-of-Control",
+              "title": "7. Transfer of Control",
+              "front": "7. Transfer of Control",
+              "back": "",
+              "type": "concept",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Alter the normal sequential execution flow.",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+              "title": "Operations",
+              "front": "Operations",
+              "back": "1. **JUMP:** Unconditional branch\n2. **BRANCH:** Conditional branch\n3. **CALL:** Subroutine call\n4. **RETURN:** Return from subroutine\n5. **SKIP:** Skip next instruction",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Conditional-Branches",
+              "title": "Conditional Branches",
+              "front": "Conditional Branches",
+              "back": "1. **BRANCH IF ZERO:** Branch if result is zero\n2. **BRANCH IF NOT ZERO:** Branch if result is not zero\n3. **BRANCH IF EQUAL:** Branch if two values equal\n4. **BRANCH IF NOT EQUAL:** Branch if two values not equal\n5. **BRANCH IF LESS:** Branch if first < second\n6. **BRANCH IF GREATER:** Branch if first > second\n7. **BRANCH IF LESS OR EQUAL:** Branch if first ≤ second\n8. **BRANCH IF GREATER OR EQUAL:** Branch if first ≥ second",
+              "type": "list",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            },
+            {
+              "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "JUMP label # Unconditional jump to label BRANCH IF ZERO label # Jump if zero flag set CALL subroutine # Call function RETURN # Return from function",
+              "type": "definition",
+              "section": "Types of Operations",
+              "subsection": "Seven Main Categories"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Instruction Set Design Considerations",
+      "subsections": [
+        {
+          "subsection": "Five Key Design Aspects",
+          "cardCount": 20,
+          "cards": [
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-1--Operation-Repertoire",
+              "title": "1. Operation Repertoire",
+              "front": "1. Operation Repertoire",
+              "back": "",
+              "type": "concept",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+              "title": "Questions",
+              "front": "Questions",
+              "back": "1. How many operations to provide?\n2. Which operations to include?\n3. How complex should operations be?",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Trade-offs",
+              "title": "Trade-offs",
+              "front": "Trade-offs",
+              "back": "1. **More operations:** More functionality, but more complex hardware\n2. **Fewer operations:** Simpler hardware, but may need multiple instructions for complex operations\n3. **Complex operations:** Fewer instructions, but slower execution\n4. **Simple operations:** Faster execution, but more instructions needed",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Examples",
+              "title": "Examples",
+              "front": "Examples",
+              "back": "1. **CISC (Complex Instruction Set Computer):** Many complex instructions\n2. **RISC (Reduced Instruction Set Computer):** Few simple instructions",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-2--Data-Types",
+              "title": "2. Data Types",
+              "front": "2. Data Types",
+              "back": "",
+              "type": "concept",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+              "title": "Questions",
+              "front": "Questions",
+              "back": "1. What data types to support?\n2. How are they represented?\n3. What operations are available for each type?",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Common-Types",
+              "title": "Common Types",
+              "front": "Common Types",
+              "back": "1. Integers (signed/unsigned, various sizes)\n2. Floating-point (single/double precision)\n3. Characters\n4. Logical (bit strings)\n5. Addresses",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Considerations",
+              "title": "Considerations",
+              "front": "Considerations",
+              "back": "1. Hardware support vs. software emulation\n2. Performance vs. cost\n3. Compatibility requirements",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-3--Instruction-Format",
+              "title": "3. Instruction Format",
+              "front": "3. Instruction Format",
+              "back": "",
+              "type": "concept",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+              "title": "Questions",
+              "front": "Questions",
+              "back": "1. How long should instructions be?\n2. How many addresses per instruction?\n3. How are fields organized?\n4. Fixed-length or variable-length?",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Factors",
+              "title": "Factors",
+              "front": "Factors",
+              "back": "1. **Instruction length:** Affects code density and memory usage\n2. **Number of addresses:** Affects flexibility and instruction size\n3. **Field sizes:** Must accommodate opcodes, registers, addresses, immediates\n4. **Format consistency:** Regular formats simplify decoding",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Examples",
+              "title": "Examples",
+              "front": "Examples",
+              "back": "1. **Fixed-length:** All instructions same size (e.g., 32 bits)\n2. **Variable-length:** Different instructions different sizes (e.g., x86: 1-15 bytes)",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-4--Registers",
+              "title": "4. Registers",
+              "front": "4. Registers",
+              "back": "",
+              "type": "concept",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+              "title": "Questions",
+              "front": "Questions",
+              "back": "1. How many registers?\n2. What are they used for?\n3. How are they organized?",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Considerations",
+              "title": "Considerations",
+              "front": "Considerations",
+              "back": "1. **More registers:** Better performance, but more expensive\n2. **Fewer registers:** Cheaper, but more memory accesses\n3. **Special-purpose vs. general-purpose:** Flexibility vs. optimization\n4. **Register windows:** For procedure calls",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Examples",
+              "title": "Examples",
+              "front": "Examples",
+              "back": "1. **MIPS:** 32 general-purpose registers\n2. **x86:** 8 general-purpose registers (32-bit), 16 (64-bit)\n3. **ARM:** 16 general-purpose registers",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-5--Addressing",
+              "title": "5. Addressing",
+              "front": "5. Addressing",
+              "back": "",
+              "type": "concept",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+              "title": "Questions",
+              "front": "Questions",
+              "back": "1. What addressing modes to support?\n2. How are addresses specified?\n3. How are addresses calculated?",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Addressing-Modes",
+              "title": "Addressing Modes",
+              "front": "Addressing Modes",
+              "back": "1. Immediate\n2. Direct\n3. Indirect\n4. Register\n5. Register indirect\n6. Displacement (base + offset)\n7. Indexed\n8. Stack",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            },
+            {
+              "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Considerations",
+              "title": "Considerations",
+              "front": "Considerations",
+              "back": "1. **More modes:** More flexibility, but more complex\n2. **Fewer modes:** Simpler, but may need more instructions\n3. **Address calculation:** Hardware vs. software",
+              "type": "list",
+              "section": "Instruction Set Design Considerations",
+              "subsection": "Five Key Design Aspects"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Design Trade-offs",
+      "subsections": [
+        {
+          "subsection": "Fewer Addresses per Instruction",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "3-Design-Trade-offs-Fewer-Addresses-per-Instruction-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. **More primitive instructions:** Simpler processor design\n2. **Shorter instructions:** Fewer bits needed\n3. **Lower hardware complexity:** Easier to implement",
+              "type": "list",
+              "section": "Design Trade-offs",
+              "subsection": "Fewer Addresses per Instruction"
+            },
+            {
+              "id": "3-Design-Trade-offs-Fewer-Addresses-per-Instruction-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. **More total instructions:** Programs are longer\n2. **Longer execution times:** More instructions to execute\n3. **More complex programs:** Harder to write and optimize",
+              "type": "list",
+              "section": "Design Trade-offs",
+              "subsection": "Fewer Addresses per Instruction"
+            },
+            {
+              "id": "3-Design-Trade-offs-Fewer-Addresses-per-Instruction-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "3-address: ADD C, A, B # 1 instruction 1-address: LOAD A, ADD B, STORE C # 3 instructions",
+              "type": "definition",
+              "section": "Design Trade-offs",
+              "subsection": "Fewer Addresses per Instruction"
+            }
+          ]
+        },
+        {
+          "subsection": "One-Address vs. Multiple-Address",
+          "cardCount": 4,
+          "cards": [
+            {
+              "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-One-Address--Accumulator-",
+              "title": "One-Address (Accumulator)",
+              "front": "One-Address (Accumulator)",
+              "back": "1. **Single register (AC):** Limited flexibility\n2. **More memory references:** Slower execution\n3. **Simpler hardware:** Lower cost",
+              "type": "list",
+              "section": "Design Trade-offs",
+              "subsection": "One-Address vs. Multiple-Address"
+            },
+            {
+              "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-Multiple-Address",
+              "title": "Multiple-Address",
+              "front": "Multiple-Address",
+              "back": "1. **Multiple registers:** More flexibility\n2. **Fewer memory references:** Faster execution (registers are faster)\n3. **More complex hardware:** Higher cost",
+              "type": "list",
+              "section": "Design Trade-offs",
+              "subsection": "One-Address vs. Multiple-Address"
+            },
+            {
+              "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-Key-Insight",
+              "title": "Key Insight",
+              "front": "Key Insight",
+              "back": "Register references are **faster** than memory references, so multiple registers speed up execution.",
+              "type": "definition",
+              "section": "Design Trade-offs",
+              "subsection": "One-Address vs. Multiple-Address"
+            },
+            {
+              "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-Modern-Practice",
+              "title": "Modern Practice",
+              "front": "Modern Practice",
+              "back": "Most contemporary machines use a **mixture of two- and three-address instructions** for flexibility and performance.",
+              "type": "definition",
+              "section": "Design Trade-offs",
+              "subsection": "One-Address vs. Multiple-Address"
+            }
+          ]
+        },
+        {
+          "subsection": "Other Factors",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Design-Trade-offs-Other-Factors-Additional-Considerations",
+              "title": "Additional Considerations",
+              "front": "Additional Considerations",
+              "back": "1. **Memory vs. Register References:**\n2. Fewer registers → fewer bits needed for register reference\n3. More registers → more flexibility but more bits needed\n4. **Addressing Modes:**\n5. More modes → more flexibility but more bits needed\n6. Mode specification takes 1 or more bits\n7. **Instruction Format Variety:**\n8. Fixed format: Simpler decoding\n9. Variable format: Better code density\n10. Most processors use **variety of formats**",
+              "type": "list",
+              "section": "Design Trade-offs",
+              "subsection": "Other Factors"
+            },
+            {
+              "id": "3-Design-Trade-offs-Other-Factors-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "R-format: ADD R1, R2, R3 # All registers I-format: ADD R1, R2, 100 # Register + immediate J-format: JUMP label # Jump address",
+              "type": "definition",
+              "section": "Design Trade-offs",
+              "subsection": "Other Factors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Key Concepts Summary",
+      "subsections": [
+        {
+          "subsection": "Instruction Set Fundamentals",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "3-Key-Concepts-Summary-Instruction-Set-Fundamentals-Instruction-Set-Fundamentals",
+              "title": "Instruction Set Fundamentals",
+              "front": "Instruction Set Fundamentals",
+              "back": "1. **Instruction Set = Vocabulary:** Defines what operations processor can perform\n2. **Four Elements:** Opcode, source operands, result, next instruction\n3. **Address Count:** 0, 1, 2, or 3 addresses (trade-offs exist)\n4. **Operand Types:** Addresses, numbers, characters, logical data\n5. **Operation Types:** Data transfer, arithmetic, logical, conversion, I/O, system control, transfer of control",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Instruction Set Fundamentals"
+            }
+          ]
+        },
+        {
+          "subsection": "Design Principles",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "3-Key-Concepts-Summary-Design-Principles-Design-Principles",
+              "title": "Design Principles",
+              "front": "Design Principles",
+              "back": "1. **Trade-offs Everywhere:**\n2. Flexibility vs. simplicity\n3. Performance vs. cost\n4. Instruction size vs. functionality\n5. **Modern Trend:**\n6. Simple instruction sets (RISC)\n7. Multiple registers\n8. Load-store architecture\n9. Regular instruction formats\n10. **Key Factors:**\n11. Operation repertoire\n12. Data types\n13. Instruction format\n14. Registers\n15. Addressing modes",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Design Principles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Practice Problems and Examples",
+      "subsections": [
+        {
+          "subsection": "Problem 1: Instruction Elements",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-1--Instruction-Elements-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "Identify the four elements in this instruction: `ADD R1, R2, R3`",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 1: Instruction Elements"
+            },
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-1--Instruction-Elements-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "1. **Opcode:** ADD (operation code)\n2. **Source Operand 1:** R2\n3. **Source Operand 2:** R3\n4. **Result Operand:** R1\n5. **Next Instruction:** Implicit (PC + instruction_size)",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 1: Instruction Elements"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 2: Address Count Comparison",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-2--Address-Count-Comparison-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "Convert this 3-address instruction to 1-address format: `MULTIPLY C, A, B`",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 2: Address Count Comparison"
+            },
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-2--Address-Count-Comparison-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "LOAD A # AC = A MULTIPLY B # AC = AC × B STORE C # C = AC",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 2: Address Count Comparison"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 3: Operand Types",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-3--Operand-Types-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "Classify the operand types in: `ADD R1, R2, 42`",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 3: Operand Types"
+            },
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-3--Operand-Types-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "1. **R1:** Register (address of register)\n2. **R2:** Register (address of register)\n3. **42:** Immediate (number - integer constant)",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 3: Operand Types"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 4: Operation Categories",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-4--Operation-Categories-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "1. `LOAD R1, [1000]`\n2. `ADD R1, R2, R3`\n3. `AND R1, R2, R3`\n4. `BRANCH IF ZERO label`",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 4: Operation Categories"
+            },
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-4--Operation-Categories-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "1. `LOAD`: Data transfer\n2. `ADD`: Arithmetic\n3. `AND`: Logical\n4. `BRANCH`: Transfer of control",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 4: Operation Categories"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 5: Design Trade-off",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-5--Design-Trade-off-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "Why do modern processors use multiple registers instead of a single accumulator?",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 5: Design Trade-off"
+            },
+            {
+              "id": "3-Practice-Problems-and-Examples-Problem-5--Design-Trade-off-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "1. **Performance:** Register accesses are much faster than memory accesses\n2. **Flexibility:** Multiple registers allow more operations without memory access\n3. **Parallelism:** Can work with multiple values simultaneously\n4. **Compiler optimization:** Easier to optimize code with more registers\n5. **Understand Trade-offs:**\n6. Every design decision has pros and cons\n7. Compare different approaches\n8. Understand why certain choices are made\n9. **Practice Conversions:**\n10. Convert between different address formats\n11. Understand how same operation can be expressed differently\n12. **Classify Operations:**\n13. Learn to identify operation types\n14. Understand what each category does\n15. **Think About Implementation:**\n16. How would hardware implement this?\n17. What are the performance implications?\n18. What are the cost implications?\n19. **Compare Architectures:**\n20. RISC vs. CISC\n21. Different register organizations\n22. Different addressing modes\n23. **What instructions are:** Vocabulary of processor commands\n24. **What they contain:** Opcode, operands, results, next instruction\n25. **How many addresses:** 0, 1, 2, or 3 (with trade-offs)\n26. **What data types:** Addresses, numbers, characters, logical\n27. **What operations:** Seven main categories\n28. **How to design:** Five key considerations with trade-offs\n29. Analyze different instruction sets\n30. Understand design decisions\n31. Evaluate performance implications\n32. Appreciate modern RISC architectures",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 5: Design Trade-off"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Conclusion",
+      "subsections": [
+        {
+          "subsection": "General",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "3-Conclusion--Next",
+              "title": "Next",
+              "front": "Next",
+              "back": "Part 2 covers the MIPS architecture as a concrete example, showing how these principles are applied in practice. *End of Group 3 Part 1 Study Guide*",
+              "type": "definition",
+              "section": "Conclusion",
+              "subsection": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "allCards": [
+    {
+      "id": "3-Detailed-Study-Guide--Detailed-Study-Guide",
+      "title": "Detailed Study Guide",
+      "front": "Detailed Study Guide",
+      "back": "1. [Introduction: What is an Instruction Set?](#introduction-what-is-an-instruction-set)\n2. [Elements of a Machine Instruction](#elements-of-a-machine-instruction)\n3. [Number of Addresses in Instructions](#number-of-addresses-in-instructions)\n4. [Types of Operands](#types-of-operands)\n5. [Types of Operations](#types-of-operations)\n6. [Instruction Set Design Considerations](#instruction-set-design-considerations)\n7. [Design Trade-offs](#design-trade-offs)\n8. [Key Concepts Summary](#key-concepts-summary)\n9. [Practice Problems and Examples](#practice-problems-and-examples)",
+      "type": "list",
+      "section": "Detailed Study Guide",
+      "subsection": ""
+    },
+    {
+      "id": "3-Introduction--What-is-an-Instruction-Set--Definition-Instruction-Set",
+      "title": "Instruction Set",
+      "front": "Instruction Set",
+      "back": "The vocabulary of commands understood by a given computer architecture.",
+      "type": "definition",
+      "section": "Introduction: What is an Instruction Set?",
+      "subsection": "Definition"
+    },
+    {
+      "id": "3-Introduction--What-is-an-Instruction-Set--Definition-Key-Characteristics",
+      "title": "Key Characteristics",
+      "front": "Key Characteristics",
+      "back": "1. Different computers have different instruction sets\n2. But many aspects are common across architectures\n3. All computers are built from similar underlying principles\n4. All computers must provide a few basic operations",
+      "type": "list",
+      "section": "Introduction: What is an Instruction Set?",
+      "subsection": "Definition"
+    },
+    {
+      "id": "3-Introduction--What-is-an-Instruction-Set--Common-Goals-Design-Objectives",
+      "title": "Design Objectives",
+      "front": "Design Objectives",
+      "back": "1. **Easy to build hardware:** Simple instructions are easier to implement\n2. **Easy to build compiler:** Instructions should map well from high-level languages\n3. **Maximize performance:** Fast execution\n4. **Minimize cost:** Affordable to manufacture\n5. **Minimize energy:** Power-efficient operation",
+      "type": "list",
+      "section": "Introduction: What is an Instruction Set?",
+      "subsection": "Common Goals"
+    },
+    {
+      "id": "3-Introduction--What-is-an-Instruction-Set--Common-Goals-Modern-Trend",
+      "title": "Modern Trend",
+      "front": "Modern Trend",
+      "back": "Many modern computers have **simple instruction sets** (RISC - Reduced Instruction Set Computer).",
+      "type": "definition",
+      "section": "Introduction: What is an Instruction Set?",
+      "subsection": "Common Goals"
+    },
+    {
+      "id": "3-Introduction--What-is-an-Instruction-Set--Common-Goals-Key-Insight",
+      "title": "Key Insight",
+      "front": "Key Insight",
+      "back": "The instruction set is the **interface** between software and hardware. It defines what operations the processor can perform and how programs specify those operations.",
+      "type": "definition",
+      "section": "Introduction: What is an Instruction Set?",
+      "subsection": "Common Goals"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-1--Operation-Code--Opcode-",
+      "title": "1. Operation Code (Opcode)",
+      "front": "1. Operation Code (Opcode)",
+      "back": "",
+      "type": "concept",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "Specifies the operation to be performed.",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Examples",
+      "title": "Examples",
+      "front": "Examples",
+      "back": "1. ADD: Addition\n2. SUB: Subtraction\n3. MUL: Multiplication\n4. LOAD: Load from memory\n5. STORE: Store to memory\n6. JUMP: Unconditional branch\n7. BRANCH: Conditional branch\n8. I/O: Input/Output operations",
+      "type": "list",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Representation",
+      "title": "Representation",
+      "front": "Representation",
+      "back": "1. Binary code (machine language)\n2. Each operation has a unique binary pattern\n3. Opcode field in instruction word",
+      "type": "list",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "Opcode: 000000 (6 bits) = ADD operation Opcode: 100011 (6 bits) = LOAD WORD operation",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-2--Source-Operand-Reference",
+      "title": "2. Source Operand Reference",
+      "front": "2. Source Operand Reference",
+      "back": "",
+      "type": "concept",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "Specifies one or more source operands (inputs for the operation).",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Operation may involve one or more source operands\n2. Unary operations: 1 source operand (e.g., NOT, NEGATE)\n3. Binary operations: 2 source operands (e.g., ADD, SUBTRACT)\n4. Some operations have no source operands (e.g., NOP - No Operation)",
+      "type": "list",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "ADD R1, R2, R3 │ │ └─► Source operand 2 (R3) │ └─────► Source operand 1 (R2) └─────────► Destination (R1)",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-3--Result-Operand-Reference",
+      "title": "3. Result Operand Reference",
+      "front": "3. Result Operand Reference",
+      "back": "",
+      "type": "concept",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "Specifies where the result of the operation should be stored.",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Not all operations produce results (e.g., BRANCH, JUMP)\n2. Result may be stored in:\n3. Register\n4. Memory location\n5. Condition codes (flags)\n6. Multiple locations",
+      "type": "list",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "ADD R1, R2, R3 └─► Result stored in R1",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-4--Next-Instruction-Reference",
+      "title": "4. Next Instruction Reference",
+      "front": "4. Next Instruction Reference",
+      "back": "",
+      "type": "concept",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "Tells the processor where to fetch the next instruction.",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. In most architectures, this is **implicit** (from Program Counter)\n2. PC is automatically incremented after each instruction\n3. Only explicit for:\n4. Branch instructions (conditional)\n5. Jump instructions (unconditional)\n6. Subroutine calls\n7. Returns from subroutines",
+      "type": "list",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Four-Essential-Elements-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "Normal: PC = PC + 4 (next sequential instruction) Branch: PC = target_address (if condition true) Jump: PC = target_address (always)",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Four Essential Elements"
+    },
+    {
+      "id": "3-Elements-of-a-Machine-Instruction-Complete-Instruction-Structure-Note",
+      "title": "Note",
+      "front": "Note",
+      "back": "Actual structure varies by instruction type and architecture.",
+      "type": "definition",
+      "section": "Elements of a Machine Instruction",
+      "subsection": "Complete Instruction Structure"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "What is the maximum number of addresses one might need in an instruction?",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Maximum Number Needed"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Analysis",
+      "title": "Analysis",
+      "front": "Analysis",
+      "back": "1. **Source Operands:**\n2. Arithmetic/logic operations are unary (1 source) or binary (2 sources)\n3. Maximum: **2 addresses** for source operands\n4. **Result Storage:**\n5. Result must be stored somewhere\n6. Maximum: **1 address** for destination\n7. **Next Instruction:**\n8. Address of next instruction\n9. Maximum: **1 address** (usually implicit)",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Maximum Number Needed"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Theoretical-Maximum",
+      "title": "Theoretical Maximum",
+      "front": "Theoretical Maximum",
+      "back": "3 addresses (2 sources + 1 destination)",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Maximum Number Needed"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Maximum-Number-Needed-Practical-Maximum",
+      "title": "Practical Maximum",
+      "front": "Practical Maximum",
+      "back": "3 addresses (next instruction usually implicit via PC)",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Maximum Number Needed"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Zero-Address-Instructions",
+      "title": "Zero-Address Instructions",
+      "front": "Zero-Address Instructions",
+      "back": "",
+      "type": "concept",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+      "title": "Concept",
+      "front": "Concept",
+      "back": "Instructions that don't explicitly specify addresses.",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Application",
+      "title": "Application",
+      "front": "Application",
+      "back": "**Stack-based architecture**",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+      "title": "How It Works",
+      "front": "How It Works",
+      "back": "1. Operands are on a **stack** (Last-In-First-Out)\n2. Top two stack elements are in processor registers\n3. Operations work on top of stack\n4. Results pushed back onto stack",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Stack-Operations",
+      "title": "Stack Operations",
+      "front": "Stack Operations",
+      "back": "1. **PUSH:** Push value onto stack\n2. **POP:** Pop value from stack\n3. **ADD:** Pop two values, add them, push result\n4. **MULTIPLY:** Pop two values, multiply, push result",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example---Postfix-Notation",
+      "title": "Example - Postfix Notation",
+      "front": "Example - Postfix Notation",
+      "back": "Expression: (A + B) × C Postfix: A B + C × Instructions: PUSH A # Stack: [A] PUSH B # Stack: [A, B] ADD # Pop B, Pop A, Add, Push result # Stack: [A+B] PUSH C # Stack: [A+B, C] MULTIPLY # Pop C, Pop (A+B), Multiply, Push result # Stack: [(A+B)×C]",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. Short instructions (no address fields)\n2. Simple hardware\n3. Good for expression evaluation",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. Requires postfix notation\n2. More instructions needed\n3. Stack management overhead",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-One-Address-Instructions",
+      "title": "One-Address Instructions",
+      "front": "One-Address Instructions",
+      "back": "",
+      "type": "concept",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+      "title": "Concept",
+      "front": "Concept",
+      "back": "One explicit address, one implicit (accumulator).",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+      "title": "How It Works",
+      "front": "How It Works",
+      "back": "1. One operand specified explicitly (in instruction)\n2. Other operand is implicit (in **Accumulator register - AC**)\n3. Result stored in accumulator",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "LOAD A # AC = A ADD B # AC = AC + B STORE C # C = AC",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-To-compute--C---A---B",
+      "title": "To compute: C = A + B",
+      "front": "To compute: C = A + B",
+      "back": "LOAD A # AC = A ADD B # AC = A + B STORE C # C = A + B",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Accumulator is implicit source and destination\n2. Only one general-purpose register (AC)\n3. Common in early computers",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. Short instructions\n2. Simple hardware\n3. Fewer bits needed",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. Limited flexibility\n2. More instructions needed\n3. Accumulator becomes bottleneck",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Two-Address-Instructions",
+      "title": "Two-Address Instructions",
+      "front": "Two-Address Instructions",
+      "back": "",
+      "type": "concept",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+      "title": "Concept",
+      "front": "Concept",
+      "back": "Two explicit addresses.",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+      "title": "How It Works",
+      "front": "How It Works",
+      "back": "1. First address: Source operand 1\n2. Second address: Source operand 2 AND destination\n3. One address serves dual purpose",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "ADD A, B # A = A + B # B is source, A is source and destination",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-To-compute--C---A---B",
+      "title": "To compute: C = A + B",
+      "front": "To compute: C = A + B",
+      "back": "MOVE C, A # C = A (copy A to C) ADD C, B # C = C + B (add B to C)",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. More flexible than one-address\n2. Common in many architectures\n3. One operand modified in place",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. Moderate instruction length\n2. Good flexibility\n3. Efficient for many operations",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. One operand is destroyed\n2. May need extra MOVE instructions",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Three-Address-Instructions",
+      "title": "Three-Address Instructions",
+      "front": "Three-Address Instructions",
+      "back": "",
+      "type": "concept",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Concept",
+      "title": "Concept",
+      "front": "Concept",
+      "back": "Three explicit addresses.",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-How-It-Works",
+      "title": "How It Works",
+      "front": "How It Works",
+      "back": "1. First address: Source operand 1\n2. Second address: Source operand 2\n3. Third address: Destination (separate from sources)",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "ADD C, A, B # C = A + B # A and B unchanged",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-To-compute--C---A---B",
+      "title": "To compute: C = A + B",
+      "front": "To compute: C = A + B",
+      "back": "ADD C, A, B # Single instruction!",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Most flexible\n2. No operands destroyed\n3. Common in modern RISC architectures",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. Maximum flexibility\n2. No operand destruction\n3. Fewer instructions needed\n4. Easier for compilers",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Instruction-Address-Categories-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. Longer instructions (more bits)\n2. More complex hardware\n3. More register ports needed",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Instruction Address Categories"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Modern-Practice-Most-contemporary-machines-employ-a-mixture",
+      "title": "Most contemporary machines employ a mixture",
+      "front": "Most contemporary machines employ a mixture",
+      "back": "1. **Two-address instructions:** For most operations\n2. **Three-address instructions:** For arithmetic/logical operations\n3. **One-address instructions:** For special cases (stack operations)\n4. **Zero-address instructions:** Rarely used (stack machines)",
+      "type": "list",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Modern Practice"
+    },
+    {
+      "id": "3-Number-of-Addresses-in-Instructions-Modern-Practice-Reason",
+      "title": "Reason",
+      "front": "Reason",
+      "back": "Balance between flexibility and instruction size.",
+      "type": "definition",
+      "section": "Number of Addresses in Instructions",
+      "subsection": "Modern Practice"
+    },
+    {
+      "id": "3-Types-of-Operands-Overview-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "The data types that machine instructions operate on.",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Overview"
+    },
+    {
+      "id": "3-Types-of-Operands-Overview-Key-Point",
+      "title": "Key Point",
+      "front": "Key Point",
+      "back": "Machine instructions operate on **data**, and different types of data require different handling.",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Overview"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-1--Addresses",
+      "title": "1. Addresses",
+      "front": "1. Addresses",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "1. Pointing to data locations\n2. Specifying instruction locations (for branches/jumps)\n3. Array indexing\n4. Pointer operations",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Typically same size as address bus width\n2. 32-bit systems: 32-bit addresses\n3. 64-bit systems: 64-bit addresses\n4. Unsigned integers",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Uses",
+      "title": "Uses",
+      "front": "Uses",
+      "back": "1. Memory addressing\n2. Array indexing\n3. Pointer arithmetic\n4. Function calls (return addresses)",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "LOAD R1, [1000] # Address: 1000 BRANCH label # Address: label",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-2--Numbers",
+      "title": "2. Numbers",
+      "front": "2. Numbers",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Types",
+      "title": "Types",
+      "front": "Types",
+      "back": "1. **Signed integers:** Two's complement representation\n2. Range: -2^(n-1) to 2^(n-1) - 1 (for n bits)\n3. Example: 8-bit signed: -128 to +127\n4. **Unsigned integers:** Binary representation\n5. Range: 0 to 2^n - 1 (for n bits)\n6. Example: 8-bit unsigned: 0 to 255\n7. **IEEE 754 standard:** Most common format\n8. **Single precision:** 32 bits (1 sign + 8 exponent + 23 mantissa)\n9. **Double precision:** 64 bits (1 sign + 11 exponent + 52 mantissa)\n10. **Special values:** Infinity, NaN (Not a Number)",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. Arithmetic: ADD, SUBTRACT, MULTIPLY, DIVIDE\n2. Comparison: Compare, test for zero\n3. Conversion: Integer ↔ Floating-point",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "ADD R1, R2, R3 # Integer addition FADD F1, F2, F3 # Floating-point addition",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-3--Characters",
+      "title": "3. Characters",
+      "front": "3. Characters",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "Text data represented as character codes.",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Common-Encodings",
+      "title": "Common Encodings",
+      "front": "Common Encodings",
+      "back": "1. **ASCII:** 7-bit (128 characters), extended to 8-bit (256 characters)\n2. 'A' = 65 (0x41)\n3. 'a' = 97 (0x61)\n4. '0' = 48 (0x30)\n5. **Unicode/UTF-8:** Multi-byte encoding for international characters\n6. Variable length (1-4 bytes per character)\n7. Supports millions of characters",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. Comparison: Compare strings\n2. Conversion: Character ↔ Number\n3. Manipulation: Concatenate, extract",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "LOAD R1, 'A' # Load ASCII code 65 COMPARE R1, R2 # Compare characters",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-4--Logical-Data",
+      "title": "4. Logical Data",
+      "front": "4. Logical Data",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "Bit-level data treated as logical values.",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Each bit is independent\n2. No arithmetic meaning\n3. Used for:\n4. Boolean operations\n5. Bit masks\n6. Flags\n7. Packed data",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **AND:** Bitwise AND\n2. **OR:** Bitwise OR\n3. **XOR:** Bitwise exclusive OR\n4. **NOT:** Bitwise complement\n5. **SHIFT:** Left/right shift\n6. **ROTATE:** Circular shift",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "AND R1, R2, R3 # R1 = R2 AND R3 (bitwise) OR R1, R2, R3 # R1 = R2 OR R3 (bitwise) XOR R1, R2, R3 # R1 = R2 XOR R3 (bitwise) SHIFT R1, R2, 3 # R1 = R2 << 3 (left shift by 3)",
+      "type": "definition",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operands-Four-Main-Categories-Use-Cases",
+      "title": "Use Cases",
+      "front": "Use Cases",
+      "back": "1. Setting/clearing flags\n2. Extracting bit fields\n3. Packing multiple values into one word\n4. Cryptography operations",
+      "type": "list",
+      "section": "Types of Operands",
+      "subsection": "Four Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Overview-Key-Point",
+      "title": "Key Point",
+      "front": "Key Point",
+      "back": "The number of different opcodes varies widely from machine to machine, but the same general types of operations are found on all machines.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Overview"
+    },
+    {
+      "id": "3-Types-of-Operations-Overview-Categorization",
+      "title": "Categorization",
+      "front": "Categorization",
+      "back": "Operations can be grouped into several categories.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Overview"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-1--Data-Transfer",
+      "title": "1. Data Transfer",
+      "front": "1. Data Transfer",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Move data between locations.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **LOAD:** Transfer from memory to register\n2. **STORE:** Transfer from register to memory\n3. **MOVE:** Transfer between registers\n4. **PUSH:** Push onto stack\n5. **POP:** Pop from stack\n6. **EXCHANGE:** Swap two operands",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Most common type of operation\n2. No data transformation (just movement)\n3. May involve address calculation",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "LOAD R1, [1000] # R1 = memory[1000] STORE R1, [2000] # memory[2000] = R1 MOVE R2, R1 # R2 = R1",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-2--Arithmetic",
+      "title": "2. Arithmetic",
+      "front": "2. Arithmetic",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Perform mathematical calculations.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **ADD:** Addition\n2. **SUBTRACT:** Subtraction\n3. **MULTIPLY:** Multiplication\n4. **DIVIDE:** Division\n5. **MODULO:** Remainder\n6. **INCREMENT:** Add 1\n7. **DECREMENT:** Subtract 1\n8. **NEGATE:** Two's complement negation\n9. **ABSOLUTE VALUE:** |x|",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Types",
+      "title": "Types",
+      "front": "Types",
+      "back": "1. **Integer arithmetic:** Operates on integers\n2. **Floating-point arithmetic:** Operates on floating-point numbers\n3. **Fixed-point arithmetic:** Operates on fixed-point numbers",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "ADD R1, R2, R3 # R1 = R2 + R3 SUB R1, R2, R3 # R1 = R2 - R3 MUL R1, R2, R3 # R1 = R2 × R3 DIV R1, R2, R3 # R1 = R2 ÷ R3",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-3--Logical",
+      "title": "3. Logical",
+      "front": "3. Logical",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Perform bitwise logical operations.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **AND:** Bitwise AND\n2. **OR:** Bitwise OR\n3. **XOR:** Bitwise exclusive OR\n4. **NOT:** Bitwise complement (one's complement)\n5. **NAND:** Bitwise NAND\n6. **NOR:** Bitwise NOR",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Uses",
+      "title": "Uses",
+      "front": "Uses",
+      "back": "1. Bit manipulation\n2. Masking\n3. Setting/clearing flags\n4. Boolean logic",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "AND R1, R2, R3 # R1 = R2 AND R3 OR R1, R2, R3 # R1 = R2 OR R3 XOR R1, R2, R3 # R1 = R2 XOR R3 NOT R1, R2 # R1 = NOT R2",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-4--Conversion",
+      "title": "4. Conversion",
+      "front": "4. Conversion",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Convert data from one format to another.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **Integer to Floating-point:** Convert integer to float\n2. **Floating-point to Integer:** Convert float to integer (truncate/round)\n3. **Sign Extension:** Extend signed number to more bits\n4. **Zero Extension:** Extend unsigned number to more bits\n5. **Byte Swap:** Change byte order (endianness)",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "INT_TO_FLOAT F1, R1 # F1 = (float) R1 FLOAT_TO_INT R1, F1 # R1 = (int) F1 SIGN_EXTEND R1, R2 # Extend R2 (8-bit) to R1 (32-bit)",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-5--I-O--Input-Output-",
+      "title": "5. I/O (Input/Output)",
+      "front": "5. I/O (Input/Output)",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Transfer data between processor and I/O devices.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **IN:** Read from I/O port\n2. **OUT:** Write to I/O port\n3. **READ:** Read from I/O device\n4. **WRITE:** Write to I/O device",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. May be memory-mapped (treated like memory)\n2. May use special I/O instructions\n3. Often involves device addressing",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "IN R1, PORT5 # R1 = input from port 5 OUT PORT5, R1 # Output R1 to port 5",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-6--System-Control",
+      "title": "6. System Control",
+      "front": "6. System Control",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Control processor and system operation.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **HALT:** Stop processor\n2. **NOP:** No operation (do nothing)\n3. **WAIT:** Wait for interrupt\n4. **INTERRUPT ENABLE/DISABLE:** Control interrupts\n5. **PRIVILEGE MODE:** Change processor mode\n6. **CACHE CONTROL:** Flush/invalidate cache\n7. **TLB CONTROL:** Translation Lookaside Buffer operations",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Usually privileged (OS/kernel only)\n2. Control system behavior\n3. Not available to user programs",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "HALT # Stop processor NOP # No operation EI # Enable interrupts DI # Disable interrupts",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-7--Transfer-of-Control",
+      "title": "7. Transfer of Control",
+      "front": "7. Transfer of Control",
+      "back": "",
+      "type": "concept",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Alter the normal sequential execution flow.",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Operations",
+      "title": "Operations",
+      "front": "Operations",
+      "back": "1. **JUMP:** Unconditional branch\n2. **BRANCH:** Conditional branch\n3. **CALL:** Subroutine call\n4. **RETURN:** Return from subroutine\n5. **SKIP:** Skip next instruction",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Conditional-Branches",
+      "title": "Conditional Branches",
+      "front": "Conditional Branches",
+      "back": "1. **BRANCH IF ZERO:** Branch if result is zero\n2. **BRANCH IF NOT ZERO:** Branch if result is not zero\n3. **BRANCH IF EQUAL:** Branch if two values equal\n4. **BRANCH IF NOT EQUAL:** Branch if two values not equal\n5. **BRANCH IF LESS:** Branch if first < second\n6. **BRANCH IF GREATER:** Branch if first > second\n7. **BRANCH IF LESS OR EQUAL:** Branch if first ≤ second\n8. **BRANCH IF GREATER OR EQUAL:** Branch if first ≥ second",
+      "type": "list",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Types-of-Operations-Seven-Main-Categories-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "JUMP label # Unconditional jump to label BRANCH IF ZERO label # Jump if zero flag set CALL subroutine # Call function RETURN # Return from function",
+      "type": "definition",
+      "section": "Types of Operations",
+      "subsection": "Seven Main Categories"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-1--Operation-Repertoire",
+      "title": "1. Operation Repertoire",
+      "front": "1. Operation Repertoire",
+      "back": "",
+      "type": "concept",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+      "title": "Questions",
+      "front": "Questions",
+      "back": "1. How many operations to provide?\n2. Which operations to include?\n3. How complex should operations be?",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Trade-offs",
+      "title": "Trade-offs",
+      "front": "Trade-offs",
+      "back": "1. **More operations:** More functionality, but more complex hardware\n2. **Fewer operations:** Simpler hardware, but may need multiple instructions for complex operations\n3. **Complex operations:** Fewer instructions, but slower execution\n4. **Simple operations:** Faster execution, but more instructions needed",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Examples",
+      "title": "Examples",
+      "front": "Examples",
+      "back": "1. **CISC (Complex Instruction Set Computer):** Many complex instructions\n2. **RISC (Reduced Instruction Set Computer):** Few simple instructions",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-2--Data-Types",
+      "title": "2. Data Types",
+      "front": "2. Data Types",
+      "back": "",
+      "type": "concept",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+      "title": "Questions",
+      "front": "Questions",
+      "back": "1. What data types to support?\n2. How are they represented?\n3. What operations are available for each type?",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Common-Types",
+      "title": "Common Types",
+      "front": "Common Types",
+      "back": "1. Integers (signed/unsigned, various sizes)\n2. Floating-point (single/double precision)\n3. Characters\n4. Logical (bit strings)\n5. Addresses",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Considerations",
+      "title": "Considerations",
+      "front": "Considerations",
+      "back": "1. Hardware support vs. software emulation\n2. Performance vs. cost\n3. Compatibility requirements",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-3--Instruction-Format",
+      "title": "3. Instruction Format",
+      "front": "3. Instruction Format",
+      "back": "",
+      "type": "concept",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+      "title": "Questions",
+      "front": "Questions",
+      "back": "1. How long should instructions be?\n2. How many addresses per instruction?\n3. How are fields organized?\n4. Fixed-length or variable-length?",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Factors",
+      "title": "Factors",
+      "front": "Factors",
+      "back": "1. **Instruction length:** Affects code density and memory usage\n2. **Number of addresses:** Affects flexibility and instruction size\n3. **Field sizes:** Must accommodate opcodes, registers, addresses, immediates\n4. **Format consistency:** Regular formats simplify decoding",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Examples",
+      "title": "Examples",
+      "front": "Examples",
+      "back": "1. **Fixed-length:** All instructions same size (e.g., 32 bits)\n2. **Variable-length:** Different instructions different sizes (e.g., x86: 1-15 bytes)",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-4--Registers",
+      "title": "4. Registers",
+      "front": "4. Registers",
+      "back": "",
+      "type": "concept",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+      "title": "Questions",
+      "front": "Questions",
+      "back": "1. How many registers?\n2. What are they used for?\n3. How are they organized?",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Considerations",
+      "title": "Considerations",
+      "front": "Considerations",
+      "back": "1. **More registers:** Better performance, but more expensive\n2. **Fewer registers:** Cheaper, but more memory accesses\n3. **Special-purpose vs. general-purpose:** Flexibility vs. optimization\n4. **Register windows:** For procedure calls",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Examples",
+      "title": "Examples",
+      "front": "Examples",
+      "back": "1. **MIPS:** 32 general-purpose registers\n2. **x86:** 8 general-purpose registers (32-bit), 16 (64-bit)\n3. **ARM:** 16 general-purpose registers",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-5--Addressing",
+      "title": "5. Addressing",
+      "front": "5. Addressing",
+      "back": "",
+      "type": "concept",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Questions",
+      "title": "Questions",
+      "front": "Questions",
+      "back": "1. What addressing modes to support?\n2. How are addresses specified?\n3. How are addresses calculated?",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Addressing-Modes",
+      "title": "Addressing Modes",
+      "front": "Addressing Modes",
+      "back": "1. Immediate\n2. Direct\n3. Indirect\n4. Register\n5. Register indirect\n6. Displacement (base + offset)\n7. Indexed\n8. Stack",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Instruction-Set-Design-Considerations-Five-Key-Design-Aspects-Considerations",
+      "title": "Considerations",
+      "front": "Considerations",
+      "back": "1. **More modes:** More flexibility, but more complex\n2. **Fewer modes:** Simpler, but may need more instructions\n3. **Address calculation:** Hardware vs. software",
+      "type": "list",
+      "section": "Instruction Set Design Considerations",
+      "subsection": "Five Key Design Aspects"
+    },
+    {
+      "id": "3-Design-Trade-offs-Fewer-Addresses-per-Instruction-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. **More primitive instructions:** Simpler processor design\n2. **Shorter instructions:** Fewer bits needed\n3. **Lower hardware complexity:** Easier to implement",
+      "type": "list",
+      "section": "Design Trade-offs",
+      "subsection": "Fewer Addresses per Instruction"
+    },
+    {
+      "id": "3-Design-Trade-offs-Fewer-Addresses-per-Instruction-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. **More total instructions:** Programs are longer\n2. **Longer execution times:** More instructions to execute\n3. **More complex programs:** Harder to write and optimize",
+      "type": "list",
+      "section": "Design Trade-offs",
+      "subsection": "Fewer Addresses per Instruction"
+    },
+    {
+      "id": "3-Design-Trade-offs-Fewer-Addresses-per-Instruction-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "3-address: ADD C, A, B # 1 instruction 1-address: LOAD A, ADD B, STORE C # 3 instructions",
+      "type": "definition",
+      "section": "Design Trade-offs",
+      "subsection": "Fewer Addresses per Instruction"
+    },
+    {
+      "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-One-Address--Accumulator-",
+      "title": "One-Address (Accumulator)",
+      "front": "One-Address (Accumulator)",
+      "back": "1. **Single register (AC):** Limited flexibility\n2. **More memory references:** Slower execution\n3. **Simpler hardware:** Lower cost",
+      "type": "list",
+      "section": "Design Trade-offs",
+      "subsection": "One-Address vs. Multiple-Address"
+    },
+    {
+      "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-Multiple-Address",
+      "title": "Multiple-Address",
+      "front": "Multiple-Address",
+      "back": "1. **Multiple registers:** More flexibility\n2. **Fewer memory references:** Faster execution (registers are faster)\n3. **More complex hardware:** Higher cost",
+      "type": "list",
+      "section": "Design Trade-offs",
+      "subsection": "One-Address vs. Multiple-Address"
+    },
+    {
+      "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-Key-Insight",
+      "title": "Key Insight",
+      "front": "Key Insight",
+      "back": "Register references are **faster** than memory references, so multiple registers speed up execution.",
+      "type": "definition",
+      "section": "Design Trade-offs",
+      "subsection": "One-Address vs. Multiple-Address"
+    },
+    {
+      "id": "3-Design-Trade-offs-One-Address-vs--Multiple-Address-Modern-Practice",
+      "title": "Modern Practice",
+      "front": "Modern Practice",
+      "back": "Most contemporary machines use a **mixture of two- and three-address instructions** for flexibility and performance.",
+      "type": "definition",
+      "section": "Design Trade-offs",
+      "subsection": "One-Address vs. Multiple-Address"
+    },
+    {
+      "id": "3-Design-Trade-offs-Other-Factors-Additional-Considerations",
+      "title": "Additional Considerations",
+      "front": "Additional Considerations",
+      "back": "1. **Memory vs. Register References:**\n2. Fewer registers → fewer bits needed for register reference\n3. More registers → more flexibility but more bits needed\n4. **Addressing Modes:**\n5. More modes → more flexibility but more bits needed\n6. Mode specification takes 1 or more bits\n7. **Instruction Format Variety:**\n8. Fixed format: Simpler decoding\n9. Variable format: Better code density\n10. Most processors use **variety of formats**",
+      "type": "list",
+      "section": "Design Trade-offs",
+      "subsection": "Other Factors"
+    },
+    {
+      "id": "3-Design-Trade-offs-Other-Factors-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "R-format: ADD R1, R2, R3 # All registers I-format: ADD R1, R2, 100 # Register + immediate J-format: JUMP label # Jump address",
+      "type": "definition",
+      "section": "Design Trade-offs",
+      "subsection": "Other Factors"
+    },
+    {
+      "id": "3-Key-Concepts-Summary-Instruction-Set-Fundamentals-Instruction-Set-Fundamentals",
+      "title": "Instruction Set Fundamentals",
+      "front": "Instruction Set Fundamentals",
+      "back": "1. **Instruction Set = Vocabulary:** Defines what operations processor can perform\n2. **Four Elements:** Opcode, source operands, result, next instruction\n3. **Address Count:** 0, 1, 2, or 3 addresses (trade-offs exist)\n4. **Operand Types:** Addresses, numbers, characters, logical data\n5. **Operation Types:** Data transfer, arithmetic, logical, conversion, I/O, system control, transfer of control",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Instruction Set Fundamentals"
+    },
+    {
+      "id": "3-Key-Concepts-Summary-Design-Principles-Design-Principles",
+      "title": "Design Principles",
+      "front": "Design Principles",
+      "back": "1. **Trade-offs Everywhere:**\n2. Flexibility vs. simplicity\n3. Performance vs. cost\n4. Instruction size vs. functionality\n5. **Modern Trend:**\n6. Simple instruction sets (RISC)\n7. Multiple registers\n8. Load-store architecture\n9. Regular instruction formats\n10. **Key Factors:**\n11. Operation repertoire\n12. Data types\n13. Instruction format\n14. Registers\n15. Addressing modes",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Design Principles"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-1--Instruction-Elements-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "Identify the four elements in this instruction: `ADD R1, R2, R3`",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 1: Instruction Elements"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-1--Instruction-Elements-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "1. **Opcode:** ADD (operation code)\n2. **Source Operand 1:** R2\n3. **Source Operand 2:** R3\n4. **Result Operand:** R1\n5. **Next Instruction:** Implicit (PC + instruction_size)",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 1: Instruction Elements"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-2--Address-Count-Comparison-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "Convert this 3-address instruction to 1-address format: `MULTIPLY C, A, B`",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 2: Address Count Comparison"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-2--Address-Count-Comparison-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "LOAD A # AC = A MULTIPLY B # AC = AC × B STORE C # C = AC",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 2: Address Count Comparison"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-3--Operand-Types-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "Classify the operand types in: `ADD R1, R2, 42`",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 3: Operand Types"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-3--Operand-Types-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "1. **R1:** Register (address of register)\n2. **R2:** Register (address of register)\n3. **42:** Immediate (number - integer constant)",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 3: Operand Types"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-4--Operation-Categories-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "1. `LOAD R1, [1000]`\n2. `ADD R1, R2, R3`\n3. `AND R1, R2, R3`\n4. `BRANCH IF ZERO label`",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 4: Operation Categories"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-4--Operation-Categories-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "1. `LOAD`: Data transfer\n2. `ADD`: Arithmetic\n3. `AND`: Logical\n4. `BRANCH`: Transfer of control",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 4: Operation Categories"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-5--Design-Trade-off-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "Why do modern processors use multiple registers instead of a single accumulator?",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 5: Design Trade-off"
+    },
+    {
+      "id": "3-Practice-Problems-and-Examples-Problem-5--Design-Trade-off-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "1. **Performance:** Register accesses are much faster than memory accesses\n2. **Flexibility:** Multiple registers allow more operations without memory access\n3. **Parallelism:** Can work with multiple values simultaneously\n4. **Compiler optimization:** Easier to optimize code with more registers\n5. **Understand Trade-offs:**\n6. Every design decision has pros and cons\n7. Compare different approaches\n8. Understand why certain choices are made\n9. **Practice Conversions:**\n10. Convert between different address formats\n11. Understand how same operation can be expressed differently\n12. **Classify Operations:**\n13. Learn to identify operation types\n14. Understand what each category does\n15. **Think About Implementation:**\n16. How would hardware implement this?\n17. What are the performance implications?\n18. What are the cost implications?\n19. **Compare Architectures:**\n20. RISC vs. CISC\n21. Different register organizations\n22. Different addressing modes\n23. **What instructions are:** Vocabulary of processor commands\n24. **What they contain:** Opcode, operands, results, next instruction\n25. **How many addresses:** 0, 1, 2, or 3 (with trade-offs)\n26. **What data types:** Addresses, numbers, characters, logical\n27. **What operations:** Seven main categories\n28. **How to design:** Five key considerations with trade-offs\n29. Analyze different instruction sets\n30. Understand design decisions\n31. Evaluate performance implications\n32. Appreciate modern RISC architectures",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 5: Design Trade-off"
+    },
+    {
+      "id": "3-Conclusion--Next",
+      "title": "Next",
+      "front": "Next",
+      "back": "Part 2 covers the MIPS architecture as a concrete example, showing how these principles are applied in practice. *End of Group 3 Part 1 Study Guide*",
+      "type": "definition",
+      "section": "Conclusion",
+      "subsection": ""
+    }
+  ]
+}

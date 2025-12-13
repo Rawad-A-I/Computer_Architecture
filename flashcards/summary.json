@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2025-12-11T22:25:37.359Z",
+  "totalGroups": 6,
+  "groups": [
+    {
+      "group": 1,
+      "totalCards": 159,
+      "sections": 10
+    },
+    {
+      "group": 2,
+      "totalCards": 207,
+      "sections": 12
+    },
+    {
+      "group": 3,
+      "totalCards": 162,
+      "sections": 11
+    },
+    {
+      "group": 4,
+      "totalCards": 271,
+      "sections": 15
+    },
+    {
+      "group": 5,
+      "totalCards": 212,
+      "sections": 12
+    },
+    {
+      "group": 6,
+      "totalCards": 231,
+      "sections": 13
+    }
+  ]
+}

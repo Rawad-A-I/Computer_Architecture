@@ -1,0 +1,3154 @@
+{
+  "group": 1,
+  "totalCards": 159,
+  "sections": [
+    {
+      "section": "Detailed Study Guide",
+      "subsections": [
+        {
+          "subsection": "General",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "1-Detailed-Study-Guide--Detailed-Study-Guide",
+              "title": "Detailed Study Guide",
+              "front": "Detailed Study Guide",
+              "back": "1. [Introduction and Core Concepts](#introduction-and-core-concepts)\n2. [Computer Components Overview](#computer-components-overview)\n3. [Instruction Cycle](#instruction-cycle)\n4. [Interrupts](#interrupts)\n5. [System Interconnection: The Bus](#system-interconnection-the-bus)\n6. [Bus Architecture and Design](#bus-architecture-and-design)\n7. [Modern Interconnect Technologies](#modern-interconnect-technologies)\n8. [Key Concepts Summary](#key-concepts-summary)\n9. [Practice Problems and Examples](#practice-problems-and-examples)",
+              "type": "list",
+              "section": "Detailed Study Guide",
+              "subsection": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Introduction and Core Concepts",
+      "subsections": [
+        {
+          "subsection": "The Program Concept",
+          "cardCount": 6,
+          "cards": [
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Fundamental-Principle",
+              "title": "Fundamental Principle",
+              "front": "Fundamental Principle",
+              "back": "Modern computers use **programmable hardware** rather than hardwired systems.",
+              "type": "definition",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Program Concept"
+            },
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Hardwired-vs--Programmable-Systems",
+              "title": "Hardwired vs. Programmable Systems",
+              "front": "Hardwired vs. Programmable Systems",
+              "back": "",
+              "type": "concept",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Program Concept"
+            },
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Hardwired-Systems",
+              "title": "Hardwired Systems",
+              "front": "Hardwired Systems",
+              "back": "1. Inflexible - designed for one specific task\n2. Require physical rewiring to change functionality\n3. Example: Early calculators, dedicated control systems",
+              "type": "list",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Program Concept"
+            },
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Programmable-Systems--General-Purpose-Hardware-",
+              "title": "Programmable Systems (General-Purpose Hardware)",
+              "front": "Programmable Systems (General-Purpose Hardware)",
+              "back": "1. Flexible - can perform different tasks\n2. Same hardware executes different programs\n3. Change functionality by supplying new control signals (instructions)\n4. Example: Modern computers, smartphones, tablets",
+              "type": "list",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Program Concept"
+            },
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-What-is-a-Program-",
+              "title": "What is a Program?",
+              "front": "What is a Program?",
+              "back": "1. A **sequence of steps** (instructions)\n2. Each step performs an **arithmetic or logical operation**\n3. Each operation requires a **different set of control signals**\n4. The sequence of control signals determines the program's behavior",
+              "type": "list",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Program Concept"
+            },
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Key-Insight",
+              "title": "Key Insight",
+              "front": "Key Insight",
+              "back": "The same hardware can execute completely different programs by changing the sequence of instructions.",
+              "type": "definition",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Program Concept"
+            }
+          ]
+        },
+        {
+          "subsection": "The Control Unit",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Control-Unit-Function",
+              "title": "Function",
+              "front": "Function",
+              "back": "The Control Unit translates instruction codes into control signals.",
+              "type": "definition",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Control Unit"
+            },
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Control-Unit-Process",
+              "title": "Process",
+              "front": "Process",
+              "back": "1. Each operation has a **unique code** (opcode)\n2. Examples: ADD, MOVE, SUBTRACT, JUMP\n3. The hardware accepts this code\n4. The hardware issues the appropriate **control signals** to execute the operation",
+              "type": "list",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Control Unit"
+            },
+            {
+              "id": "1-Introduction-and-Core-Concepts-The-Control-Unit-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "1. Instruction code: `ADD`\n2. Control signals generated:\n3. Enable ALU addition mode\n4. Route operands to ALU inputs\n5. Route result to destination register\n6. Update status flags",
+              "type": "list",
+              "section": "Introduction and Core Concepts",
+              "subsection": "The Control Unit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Computer Components Overview",
+      "subsections": [
+        {
+          "subsection": "The Four Essential Components",
+          "cardCount": 4,
+          "cards": [
+            {
+              "id": "1-Computer-Components-Overview-The-Four-Essential-Components-1--Central-Processing-Unit--CPU-",
+              "title": "1. Central Processing Unit (CPU)",
+              "front": "1. Central Processing Unit (CPU)",
+              "back": "1. **Control Unit (CU):** Manages instruction execution, generates control signals\n2. **Arithmetic and Logic Unit (ALU):** Performs arithmetic and logical operations\n3. **Registers:** Fast, temporary storage within the CPU",
+              "type": "list",
+              "section": "Computer Components Overview",
+              "subsection": "The Four Essential Components"
+            },
+            {
+              "id": "1-Computer-Components-Overview-The-Four-Essential-Components-2--Main-Memory",
+              "title": "2. Main Memory",
+              "front": "2. Main Memory",
+              "back": "1. Stores both **instructions** and **data**\n2. Temporary storage (volatile - loses data when power is off)\n3. Organized as a sequence of addressable locations\n4. Each location can store a word (typically 32 or 64 bits)",
+              "type": "list",
+              "section": "Computer Components Overview",
+              "subsection": "The Four Essential Components"
+            },
+            {
+              "id": "1-Computer-Components-Overview-The-Four-Essential-Components-3--Input-Output--I-O--Modules",
+              "title": "3. Input/Output (I/O) Modules",
+              "front": "3. Input/Output (I/O) Modules",
+              "back": "1. Interface between the computer and external devices\n2. Handle data transfer to/from peripherals\n3. Examples: Keyboard, mouse, display, printer, disk drives, network interfaces",
+              "type": "list",
+              "section": "Computer Components Overview",
+              "subsection": "The Four Essential Components"
+            },
+            {
+              "id": "1-Computer-Components-Overview-The-Four-Essential-Components-4--System-Interconnection",
+              "title": "4. System Interconnection",
+              "front": "4. System Interconnection",
+              "back": "1. **Bus:** Communication pathway connecting all components\n2. Enables data, address, and control signal transfer\n3. Critical for system performance",
+              "type": "list",
+              "section": "Computer Components Overview",
+              "subsection": "The Four Essential Components"
+            }
+          ]
+        },
+        {
+          "subsection": "Component Relationships",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "1-Computer-Components-Overview-Component-Relationships-Key-Point",
+              "title": "Key Point",
+              "front": "Key Point",
+              "back": "All components communicate through the system bus. The bus is the shared communication pathway.",
+              "type": "definition",
+              "section": "Computer Components Overview",
+              "subsection": "Component Relationships"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Instruction Cycle",
+      "subsections": [
+        {
+          "subsection": "Basic Instruction Cycle",
+          "cardCount": 7,
+          "cards": [
+            {
+              "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Phase-1--Fetch-Cycle",
+              "title": "Phase 1: Fetch Cycle",
+              "front": "Phase 1: Fetch Cycle",
+              "back": "",
+              "type": "concept",
+              "section": "Instruction Cycle",
+              "subsection": "Basic Instruction Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Retrieve the next instruction from memory",
+              "type": "definition",
+              "section": "Instruction Cycle",
+              "subsection": "Basic Instruction Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Steps",
+              "title": "Steps",
+              "front": "Steps",
+              "back": "1. **Read Program Counter (PC):** PC contains the address of the next instruction\n2. **Fetch Instruction:** Read instruction from memory location pointed to by PC\n3. **Increment PC:** PC = PC + 1 (or appropriate increment based on instruction size)\n4. **Load Instruction Register (IR):** Store fetched instruction in IR for decoding",
+              "type": "list",
+              "section": "Instruction Cycle",
+              "subsection": "Basic Instruction Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "PC = 1000 (address of next instruction) Fetch instruction from memory[1000] PC = 1001 (or 1004 if 32-bit instructions) IR = instruction from memory[1000]",
+              "type": "definition",
+              "section": "Instruction Cycle",
+              "subsection": "Basic Instruction Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Phase-2--Execute-Cycle",
+              "title": "Phase 2: Execute Cycle",
+              "front": "Phase 2: Execute Cycle",
+              "back": "",
+              "type": "concept",
+              "section": "Instruction Cycle",
+              "subsection": "Basic Instruction Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "Interpret and execute the instruction",
+              "type": "definition",
+              "section": "Instruction Cycle",
+              "subsection": "Basic Instruction Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Types-of-Operations",
+              "title": "Types of Operations",
+              "front": "Types of Operations",
+              "back": "1. **Processor-Memory:**\n2. Data transfer between CPU and main memory\n3. Read data from memory\n4. Write data to memory\n5. **Data Processing:**\n6. Arithmetic operations (ADD, SUBTRACT, MULTIPLY, DIVIDE)\n7. Logical operations (AND, OR, NOT, XOR)\n8. Shift operations (left, right, rotate)\n9. **Control:**\n10. Alteration of instruction sequence\n11. Jump instructions (unconditional)\n12. Branch instructions (conditional)\n13. Subroutine calls and returns\n14. **Processor-I/O:**\n15. Data transfer between CPU and I/O module\n16. Input operations\n17. Output operations",
+              "type": "list",
+              "section": "Instruction Cycle",
+              "subsection": "Basic Instruction Cycle"
+            }
+          ]
+        },
+        {
+          "subsection": "Instruction Cycle State Diagram",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "1-Instruction-Cycle-Instruction-Cycle-State-Diagram-Key-States",
+              "title": "Key States",
+              "front": "Key States",
+              "back": "1. **Fetch:** Get instruction from memory\n2. **Execute:** Perform the operation\n3. **Interrupt Check:** (Added when interrupts are enabled)",
+              "type": "list",
+              "section": "Instruction Cycle",
+              "subsection": "Instruction Cycle State Diagram"
+            }
+          ]
+        },
+        {
+          "subsection": "Multiple Memory Access in Execute Cycle",
+          "cardCount": 4,
+          "cards": [
+            {
+              "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Important",
+              "title": "Important",
+              "front": "Important",
+              "back": "The execute cycle may require **multiple memory accesses**. **Example: PDP-11 Instruction `ADD B, A`** This instruction adds the value at memory location B to the value at memory location A.",
+              "type": "definition",
+              "section": "Instruction Cycle",
+              "subsection": "Multiple Memory Access in Execute Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Execute-Cycle-Steps",
+              "title": "Execute Cycle Steps",
+              "front": "Execute Cycle Steps",
+              "back": "1. **Read memory location A** → Load into register R1\n2. **Read memory location B** → Load into register R2\n3. **Add R1 + R2** → Result in R1\n4. **Write R1** → Store result back to memory location A",
+              "type": "list",
+              "section": "Instruction Cycle",
+              "subsection": "Multiple Memory Access in Execute Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Total-Memory-Accesses",
+              "title": "Total Memory Accesses",
+              "front": "Total Memory Accesses",
+              "back": "3 (2 reads, 1 write)",
+              "type": "definition",
+              "section": "Instruction Cycle",
+              "subsection": "Multiple Memory Access in Execute Cycle"
+            },
+            {
+              "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Key-Insight",
+              "title": "Key Insight",
+              "front": "Key Insight",
+              "back": "Complex instructions require multiple memory operations, making the execute cycle more complicated.",
+              "type": "definition",
+              "section": "Instruction Cycle",
+              "subsection": "Multiple Memory Access in Execute Cycle"
+            }
+          ]
+        },
+        {
+          "subsection": "Instruction Cycle Timing",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Instruction-Cycle-Instruction-Cycle-Timing-Without-Interrupts",
+              "title": "Without Interrupts",
+              "front": "Without Interrupts",
+              "back": "Instruction 1: [Fetch] [Execute] [Fetch] [Execute] [Fetch] [Execute] ... Instruction 2: [Fetch] [Execute] [Fetch] [Execute] ... Instruction 3: [Fetch] [Execute] ...",
+              "type": "definition",
+              "section": "Instruction Cycle",
+              "subsection": "Instruction Cycle Timing"
+            },
+            {
+              "id": "1-Instruction-Cycle-Instruction-Cycle-Timing-Performance-Consideration",
+              "title": "Performance Consideration",
+              "front": "Performance Consideration",
+              "back": "1. Fetch time depends on memory speed\n2. Execute time depends on instruction complexity\n3. Total cycle time = Fetch time + Execute time",
+              "type": "list",
+              "section": "Instruction Cycle",
+              "subsection": "Instruction Cycle Timing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Interrupts",
+      "subsections": [
+        {
+          "subsection": "What are Interrupts?",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Interrupts-What-are-Interrupts--Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "A mechanism by which other modules (e.g., I/O devices) can interrupt the normal sequence of instruction execution.",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "What are Interrupts?"
+            },
+            {
+              "id": "1-Interrupts-What-are-Interrupts--Purpose",
+              "title": "Purpose",
+              "front": "Purpose",
+              "back": "1. **Improve Processing Efficiency:**\n2. External devices are much slower than the processor\n3. Don't want CPU to wait idle for I/O operations\n4. Example: Printer takes milliseconds to print; CPU can do millions of operations in that time\n5. **Error Handling:**\n6. Stop execution when errors occur\n7. Errors may or may not be recoverable\n8. Allows graceful error handling\n9. **Real-Time Response:**\n10. Respond to time-critical events immediately\n11. Example: User input, network packets, sensor data",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "What are Interrupts?"
+            }
+          ]
+        },
+        {
+          "subsection": "Classes of Interrupts",
+          "cardCount": 4,
+          "cards": [
+            {
+              "id": "1-Interrupts-Classes-of-Interrupts-1--Program-Interrupts",
+              "title": "1. Program Interrupts",
+              "front": "1. Program Interrupts",
+              "back": "1. Generated by program execution\n2. **Examples:**\n3. **Overflow:** Arithmetic operation result exceeds register capacity\n4. **Division by Zero:** Attempt to divide by zero\n5. **Illegal Instruction:** Invalid opcode encountered\n6. **Privilege Violation:** User program attempts privileged operation",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Classes of Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Classes-of-Interrupts-2--Timer-Interrupts",
+              "title": "2. Timer Interrupts",
+              "front": "2. Timer Interrupts",
+              "back": "1. Generated by internal processor timer\n2. **Uses:**\n3. **Pre-emptive Multi-tasking:** OS switches between processes\n4. **Time Slicing:** Fair CPU time allocation\n5. **Real-Time Systems:** Periodic task scheduling\n6. **Example:** Every 10ms, timer interrupt triggers OS scheduler",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Classes of Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Classes-of-Interrupts-3--I-O-Interrupts",
+              "title": "3. I/O Interrupts",
+              "front": "3. I/O Interrupts",
+              "back": "1. Generated by I/O controllers\n2. **Examples:**\n3. **Device Ready:** I/O operation completed\n4. **Device Error:** I/O operation failed\n5. **Data Available:** Input device has data ready\n6. **Example:** Printer finishes printing, interrupts CPU to request next page",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Classes of Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Classes-of-Interrupts-4--Hardware-Failure-Interrupts",
+              "title": "4. Hardware Failure Interrupts",
+              "front": "4. Hardware Failure Interrupts",
+              "back": "1. Generated by hardware malfunctions\n2. **Examples:**\n3. **Power Failure:** Power supply issues detected\n4. **Memory Parity Error:** Data corruption detected in memory\n5. **Hardware Malfunction:** Component failure detected",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Classes of Interrupts"
+            }
+          ]
+        },
+        {
+          "subsection": "Transfer of Control via Interrupts",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-Interrupts-Transfer-of-Control-via-Interrupts-Normal-Flow",
+              "title": "Normal Flow",
+              "front": "Normal Flow",
+              "back": "Instruction 1 → Instruction 2 → Instruction 3 → Instruction 4 → ...",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Transfer of Control via Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Transfer-of-Control-via-Interrupts-With-Interrupt",
+              "title": "With Interrupt",
+              "front": "With Interrupt",
+              "back": "Instruction 1 → Instruction 2 → [INTERRUPT] → Interrupt Handler → Resume Instruction 3 → ...",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Transfer of Control via Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Transfer-of-Control-via-Interrupts-Key-Process",
+              "title": "Key Process",
+              "front": "Key Process",
+              "back": "1. Current instruction completes (or is suspended)\n2. CPU saves current context (registers, PC, status)\n3. CPU jumps to interrupt handler routine\n4. Handler processes the interrupt\n5. CPU restores saved context\n6. CPU resumes execution from where it was interrupted",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Transfer of Control via Interrupts"
+            }
+          ]
+        },
+        {
+          "subsection": "Interrupt Cycle",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Interrupts-Interrupt-Cycle-Modified-Instruction-Cycle",
+              "title": "Modified Instruction Cycle",
+              "front": "Modified Instruction Cycle",
+              "back": "FETCH → EXECUTE → [INTERRUPT CHECK] → FETCH (next instruction) │ If interrupt pending: SAVE CONTEXT JUMP TO HANDLER PROCESS INTERRUPT RESTORE CONTEXT RETURN TO PROGRAM",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Interrupt Cycle"
+            },
+            {
+              "id": "1-Interrupts-Interrupt-Cycle-Interrupt-Check-Steps",
+              "title": "Interrupt Check Steps",
+              "front": "Interrupt Check Steps",
+              "back": "1. **Check for interrupt signal** (after each instruction)\n2. **If no interrupt:** Continue to fetch next instruction\n3. **If interrupt pending:**\n4. **Suspend** execution of current program\n5. **Save context:**\n6. Program Counter (PC)\n7. Processor Status Word (PSW)\n8. General-purpose registers\n9. Other processor state\n10. **Set PC** to start address of interrupt handler routine\n11. **Process interrupt** (execute handler)\n12. **Restore context** (restore saved state)\n13. **Continue** interrupted program",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Interrupt Cycle"
+            }
+          ]
+        },
+        {
+          "subsection": "Program Timing with Interrupts",
+          "cardCount": 5,
+          "cards": [
+            {
+              "id": "1-Interrupts-Program-Timing-with-Interrupts-Without-Interrupts--Programmed-I-O--",
+              "title": "Without Interrupts (Programmed I/O):",
+              "front": "Without Interrupts (Programmed I/O):",
+              "back": "CPU: [Execute] [Wait] [Wait] [Wait] [Wait] [Wait] [I/O Complete] [Continue] └─────────────────────────────────────────────────────────┘ CPU WASTED TIME",
+              "type": "concept",
+              "section": "Interrupts",
+              "subsection": "Program Timing with Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Program-Timing-with-Interrupts-Problem",
+              "title": "Problem",
+              "front": "Problem",
+              "back": "CPU sits idle waiting for slow I/O device.",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Program Timing with Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Program-Timing-with-Interrupts-With-Interrupts--Interrupt-Driven-I-O--",
+              "title": "With Interrupts (Interrupt-Driven I/O):",
+              "front": "With Interrupts (Interrupt-Driven I/O):",
+              "back": "CPU: [Execute] [Execute] [Execute] [Execute] [Interrupt] [Handler] [Continue] I/O: [Start] [Working] [Working] [Working] [Complete] ──┘",
+              "type": "concept",
+              "section": "Interrupts",
+              "subsection": "Program Timing with Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Program-Timing-with-Interrupts-Benefit",
+              "title": "Benefit",
+              "front": "Benefit",
+              "back": "CPU can do useful work while I/O device operates.",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Program Timing with Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Program-Timing-with-Interrupts-Efficiency-Gain",
+              "title": "Efficiency Gain",
+              "front": "Efficiency Gain",
+              "back": "1. **Short I/O Wait:** Small improvement\n2. **Long I/O Wait:** Massive improvement (CPU can execute thousands of instructions)",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Program Timing with Interrupts"
+            }
+          ]
+        },
+        {
+          "subsection": "Multiple Interrupts",
+          "cardCount": 6,
+          "cards": [
+            {
+              "id": "1-Interrupts-Multiple-Interrupts-Strategy-1--Disable-Interrupts",
+              "title": "Strategy 1: Disable Interrupts",
+              "front": "Strategy 1: Disable Interrupts",
+              "back": "1. **Approach:** Processor ignores further interrupts while processing one\n2. **Behavior:**\n3. Interrupts remain pending\n4. Checked after current interrupt is processed\n5. Handled in sequence as they occurred\n6. **Use Case:** Simple systems, low interrupt rates",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Multiple Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Multiple-Interrupts-Timeline",
+              "title": "Timeline",
+              "front": "Timeline",
+              "back": "Interrupt 1 arrives → Process Interrupt 1 Interrupt 2 arrives → [IGNORED, pending] Interrupt 3 arrives → [IGNORED, pending] Interrupt 1 complete → Check pending → Process Interrupt 2 Interrupt 2 complete → Check pending → Process Interrupt 3",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Multiple Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Multiple-Interrupts-Strategy-2--Priority-Based--Nested-Interrupts-",
+              "title": "Strategy 2: Priority-Based (Nested Interrupts)",
+              "front": "Strategy 2: Priority-Based (Nested Interrupts)",
+              "back": "1. **Approach:** Define interrupt priorities\n2. **Behavior:**\n3. Low priority interrupts can be interrupted by higher priority interrupts\n4. When high priority interrupt completes, return to previous interrupt\n5. Supports nested interrupt handling\n6. **Use Case:** Real-time systems, critical events",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Multiple Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Multiple-Interrupts-Priority-Levels--Example-",
+              "title": "Priority Levels (Example)",
+              "front": "Priority Levels (Example)",
+              "back": "1. **Highest:** Hardware failure (power failure, memory error)\n2. **High:** Timer interrupts (system scheduling)\n3. **Medium:** I/O interrupts (device ready)\n4. **Lowest:** Program interrupts (overflow, division by zero)",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Multiple Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Multiple-Interrupts-Timeline--Nested-",
+              "title": "Timeline (Nested)",
+              "front": "Timeline (Nested)",
+              "back": "Low Priority Interrupt 1 starts → High Priority Interrupt 2 arrives → Process Interrupt 2 (higher priority) → Interrupt 2 complete → Resume Interrupt 1 → Interrupt 1 complete",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Multiple Interrupts"
+            },
+            {
+              "id": "1-Interrupts-Multiple-Interrupts-Timeline--Sequential-",
+              "title": "Timeline (Sequential)",
+              "front": "Timeline (Sequential)",
+              "back": "Interrupt 1 arrives → Process Interrupt 1 → Complete Interrupt 2 arrives → Process Interrupt 2 → Complete Interrupt 3 arrives → Process Interrupt 3 → Complete",
+              "type": "definition",
+              "section": "Interrupts",
+              "subsection": "Multiple Interrupts"
+            }
+          ]
+        },
+        {
+          "subsection": "Interrupt Performance Impact",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Interrupts-Interrupt-Performance-Impact-Overhead",
+              "title": "Overhead",
+              "front": "Overhead",
+              "back": "1. Context saving/restoring takes time\n2. Interrupt handler execution time\n3. Pipeline stalls (in pipelined processors)",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Interrupt Performance Impact"
+            },
+            {
+              "id": "1-Interrupts-Interrupt-Performance-Impact-Benefit",
+              "title": "Benefit",
+              "front": "Benefit",
+              "back": "1. Much greater than overhead for long I/O operations\n2. Enables multitasking and real-time response",
+              "type": "list",
+              "section": "Interrupts",
+              "subsection": "Interrupt Performance Impact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "System Interconnection: The Bus",
+      "subsections": [
+        {
+          "subsection": "What is a Bus?",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-System-Interconnection--The-Bus-What-is-a-Bus--Definition",
+              "title": "Definition",
+              "front": "Definition",
+              "back": "A communication pathway connecting two or more devices.",
+              "type": "definition",
+              "section": "System Interconnection: The Bus",
+              "subsection": "What is a Bus?"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-What-is-a-Bus--Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. **Broadcast:** Signals sent on bus are received by all connected devices\n2. **Shared Resource:** Only one device can transmit at a time\n3. **Grouped Channels:** Multiple wires carrying related signals\n4. Example: 32-bit data bus = 32 separate wires (channels)",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "What is a Bus?"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-What-is-a-Bus--Examples",
+              "title": "Examples",
+              "front": "Examples",
+              "back": "1. **Control/Address/Data bus (PC):** Traditional PC architecture\n2. **Unibus (DEC-PDP):** DEC's unified bus system",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "What is a Bus?"
+            }
+          ]
+        },
+        {
+          "subsection": "Bus Interconnection Scheme",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "1-System-Interconnection--The-Bus-Bus-Interconnection-Scheme-Key-Point",
+              "title": "Key Point",
+              "front": "Key Point",
+              "back": "All devices share the same bus. Only one can use it at a time.",
+              "type": "definition",
+              "section": "System Interconnection: The Bus",
+              "subsection": "Bus Interconnection Scheme"
+            }
+          ]
+        },
+        {
+          "subsection": "The Three Types of Buses",
+          "cardCount": 16,
+          "cards": [
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-1--Data-Bus",
+              "title": "1. Data Bus",
+              "front": "1. Data Bus",
+              "back": "",
+              "type": "concept",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Function",
+              "title": "Function",
+              "front": "Function",
+              "back": "Carries data and instructions between components.",
+              "type": "definition",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Key-Characteristics",
+              "title": "Key Characteristics",
+              "front": "Key Characteristics",
+              "back": "1. **Bidirectional:** Data can flow in both directions\n2. **Width Matters:**\n3. 8-bit bus: Transfer 1 byte at a time\n4. 16-bit bus: Transfer 2 bytes at a time\n5. 32-bit bus: Transfer 4 bytes at a time\n6. 64-bit bus: Transfer 8 bytes at a time\n7. **Performance Impact:** Wider bus = faster data transfer",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Important-Note",
+              "title": "Important Note",
+              "front": "Important Note",
+              "back": "At the bus level, there is **no difference between \"data\" and \"instructions\"**. Both are just binary patterns traveling on the data bus.",
+              "type": "definition",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "1. 32-bit data bus can transfer a 32-bit instruction in one cycle\n2. Or transfer a 32-bit data value in one cycle",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-2--Address-Bus",
+              "title": "2. Address Bus",
+              "front": "2. Address Bus",
+              "back": "",
+              "type": "concept",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Function",
+              "title": "Function",
+              "front": "Function",
+              "back": "Identifies the source or destination of data.",
+              "type": "definition",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Key-Characteristics",
+              "title": "Key Characteristics",
+              "front": "Key Characteristics",
+              "back": "1. **Unidirectional:** Typically CPU → Memory/I/O (CPU specifies address)\n2. **Width Determines Memory Capacity:**\n3. n-bit address bus = 2^n addressable locations\n4. Example: 16-bit address bus = 2^16 = 65,536 locations = 64 KB\n5. Example: 32-bit address bus = 2^32 = 4,294,967,296 locations = 4 GB",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Memory-Addressing-Example",
+              "title": "Memory Addressing Example",
+              "front": "Memory Addressing Example",
+              "back": "1. CPU places 1000 on address bus\n2. Memory module sees address 1000\n3. Memory module places contents of location 1000 on data bus\n4. CPU reads data from data bus",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Historical-Example",
+              "title": "Historical Example",
+              "front": "Historical Example",
+              "back": "1. Intel 8080: 16-bit address bus → 64 KB maximum memory\n2. Modern processors: 64-bit address bus → 16 exabytes theoretical maximum",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-3--Control-Bus",
+              "title": "3. Control Bus",
+              "front": "3. Control Bus",
+              "back": "",
+              "type": "concept",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Function",
+              "title": "Function",
+              "front": "Function",
+              "back": "Carries control and timing information.",
+              "type": "definition",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Key-Signals",
+              "title": "Key Signals",
+              "front": "Key Signals",
+              "back": "1. **Memory Read:** Signal to read from memory\n2. **Memory Write:** Signal to write to memory\n3. **I/O Read:** Signal to read from I/O device\n4. **I/O Write:** Signal to write to I/O device\n5. **Interrupt Request (IRQ):** Device requesting interrupt\n6. **Interrupt Acknowledge:** CPU acknowledging interrupt\n7. **Bus Request:** Device requesting bus control\n8. **Bus Grant:** CPU granting bus control\n9. **Clock:** Synchronization signal\n10. **Reset:** System reset signal",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Control-Bus-Operations",
+              "title": "Control Bus Operations",
+              "front": "Control Bus Operations",
+              "back": "",
+              "type": "definition",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Sending-Data",
+              "title": "Sending Data",
+              "front": "Sending Data",
+              "back": "1. Obtain use of the bus (bus arbitration)\n2. Place address on address bus\n3. Place data on data bus\n4. Assert appropriate control signal (e.g., Write)\n5. Wait for acknowledgment\n6. Release bus",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Requesting-Data",
+              "title": "Requesting Data",
+              "front": "Requesting Data",
+              "back": "1. Obtain use of the bus\n2. Place address on address bus\n3. Assert appropriate control signal (e.g., Read)\n4. Wait for data on data bus\n5. Read data from data bus\n6. Release bus",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "The Three Types of Buses"
+            }
+          ]
+        },
+        {
+          "subsection": "Bus Width and Performance",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-System-Interconnection--The-Bus-Bus-Width-and-Performance-Data-Bus-Width",
+              "title": "Data Bus Width",
+              "front": "Data Bus Width",
+              "back": "1. Determines how much data can be transferred per cycle\n2. Wider = fewer cycles needed for large transfers\n3. Trade-off: More wires = higher cost",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "Bus Width and Performance"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-Bus-Width-and-Performance-Address-Bus-Width",
+              "title": "Address Bus Width",
+              "front": "Address Bus Width",
+              "back": "1. Determines maximum addressable memory\n2. Wider = more memory can be addressed\n3. Trade-off: More wires = higher cost",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "Bus Width and Performance"
+            },
+            {
+              "id": "1-System-Interconnection--The-Bus-Bus-Width-and-Performance-Example-Calculation",
+              "title": "Example Calculation",
+              "front": "Example Calculation",
+              "back": "1. 32-bit data bus: Can transfer 4 bytes per cycle\n2. 32-bit address bus: Can address 4 GB of memory\n3. Number of transfers needed: 1 MB / 4 bytes = 262,144 transfers\n4. If each transfer takes 1 cycle: 262,144 cycles",
+              "type": "list",
+              "section": "System Interconnection: The Bus",
+              "subsection": "Bus Width and Performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Bus Architecture and Design",
+      "subsections": [
+        {
+          "subsection": "Single Bus Problems",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Bus-Architecture-and-Design-Single-Bus-Problems-Issues-with-Single-Bus-Architecture",
+              "title": "Issues with Single Bus Architecture",
+              "front": "Issues with Single Bus Architecture",
+              "back": "1. **Propagation Delays:**\n2. Long bus = longer signal travel time\n3. Limits maximum bus speed\n4. Becomes worse with more devices\n5. **Bus Contention:**\n6. Many devices competing for bus access\n7. Coordination overhead increases\n8. Performance degrades as more devices added\n9. **Bandwidth Limitations:**\n10. Single bus has fixed bandwidth\n11. Aggregate data transfer approaches bus capacity\n12. Becomes bottleneck for high-performance systems",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Single Bus Problems"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Single-Bus-Problems-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "Use **multiple buses** organized hierarchically.",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Single Bus Problems"
+            }
+          ]
+        },
+        {
+          "subsection": "Traditional Bus Architecture",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Bus-Architecture-and-Design-Traditional-Bus-Architecture-Structure",
+              "title": "Structure",
+              "front": "Structure",
+              "back": "├──► System Bus (High Speed) ├──► Memory Bus ──► Main Memory └──► Expansion Bus ──► I/O Devices",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Traditional Bus Architecture"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Traditional-Bus-Architecture-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. **System Bus:** Fast, connects CPU and cache\n2. **Memory Bus:** Connects to main memory\n3. **Expansion Bus:** Slower, connects to I/O devices\n4. **Hierarchical:** Different speeds for different purposes",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Traditional Bus Architecture"
+            }
+          ]
+        },
+        {
+          "subsection": "High Performance Bus Architecture",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Bus-Architecture-and-Design-High-Performance-Bus-Architecture-Structure",
+              "title": "Structure",
+              "front": "Structure",
+              "back": "├──► Local Bus (Very Fast) ──► Cache └──► System Bus (Fast) ──► Main Memory └──► Expansion Bus (Slower) ──► I/O Devices",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "High Performance Bus Architecture"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-High-Performance-Bus-Architecture-Benefits",
+              "title": "Benefits",
+              "front": "Benefits",
+              "back": "1. **Local Bus:** Ultra-fast for CPU-cache communication\n2. **System Bus:** Fast for CPU-memory communication\n3. **Expansion Bus:** Adequate speed for I/O devices\n4. **Reduced Contention:** Different buses for different purposes",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "High Performance Bus Architecture"
+            }
+          ]
+        },
+        {
+          "subsection": "Bus Types",
+          "cardCount": 5,
+          "cards": [
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Types-1--Dedicated-Bus",
+              "title": "1. Dedicated Bus",
+              "front": "1. Dedicated Bus",
+              "back": "1. **Separate lines** for data and address\n2. **Advantages:**\n3. Simpler control logic\n4. Can transfer address and data simultaneously (in some cases)\n5. Better performance\n6. **Disadvantages:**\n7. More wires = higher cost\n8. More complex physical layout",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Types"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Types-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "Data Bus: 32 wires (D0-D31) Address Bus: 32 wires (A0-A31) Control Bus: Various control signals Total: 64+ wires",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Types"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Types-2--Multiplexed-Bus",
+              "title": "2. Multiplexed Bus",
+              "front": "2. Multiplexed Bus",
+              "back": "1. **Shared lines** for address and data\n2. **Control signal** indicates whether address or data is on bus\n3. **Advantages:**\n4. Fewer wires = lower cost\n5. Simpler physical layout\n6. **Disadvantages:**\n7. More complex control logic\n8. Requires two cycles (address, then data)\n9. Lower performance",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Types"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Types-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "1. ALE=1: Bus carries address\n2. ALE=0: Bus carries data",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Types"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Types-Operation",
+              "title": "Operation",
+              "front": "Operation",
+              "back": "Cycle 1: Place address on bus, assert ALE Cycle 2: Place data on bus, deassert ALE",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Types"
+            }
+          ]
+        },
+        {
+          "subsection": "Bus Arbitration",
+          "cardCount": 13,
+          "cards": [
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Problem",
+              "title": "Problem",
+              "front": "Problem",
+              "back": "Multiple devices may want to use the bus simultaneously.",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "**Bus Arbitration** - mechanism to determine which device gets bus access.",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Requirements",
+              "title": "Requirements",
+              "front": "Requirements",
+              "back": "1. Only **one device** can control bus at a time\n2. Fair access to all devices\n3. Priority for time-critical operations\n4. Efficient arbitration (minimal overhead)",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Centralized-Arbitration",
+              "title": "Centralized Arbitration",
+              "front": "Centralized Arbitration",
+              "back": "",
+              "type": "concept",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Structure",
+              "title": "Structure",
+              "front": "Structure",
+              "back": "1. **Single hardware device** (bus controller/arbiter) controls bus access\n2. May be part of CPU or separate chip\n3. All devices request bus from arbiter\n4. Arbiter grants bus to one device at a time",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. Simple logic in each device\n2. Centralized control\n3. Easy to implement priority schemes",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. Single point of failure\n2. May become bottleneck\n3. Centralized logic complexity",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "Device 1 ──┐ Device 2 ──┼──► Bus Arbiter ──► Bus Control Device 3 ──┘",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Distributed-Arbitration",
+              "title": "Distributed Arbitration",
+              "front": "Distributed Arbitration",
+              "back": "",
+              "type": "concept",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Structure",
+              "title": "Structure",
+              "front": "Structure",
+              "back": "1. **Each device** has arbitration logic\n2. Devices compete directly\n3. No central arbiter\n4. Self-selecting based on priority",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. No single point of failure\n2. Scalable\n3. Can be faster (parallel arbitration)",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. More complex logic in each device\n2. More expensive per device\n3. Harder to debug",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Example",
+              "title": "Example",
+              "front": "Example",
+              "back": "Device 1 (Priority 3) ──┐ Device 2 (Priority 2) ──┼──► Bus (winner takes control) Device 3 (Priority 1) ──┘ (Device 3 wins - highest priority)",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Arbitration"
+            }
+          ]
+        },
+        {
+          "subsection": "Bus Timing",
+          "cardCount": 15,
+          "cards": [
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Problem",
+              "title": "Problem",
+              "front": "Problem",
+              "back": "Devices must coordinate when to read/write data.",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "**Timing protocols** ensure proper synchronization.",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Synchronous-Timing",
+              "title": "Synchronous Timing",
+              "front": "Synchronous Timing",
+              "back": "",
+              "type": "concept",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. Events determined by **clock signals**\n2. Control bus includes **clock line**\n3. All devices read same clock\n4. Single clock cycle (1-0 transition) = one bus cycle\n5. Usually synchronize on **leading edge** (rising edge) of clock\n6. Usually one cycle per event",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. Simple to implement\n2. Predictable timing\n3. Easy to design for",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. Limited by slowest device\n2. Clock skew problems at high speeds\n3. Inflexible (all devices must use same clock)",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Timing-Diagram",
+              "title": "Timing Diagram",
+              "front": "Timing Diagram",
+              "back": "Clock: ──┐ ┐ ┐ ┐ └─────┘ └─────┘ Address: ──[A]─────────────── Data: └──[D]─────────── Read: └────────────────",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Operation",
+              "title": "Operation",
+              "front": "Operation",
+              "back": "1. **T1:** Address placed on address bus\n2. **T2:** Read signal asserted\n3. **T3:** Data available on data bus (memory responds)\n4. **T4:** Data read, signals deasserted",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Asynchronous-Timing",
+              "title": "Asynchronous Timing",
+              "front": "Asynchronous Timing",
+              "back": "",
+              "type": "concept",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Characteristics",
+              "title": "Characteristics",
+              "front": "Characteristics",
+              "back": "1. **No common clock**\n2. Devices use **handshaking signals**\n3. **Request-Acknowledge** protocol\n4. Timing determined by device speeds, not fixed clock",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Signals",
+              "title": "Signals",
+              "front": "Signals",
+              "back": "1. **Request (REQ):** Initiator requests operation\n2. **Acknowledge (ACK):** Target acknowledges completion\n3. **Ready:** Data ready signal",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. Works with devices of different speeds\n2. No clock skew issues\n3. More flexible",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Disadvantages",
+              "title": "Disadvantages",
+              "front": "Disadvantages",
+              "back": "1. More complex control logic\n2. Harder to design\n3. Variable timing (harder to predict)",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Read-Operation-Timing",
+              "title": "Read Operation Timing",
+              "front": "Read Operation Timing",
+              "back": "Initiator places address on bus Initiator asserts REQ Target sees REQ, places data on bus Target asserts ACK Initiator reads data, deasserts REQ Target deasserts ACK",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Bus-Timing-Write-Operation-Timing",
+              "title": "Write Operation Timing",
+              "front": "Write Operation Timing",
+              "back": "Initiator places address and data on bus Initiator asserts REQ Target reads data, asserts ACK Initiator deasserts REQ Target deasserts ACK",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Bus Timing"
+            }
+          ]
+        },
+        {
+          "subsection": "Direct Memory Access (DMA) Fundamentals",
+          "cardCount": 7,
+          "cards": [
+            {
+              "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Concept",
+              "title": "Concept",
+              "front": "Concept",
+              "back": "Allow I/O modules to exchange data directly with memory, bypassing the CPU.",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Direct Memory Access (DMA) Fundamentals"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Traditional-Approach--Programmed-I-O-",
+              "title": "Traditional Approach (Programmed I/O)",
+              "front": "Traditional Approach (Programmed I/O)",
+              "back": "CPU reads from I/O → CPU writes to Memory CPU reads from Memory → CPU writes to I/O",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Direct Memory Access (DMA) Fundamentals"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Problem",
+              "title": "Problem",
+              "front": "Problem",
+              "back": "CPU is involved in every data transfer, wasting CPU cycles.",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Direct Memory Access (DMA) Fundamentals"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-DMA-Approach",
+              "title": "DMA Approach",
+              "front": "DMA Approach",
+              "back": "I/O Module ──► Memory (direct transfer, CPU not involved)",
+              "type": "definition",
+              "section": "Bus Architecture and Design",
+              "subsection": "Direct Memory Access (DMA) Fundamentals"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Process",
+              "title": "Process",
+              "front": "Process",
+              "back": "1. CPU grants DMA authority to I/O module\n2. I/O module issues read/write commands directly to memory\n3. CPU is free to do other work\n4. I/O module notifies CPU when transfer complete (interrupt)",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Direct Memory Access (DMA) Fundamentals"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Benefits",
+              "title": "Benefits",
+              "front": "Benefits",
+              "back": "1. CPU not tied up during data transfer\n2. Much faster for large transfers\n3. Better overall system performance",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Direct Memory Access (DMA) Fundamentals"
+            },
+            {
+              "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Use-Cases",
+              "title": "Use Cases",
+              "front": "Use Cases",
+              "back": "1. Disk I/O (reading/writing files)\n2. Network I/O (receiving/sending packets)\n3. Graphics (transferring frame buffers)\n4. Audio (streaming audio data)",
+              "type": "list",
+              "section": "Bus Architecture and Design",
+              "subsection": "Direct Memory Access (DMA) Fundamentals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Modern Interconnect Technologies",
+      "subsections": [
+        {
+          "subsection": "Evolution from Bus to Point-to-Point",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Modern-Interconnect-Technologies-Evolution-from-Bus-to-Point-to-Point-Problems-with-Traditional-Buses",
+              "title": "Problems with Traditional Buses",
+              "front": "Problems with Traditional Buses",
+              "back": "1. **Electrical Constraints:**\n2. Increasing frequency causes signal integrity issues\n3. Wide synchronous buses become difficult at high speeds\n4. Clock distribution becomes problematic\n5. **Synchronization and Arbitration:**\n6. Hard to perform in timely fashion at high data rates\n7. Arbitration overhead increases\n8. Becomes bottleneck\n9. **Multicore Challenges:**\n10. Multiple processors on single chip\n11. Shared bus on chip magnifies problems\n12. Need to keep up with processor speeds",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Evolution from Bus to Point-to-Point"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Evolution-from-Bus-to-Point-to-Point-Advantages",
+              "title": "Advantages",
+              "front": "Advantages",
+              "back": "1. **Lower Latency:** Direct connections, no bus arbitration\n2. **Higher Data Rate:** Can achieve much higher speeds\n3. **Better Scalability:** Add more connections without degrading performance\n4. **No Arbitration Overhead:** Direct connections eliminate contention",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Evolution from Bus to Point-to-Point"
+            }
+          ]
+        },
+        {
+          "subsection": "Quick Path Interconnect (QPI)",
+          "cardCount": 6,
+          "cards": [
+            {
+              "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Introduction",
+              "title": "Introduction",
+              "front": "Introduction",
+              "back": "Intel introduced QPI in 2008 for high-performance systems.",
+              "type": "definition",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Quick Path Interconnect (QPI)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Key-Features",
+              "title": "Key Features",
+              "front": "Key Features",
+              "back": "1. **Multiple Direct Connections:** Pairwise connections between components\n2. **No Arbitration:** Eliminates need for bus arbitration\n3. **Layered Protocol:** Similar to network protocols\n4. **Packetized Transfer:** Data sent as packets with headers and error codes",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Quick Path Interconnect (QPI)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--QPI-Architecture-Layers",
+              "title": "QPI Architecture Layers",
+              "front": "QPI Architecture Layers",
+              "back": "1. **Function:** Actual wires and circuitry for signal transmission\n2. **Unit:** **Phit (Physical Unit)** = 20 bits\n3. **Implementation:**\n4. 20 data lanes in each direction (transmit and receive)\n5. Plus clock lane in each direction\n6. **Differential Signaling:** Two wires per lane (balanced transmission)\n7. Current travels down one conductor, returns on other\n8. Binary value depends on voltage difference\n9. More noise-resistant than single-ended signaling\n10. **Function:** Reliable transmission and flow control\n11. **Unit:** **Flit (Flow Control Unit)** = 80 bits\n12. 72-bit message payload\n13. 8-bit error control code (CRC - Cyclic Redundancy Check)\n14. **Responsibilities:**\n15. **Flow Control:** Prevents sender from overwhelming receiver\n16. **Error Control:** Detects and recovers from bit errors\n17. **Function:** Determines packet path through system\n18. **Implementation:** Defined by firmware\n19. **Purpose:** Describes possible paths packets can follow\n20. **Function:** High-level rules for packet exchange\n21. **Unit:** **Packet** (comprised of integral number of Flits)\n22. **Key Feature:** Cache coherency protocol\n23. Ensures main memory values in multiple caches remain consistent\n24. Critical for multiprocessor systems",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Quick Path Interconnect (QPI)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--QPI-Physical-Interface",
+              "title": "QPI Physical Interface",
+              "front": "QPI Physical Interface",
+              "back": "",
+              "type": "concept",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Quick Path Interconnect (QPI)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Structure",
+              "title": "Structure",
+              "front": "Structure",
+              "back": "1. **84 individual links** per QPI port\n2. **20 data lanes** in each direction (40 total)\n3. **1 clock lane** in each direction (2 total)\n4. **Multilane Distribution:** 80-bit flits distributed across 20 lanes in round-robin fashion",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Quick Path Interconnect (QPI)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Performance",
+              "title": "Performance",
+              "front": "Performance",
+              "back": "1. Can transmit 20 bits in parallel in each direction\n2. Very high data rates achieved through parallel channels",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Quick Path Interconnect (QPI)"
+            }
+          ]
+        },
+        {
+          "subsection": "Peripheral Component Interconnect Express (PCIe)",
+          "cardCount": 6,
+          "cards": [
+            {
+              "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Evolution",
+              "title": "Evolution",
+              "front": "Evolution",
+              "back": "1. **PCI (Peripheral Component Interconnect):** Traditional bus-based scheme\n2. **PCIe (PCI Express):** Point-to-point interconnect replacing PCI",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Peripheral Component Interconnect Express (PCIe)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Key-Requirements",
+              "title": "Key Requirements",
+              "front": "Key Requirements",
+              "back": "1. High capacity for high data rate I/O devices\n2. Support for Gigabit Ethernet and faster\n3. Support time-dependent data streams (real-time audio/video)",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Peripheral Component Interconnect Express (PCIe)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--PCIe-Architecture-Layers",
+              "title": "PCIe Architecture Layers",
+              "front": "PCIe Architecture Layers",
+              "back": "1. **Function:** Physical wires and transmission circuitry\n2. **Characteristics:**\n3. **Bidirectional Lanes:** Unlike QPI, lanes work both directions\n4. **Configurable Lanes:** 1, 4, 8, 16, or 32 lanes per port\n5. **Round-Robin Distribution:** Bits sent to lanes in round-robin\n6. **128-bit Processing:** Each lane processes 16 bytes (128 bits) at a time\n7. **130-bit Encoding:** Each 128-bit block encoded into 130-bit codeword\n8. **No Common Clock:** Receiver uses data transitions for synchronization\n9. **Transition Guarantee:** Extra 2 bits ensure transitions in long sequences of 1s\n10. **Function:** Reliable transmission and flow control\n11. **Unit:** **DLLP (Data Link Layer Packet)**\n12. **Responsibilities:**\n13. **Flow Control:** Regulates transmission rate\n14. **Power Management:** Manages power budgeting\n15. **ACK/NAK:** Acknowledges valid packets, requests retransmission of invalid packets\n16. **Function:** Generates and consumes data packets, manages flow\n17. **Unit:** **TLP (Transaction Layer Packet)**\n18. **Responsibilities:**\n19. Receives read/write requests from software\n20. Creates request packets for transmission\n21. **Split Transactions:** Most transactions use request-response pattern\n22. **Posted Transactions:** Some writes and messages don't expect response\n23. Supports 32-bit and 64-bit memory addressing",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Peripheral Component Interconnect Express (PCIe)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--PCIe-Configuration",
+              "title": "PCIe Configuration",
+              "front": "PCIe Configuration",
+              "back": "",
+              "type": "concept",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Peripheral Component Interconnect Express (PCIe)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Typical-Setup",
+              "title": "Typical Setup",
+              "front": "Typical Setup",
+              "back": "CPU ──► QPI ──► Memory Controller Hub ├──► PCIe ──► Graphics Card (x16) ├──► PCIe ──► Network Card (x1) └──► PCIe ──► Storage Controller (x4)",
+              "type": "definition",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Peripheral Component Interconnect Express (PCIe)"
+            },
+            {
+              "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Lane-Configurations",
+              "title": "Lane Configurations",
+              "front": "Lane Configurations",
+              "back": "1. **x1:** 1 lane (low bandwidth devices)\n2. **x4:** 4 lanes (moderate bandwidth)\n3. **x8:** 8 lanes (high bandwidth)\n4. **x16:** 16 lanes (graphics cards, high-performance devices)",
+              "type": "list",
+              "section": "Modern Interconnect Technologies",
+              "subsection": "Peripheral Component Interconnect Express (PCIe)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Key Concepts Summary",
+      "subsections": [
+        {
+          "subsection": "Fundamental Principles",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "1-Key-Concepts-Summary-Fundamental-Principles-Fundamental-Principles",
+              "title": "Fundamental Principles",
+              "front": "Fundamental Principles",
+              "back": "1. **Programmable Hardware:**\n2. Same hardware executes different programs\n3. Programs are sequences of instructions\n4. Instructions generate control signals\n5. **Component Communication:**\n6. All components communicate via system bus\n7. Bus is shared resource\n8. Only one device can use bus at a time\n9. **Instruction Execution:**\n10. Fetch-Execute cycle repeats\n11. Each instruction may require multiple memory accesses\n12. Interrupts can suspend normal execution\n13. **Performance Optimization:**\n14. Interrupts improve efficiency (CPU doesn't wait for I/O)\n15. Multiple buses reduce contention\n16. Point-to-point interconnects eliminate bus bottlenecks",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Fundamental Principles"
+            }
+          ]
+        },
+        {
+          "subsection": "Memory Hierarchy Concept",
+          "cardCount": 2,
+          "cards": [
+            {
+              "id": "1-Key-Concepts-Summary-Memory-Hierarchy-Concept-Levels--Fastest-to-Slowest-",
+              "title": "Levels (Fastest to Slowest)",
+              "front": "Levels (Fastest to Slowest)",
+              "back": "1. **CPU Registers:** Fastest, smallest, most expensive\n2. **Cache Memory:** Very fast, small, expensive\n3. **Main Memory (RAM):** Fast, medium size, moderate cost\n4. **Secondary Storage (Disk):** Slow, large, cheap",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Memory Hierarchy Concept"
+            },
+            {
+              "id": "1-Key-Concepts-Summary-Memory-Hierarchy-Concept-Principle",
+              "title": "Principle",
+              "front": "Principle",
+              "back": "Use fast, expensive memory for frequently accessed data; use slow, cheap memory for bulk storage.",
+              "type": "definition",
+              "section": "Key Concepts Summary",
+              "subsection": "Memory Hierarchy Concept"
+            }
+          ]
+        },
+        {
+          "subsection": "Bus Design Trade-offs",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-Key-Concepts-Summary-Bus-Design-Trade-offs-Dedicated-vs--Multiplexed",
+              "title": "Dedicated vs. Multiplexed",
+              "front": "Dedicated vs. Multiplexed",
+              "back": "1. **Dedicated:** Better performance, more expensive\n2. **Multiplexed:** Lower cost, lower performance",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Bus Design Trade-offs"
+            },
+            {
+              "id": "1-Key-Concepts-Summary-Bus-Design-Trade-offs-Synchronous-vs--Asynchronous",
+              "title": "Synchronous vs. Asynchronous",
+              "front": "Synchronous vs. Asynchronous",
+              "back": "1. **Synchronous:** Simpler, predictable, limited by slowest device\n2. **Asynchronous:** More flexible, works with different speeds, more complex",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Bus Design Trade-offs"
+            },
+            {
+              "id": "1-Key-Concepts-Summary-Bus-Design-Trade-offs-Single-vs--Multiple-Buses",
+              "title": "Single vs. Multiple Buses",
+              "front": "Single vs. Multiple Buses",
+              "back": "1. **Single:** Simple, but becomes bottleneck\n2. **Multiple:** Better performance, more complex",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Bus Design Trade-offs"
+            }
+          ]
+        },
+        {
+          "subsection": "Interrupt System Benefits",
+          "cardCount": 1,
+          "cards": [
+            {
+              "id": "1-Key-Concepts-Summary-Interrupt-System-Benefits-Interrupt-System-Benefits",
+              "title": "Interrupt System Benefits",
+              "front": "Interrupt System Benefits",
+              "back": "1. **Efficiency:** CPU doesn't waste time waiting for I/O\n2. **Responsiveness:** System can respond to events immediately\n3. **Multitasking:** Enables time-sharing and pre-emptive scheduling\n4. **Error Handling:** Graceful error recovery",
+              "type": "list",
+              "section": "Key Concepts Summary",
+              "subsection": "Interrupt System Benefits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Practice Problems and Examples",
+      "subsections": [
+        {
+          "subsection": "Problem 1: Address Bus Calculation",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-1--Address-Bus-Calculation-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "A microprocessor has a 20-bit address bus. What is the maximum directly addressable memory capacity?",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 1: Address Bus Calculation"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-1--Address-Bus-Calculation-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "1. Address bus width: 20 bits\n2. Maximum addressable locations: 2^20 = 1,048,576 locations\n3. If each location stores 1 byte: 1,048,576 bytes = 1 MB\n4. If each location stores 1 word (4 bytes): 4 MB",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 1: Address Bus Calculation"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-1--Address-Bus-Calculation-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "1 MB (assuming byte-addressable memory)",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 1: Address Bus Calculation"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 2: Data Bus Performance",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-2--Data-Bus-Performance-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "A system has a 32-bit data bus running at 100 MHz. What is the theoretical maximum data transfer rate?",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 2: Data Bus Performance"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-2--Data-Bus-Performance-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "1. Bus width: 32 bits = 4 bytes\n2. Bus frequency: 100 MHz = 100 million cycles per second\n3. Maximum transfer rate: 4 bytes × 100,000,000 cycles/sec = 400,000,000 bytes/sec\n4. = 400 MB/s",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 2: Data Bus Performance"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-2--Data-Bus-Performance-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "400 MB/s",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 2: Data Bus Performance"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 3: Instruction Cycle Analysis",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-3--Instruction-Cycle-Analysis-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "For the instruction `ADD B, A` (add value at B to value at A, store result in A), how many memory accesses occur during the execute cycle?",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 3: Instruction Cycle Analysis"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-3--Instruction-Cycle-Analysis-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "1. Read memory location A → 1 access\n2. Read memory location B → 1 access\n3. Add values (in CPU, no memory access)\n4. Write result to memory location A → 1 access",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 3: Instruction Cycle Analysis"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-3--Instruction-Cycle-Analysis-Total",
+              "title": "Total",
+              "front": "Total",
+              "back": "3 memory accesses (2 reads, 1 write)",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 3: Instruction Cycle Analysis"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 4: Interrupt Efficiency",
+          "cardCount": 4,
+          "cards": [
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "An I/O operation takes 10 ms. The CPU can execute 1 billion instructions per second. How many instructions can the CPU execute during the I/O operation if interrupts are used?",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 4: Interrupt Efficiency"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "1. I/O operation time: 10 ms = 0.01 seconds\n2. CPU speed: 1 billion instructions/second\n3. Instructions during I/O: 1,000,000,000 × 0.01 = 10,000,000 instructions",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 4: Interrupt Efficiency"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Answer",
+              "title": "Answer",
+              "front": "Answer",
+              "back": "10 million instructions",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 4: Interrupt Efficiency"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Without-interrupts",
+              "title": "Without interrupts",
+              "front": "Without interrupts",
+              "back": "CPU would wait idle, executing 0 instructions.",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 4: Interrupt Efficiency"
+            }
+          ]
+        },
+        {
+          "subsection": "Problem 5: Bus Arbitration",
+          "cardCount": 3,
+          "cards": [
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-5--Bus-Arbitration-Question",
+              "title": "Question",
+              "front": "Question",
+              "back": "In a system with 4 devices requesting bus access, how does centralized arbitration work?",
+              "type": "definition",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 5: Bus Arbitration"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-5--Bus-Arbitration-Solution",
+              "title": "Solution",
+              "front": "Solution",
+              "back": "1. All 4 devices send bus request to arbiter\n2. Arbiter determines priority (e.g., Device 1 = highest, Device 4 = lowest)\n3. Arbiter grants bus to Device 1\n4. Device 1 uses bus, completes operation, releases bus\n5. Arbiter grants bus to next device in priority order\n6. Process repeats",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 5: Bus Arbitration"
+            },
+            {
+              "id": "1-Practice-Problems-and-Examples-Problem-5--Bus-Arbitration-Key-Point",
+              "title": "Key Point",
+              "front": "Key Point",
+              "back": "1. **Understand the Big Picture:**\n2. Start with the overall system architecture\n3. Understand how components connect and communicate\n4. Then dive into details of each component\n5. **Visualize the Data Flow:**\n6. Draw diagrams of instruction execution\n7. Trace data through the system\n8. Understand bus operations step-by-step\n9. **Practice Calculations:**\n10. Address bus width → memory capacity\n11. Data bus width → transfer rates\n12. Interrupt timing and efficiency\n13. **Compare and Contrast:**\n14. Dedicated vs. multiplexed buses\n15. Synchronous vs. asynchronous timing\n16. Centralized vs. distributed arbitration\n17. Traditional bus vs. point-to-point interconnect\n18. **Understand Trade-offs:**\n19. Performance vs. cost\n20. Complexity vs. simplicity\n21. Flexibility vs. speed\n22. **Relate to Real Systems:**\n23. Think about how these concepts apply to actual computers\n24. Consider modern systems (QPI, PCIe) vs. traditional systems\n25. Understand why systems evolved\n26. **Computers are programmable:** Same hardware, different programs\n27. **Components communicate via buses:** Shared communication pathways\n28. **Instructions execute in cycles:** Fetch, then execute\n29. **Interrupts improve efficiency:** CPU doesn't wait for slow devices\n30. **Bus design affects performance:** Width, timing, and architecture matter\n31. **Modern systems use point-to-point:** Better performance than shared buses\n32. CPU architecture (Group 2) builds on instruction execution\n33. Instruction sets (Group 3) define what instructions look like\n34. Memory systems (Group 4) connect via buses\n35. I/O systems (Group 6) use interrupts and DMA",
+              "type": "list",
+              "section": "Practice Problems and Examples",
+              "subsection": "Problem 5: Bus Arbitration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "allCards": [
+    {
+      "id": "1-Detailed-Study-Guide--Detailed-Study-Guide",
+      "title": "Detailed Study Guide",
+      "front": "Detailed Study Guide",
+      "back": "1. [Introduction and Core Concepts](#introduction-and-core-concepts)\n2. [Computer Components Overview](#computer-components-overview)\n3. [Instruction Cycle](#instruction-cycle)\n4. [Interrupts](#interrupts)\n5. [System Interconnection: The Bus](#system-interconnection-the-bus)\n6. [Bus Architecture and Design](#bus-architecture-and-design)\n7. [Modern Interconnect Technologies](#modern-interconnect-technologies)\n8. [Key Concepts Summary](#key-concepts-summary)\n9. [Practice Problems and Examples](#practice-problems-and-examples)",
+      "type": "list",
+      "section": "Detailed Study Guide",
+      "subsection": ""
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Fundamental-Principle",
+      "title": "Fundamental Principle",
+      "front": "Fundamental Principle",
+      "back": "Modern computers use **programmable hardware** rather than hardwired systems.",
+      "type": "definition",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Program Concept"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Hardwired-vs--Programmable-Systems",
+      "title": "Hardwired vs. Programmable Systems",
+      "front": "Hardwired vs. Programmable Systems",
+      "back": "",
+      "type": "concept",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Program Concept"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Hardwired-Systems",
+      "title": "Hardwired Systems",
+      "front": "Hardwired Systems",
+      "back": "1. Inflexible - designed for one specific task\n2. Require physical rewiring to change functionality\n3. Example: Early calculators, dedicated control systems",
+      "type": "list",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Program Concept"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Programmable-Systems--General-Purpose-Hardware-",
+      "title": "Programmable Systems (General-Purpose Hardware)",
+      "front": "Programmable Systems (General-Purpose Hardware)",
+      "back": "1. Flexible - can perform different tasks\n2. Same hardware executes different programs\n3. Change functionality by supplying new control signals (instructions)\n4. Example: Modern computers, smartphones, tablets",
+      "type": "list",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Program Concept"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-What-is-a-Program-",
+      "title": "What is a Program?",
+      "front": "What is a Program?",
+      "back": "1. A **sequence of steps** (instructions)\n2. Each step performs an **arithmetic or logical operation**\n3. Each operation requires a **different set of control signals**\n4. The sequence of control signals determines the program's behavior",
+      "type": "list",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Program Concept"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Program-Concept-Key-Insight",
+      "title": "Key Insight",
+      "front": "Key Insight",
+      "back": "The same hardware can execute completely different programs by changing the sequence of instructions.",
+      "type": "definition",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Program Concept"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Control-Unit-Function",
+      "title": "Function",
+      "front": "Function",
+      "back": "The Control Unit translates instruction codes into control signals.",
+      "type": "definition",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Control Unit"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Control-Unit-Process",
+      "title": "Process",
+      "front": "Process",
+      "back": "1. Each operation has a **unique code** (opcode)\n2. Examples: ADD, MOVE, SUBTRACT, JUMP\n3. The hardware accepts this code\n4. The hardware issues the appropriate **control signals** to execute the operation",
+      "type": "list",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Control Unit"
+    },
+    {
+      "id": "1-Introduction-and-Core-Concepts-The-Control-Unit-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "1. Instruction code: `ADD`\n2. Control signals generated:\n3. Enable ALU addition mode\n4. Route operands to ALU inputs\n5. Route result to destination register\n6. Update status flags",
+      "type": "list",
+      "section": "Introduction and Core Concepts",
+      "subsection": "The Control Unit"
+    },
+    {
+      "id": "1-Computer-Components-Overview-The-Four-Essential-Components-1--Central-Processing-Unit--CPU-",
+      "title": "1. Central Processing Unit (CPU)",
+      "front": "1. Central Processing Unit (CPU)",
+      "back": "1. **Control Unit (CU):** Manages instruction execution, generates control signals\n2. **Arithmetic and Logic Unit (ALU):** Performs arithmetic and logical operations\n3. **Registers:** Fast, temporary storage within the CPU",
+      "type": "list",
+      "section": "Computer Components Overview",
+      "subsection": "The Four Essential Components"
+    },
+    {
+      "id": "1-Computer-Components-Overview-The-Four-Essential-Components-2--Main-Memory",
+      "title": "2. Main Memory",
+      "front": "2. Main Memory",
+      "back": "1. Stores both **instructions** and **data**\n2. Temporary storage (volatile - loses data when power is off)\n3. Organized as a sequence of addressable locations\n4. Each location can store a word (typically 32 or 64 bits)",
+      "type": "list",
+      "section": "Computer Components Overview",
+      "subsection": "The Four Essential Components"
+    },
+    {
+      "id": "1-Computer-Components-Overview-The-Four-Essential-Components-3--Input-Output--I-O--Modules",
+      "title": "3. Input/Output (I/O) Modules",
+      "front": "3. Input/Output (I/O) Modules",
+      "back": "1. Interface between the computer and external devices\n2. Handle data transfer to/from peripherals\n3. Examples: Keyboard, mouse, display, printer, disk drives, network interfaces",
+      "type": "list",
+      "section": "Computer Components Overview",
+      "subsection": "The Four Essential Components"
+    },
+    {
+      "id": "1-Computer-Components-Overview-The-Four-Essential-Components-4--System-Interconnection",
+      "title": "4. System Interconnection",
+      "front": "4. System Interconnection",
+      "back": "1. **Bus:** Communication pathway connecting all components\n2. Enables data, address, and control signal transfer\n3. Critical for system performance",
+      "type": "list",
+      "section": "Computer Components Overview",
+      "subsection": "The Four Essential Components"
+    },
+    {
+      "id": "1-Computer-Components-Overview-Component-Relationships-Key-Point",
+      "title": "Key Point",
+      "front": "Key Point",
+      "back": "All components communicate through the system bus. The bus is the shared communication pathway.",
+      "type": "definition",
+      "section": "Computer Components Overview",
+      "subsection": "Component Relationships"
+    },
+    {
+      "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Phase-1--Fetch-Cycle",
+      "title": "Phase 1: Fetch Cycle",
+      "front": "Phase 1: Fetch Cycle",
+      "back": "",
+      "type": "concept",
+      "section": "Instruction Cycle",
+      "subsection": "Basic Instruction Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Retrieve the next instruction from memory",
+      "type": "definition",
+      "section": "Instruction Cycle",
+      "subsection": "Basic Instruction Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Steps",
+      "title": "Steps",
+      "front": "Steps",
+      "back": "1. **Read Program Counter (PC):** PC contains the address of the next instruction\n2. **Fetch Instruction:** Read instruction from memory location pointed to by PC\n3. **Increment PC:** PC = PC + 1 (or appropriate increment based on instruction size)\n4. **Load Instruction Register (IR):** Store fetched instruction in IR for decoding",
+      "type": "list",
+      "section": "Instruction Cycle",
+      "subsection": "Basic Instruction Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "PC = 1000 (address of next instruction) Fetch instruction from memory[1000] PC = 1001 (or 1004 if 32-bit instructions) IR = instruction from memory[1000]",
+      "type": "definition",
+      "section": "Instruction Cycle",
+      "subsection": "Basic Instruction Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Phase-2--Execute-Cycle",
+      "title": "Phase 2: Execute Cycle",
+      "front": "Phase 2: Execute Cycle",
+      "back": "",
+      "type": "concept",
+      "section": "Instruction Cycle",
+      "subsection": "Basic Instruction Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "Interpret and execute the instruction",
+      "type": "definition",
+      "section": "Instruction Cycle",
+      "subsection": "Basic Instruction Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Basic-Instruction-Cycle-Types-of-Operations",
+      "title": "Types of Operations",
+      "front": "Types of Operations",
+      "back": "1. **Processor-Memory:**\n2. Data transfer between CPU and main memory\n3. Read data from memory\n4. Write data to memory\n5. **Data Processing:**\n6. Arithmetic operations (ADD, SUBTRACT, MULTIPLY, DIVIDE)\n7. Logical operations (AND, OR, NOT, XOR)\n8. Shift operations (left, right, rotate)\n9. **Control:**\n10. Alteration of instruction sequence\n11. Jump instructions (unconditional)\n12. Branch instructions (conditional)\n13. Subroutine calls and returns\n14. **Processor-I/O:**\n15. Data transfer between CPU and I/O module\n16. Input operations\n17. Output operations",
+      "type": "list",
+      "section": "Instruction Cycle",
+      "subsection": "Basic Instruction Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Instruction-Cycle-State-Diagram-Key-States",
+      "title": "Key States",
+      "front": "Key States",
+      "back": "1. **Fetch:** Get instruction from memory\n2. **Execute:** Perform the operation\n3. **Interrupt Check:** (Added when interrupts are enabled)",
+      "type": "list",
+      "section": "Instruction Cycle",
+      "subsection": "Instruction Cycle State Diagram"
+    },
+    {
+      "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Important",
+      "title": "Important",
+      "front": "Important",
+      "back": "The execute cycle may require **multiple memory accesses**. **Example: PDP-11 Instruction `ADD B, A`** This instruction adds the value at memory location B to the value at memory location A.",
+      "type": "definition",
+      "section": "Instruction Cycle",
+      "subsection": "Multiple Memory Access in Execute Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Execute-Cycle-Steps",
+      "title": "Execute Cycle Steps",
+      "front": "Execute Cycle Steps",
+      "back": "1. **Read memory location A** → Load into register R1\n2. **Read memory location B** → Load into register R2\n3. **Add R1 + R2** → Result in R1\n4. **Write R1** → Store result back to memory location A",
+      "type": "list",
+      "section": "Instruction Cycle",
+      "subsection": "Multiple Memory Access in Execute Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Total-Memory-Accesses",
+      "title": "Total Memory Accesses",
+      "front": "Total Memory Accesses",
+      "back": "3 (2 reads, 1 write)",
+      "type": "definition",
+      "section": "Instruction Cycle",
+      "subsection": "Multiple Memory Access in Execute Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Multiple-Memory-Access-in-Execute-Cycle-Key-Insight",
+      "title": "Key Insight",
+      "front": "Key Insight",
+      "back": "Complex instructions require multiple memory operations, making the execute cycle more complicated.",
+      "type": "definition",
+      "section": "Instruction Cycle",
+      "subsection": "Multiple Memory Access in Execute Cycle"
+    },
+    {
+      "id": "1-Instruction-Cycle-Instruction-Cycle-Timing-Without-Interrupts",
+      "title": "Without Interrupts",
+      "front": "Without Interrupts",
+      "back": "Instruction 1: [Fetch] [Execute] [Fetch] [Execute] [Fetch] [Execute] ... Instruction 2: [Fetch] [Execute] [Fetch] [Execute] ... Instruction 3: [Fetch] [Execute] ...",
+      "type": "definition",
+      "section": "Instruction Cycle",
+      "subsection": "Instruction Cycle Timing"
+    },
+    {
+      "id": "1-Instruction-Cycle-Instruction-Cycle-Timing-Performance-Consideration",
+      "title": "Performance Consideration",
+      "front": "Performance Consideration",
+      "back": "1. Fetch time depends on memory speed\n2. Execute time depends on instruction complexity\n3. Total cycle time = Fetch time + Execute time",
+      "type": "list",
+      "section": "Instruction Cycle",
+      "subsection": "Instruction Cycle Timing"
+    },
+    {
+      "id": "1-Interrupts-What-are-Interrupts--Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "A mechanism by which other modules (e.g., I/O devices) can interrupt the normal sequence of instruction execution.",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "What are Interrupts?"
+    },
+    {
+      "id": "1-Interrupts-What-are-Interrupts--Purpose",
+      "title": "Purpose",
+      "front": "Purpose",
+      "back": "1. **Improve Processing Efficiency:**\n2. External devices are much slower than the processor\n3. Don't want CPU to wait idle for I/O operations\n4. Example: Printer takes milliseconds to print; CPU can do millions of operations in that time\n5. **Error Handling:**\n6. Stop execution when errors occur\n7. Errors may or may not be recoverable\n8. Allows graceful error handling\n9. **Real-Time Response:**\n10. Respond to time-critical events immediately\n11. Example: User input, network packets, sensor data",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "What are Interrupts?"
+    },
+    {
+      "id": "1-Interrupts-Classes-of-Interrupts-1--Program-Interrupts",
+      "title": "1. Program Interrupts",
+      "front": "1. Program Interrupts",
+      "back": "1. Generated by program execution\n2. **Examples:**\n3. **Overflow:** Arithmetic operation result exceeds register capacity\n4. **Division by Zero:** Attempt to divide by zero\n5. **Illegal Instruction:** Invalid opcode encountered\n6. **Privilege Violation:** User program attempts privileged operation",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Classes of Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Classes-of-Interrupts-2--Timer-Interrupts",
+      "title": "2. Timer Interrupts",
+      "front": "2. Timer Interrupts",
+      "back": "1. Generated by internal processor timer\n2. **Uses:**\n3. **Pre-emptive Multi-tasking:** OS switches between processes\n4. **Time Slicing:** Fair CPU time allocation\n5. **Real-Time Systems:** Periodic task scheduling\n6. **Example:** Every 10ms, timer interrupt triggers OS scheduler",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Classes of Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Classes-of-Interrupts-3--I-O-Interrupts",
+      "title": "3. I/O Interrupts",
+      "front": "3. I/O Interrupts",
+      "back": "1. Generated by I/O controllers\n2. **Examples:**\n3. **Device Ready:** I/O operation completed\n4. **Device Error:** I/O operation failed\n5. **Data Available:** Input device has data ready\n6. **Example:** Printer finishes printing, interrupts CPU to request next page",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Classes of Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Classes-of-Interrupts-4--Hardware-Failure-Interrupts",
+      "title": "4. Hardware Failure Interrupts",
+      "front": "4. Hardware Failure Interrupts",
+      "back": "1. Generated by hardware malfunctions\n2. **Examples:**\n3. **Power Failure:** Power supply issues detected\n4. **Memory Parity Error:** Data corruption detected in memory\n5. **Hardware Malfunction:** Component failure detected",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Classes of Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Transfer-of-Control-via-Interrupts-Normal-Flow",
+      "title": "Normal Flow",
+      "front": "Normal Flow",
+      "back": "Instruction 1 → Instruction 2 → Instruction 3 → Instruction 4 → ...",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Transfer of Control via Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Transfer-of-Control-via-Interrupts-With-Interrupt",
+      "title": "With Interrupt",
+      "front": "With Interrupt",
+      "back": "Instruction 1 → Instruction 2 → [INTERRUPT] → Interrupt Handler → Resume Instruction 3 → ...",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Transfer of Control via Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Transfer-of-Control-via-Interrupts-Key-Process",
+      "title": "Key Process",
+      "front": "Key Process",
+      "back": "1. Current instruction completes (or is suspended)\n2. CPU saves current context (registers, PC, status)\n3. CPU jumps to interrupt handler routine\n4. Handler processes the interrupt\n5. CPU restores saved context\n6. CPU resumes execution from where it was interrupted",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Transfer of Control via Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Interrupt-Cycle-Modified-Instruction-Cycle",
+      "title": "Modified Instruction Cycle",
+      "front": "Modified Instruction Cycle",
+      "back": "FETCH → EXECUTE → [INTERRUPT CHECK] → FETCH (next instruction) │ If interrupt pending: SAVE CONTEXT JUMP TO HANDLER PROCESS INTERRUPT RESTORE CONTEXT RETURN TO PROGRAM",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Interrupt Cycle"
+    },
+    {
+      "id": "1-Interrupts-Interrupt-Cycle-Interrupt-Check-Steps",
+      "title": "Interrupt Check Steps",
+      "front": "Interrupt Check Steps",
+      "back": "1. **Check for interrupt signal** (after each instruction)\n2. **If no interrupt:** Continue to fetch next instruction\n3. **If interrupt pending:**\n4. **Suspend** execution of current program\n5. **Save context:**\n6. Program Counter (PC)\n7. Processor Status Word (PSW)\n8. General-purpose registers\n9. Other processor state\n10. **Set PC** to start address of interrupt handler routine\n11. **Process interrupt** (execute handler)\n12. **Restore context** (restore saved state)\n13. **Continue** interrupted program",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Interrupt Cycle"
+    },
+    {
+      "id": "1-Interrupts-Program-Timing-with-Interrupts-Without-Interrupts--Programmed-I-O--",
+      "title": "Without Interrupts (Programmed I/O):",
+      "front": "Without Interrupts (Programmed I/O):",
+      "back": "CPU: [Execute] [Wait] [Wait] [Wait] [Wait] [Wait] [I/O Complete] [Continue] └─────────────────────────────────────────────────────────┘ CPU WASTED TIME",
+      "type": "concept",
+      "section": "Interrupts",
+      "subsection": "Program Timing with Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Program-Timing-with-Interrupts-Problem",
+      "title": "Problem",
+      "front": "Problem",
+      "back": "CPU sits idle waiting for slow I/O device.",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Program Timing with Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Program-Timing-with-Interrupts-With-Interrupts--Interrupt-Driven-I-O--",
+      "title": "With Interrupts (Interrupt-Driven I/O):",
+      "front": "With Interrupts (Interrupt-Driven I/O):",
+      "back": "CPU: [Execute] [Execute] [Execute] [Execute] [Interrupt] [Handler] [Continue] I/O: [Start] [Working] [Working] [Working] [Complete] ──┘",
+      "type": "concept",
+      "section": "Interrupts",
+      "subsection": "Program Timing with Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Program-Timing-with-Interrupts-Benefit",
+      "title": "Benefit",
+      "front": "Benefit",
+      "back": "CPU can do useful work while I/O device operates.",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Program Timing with Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Program-Timing-with-Interrupts-Efficiency-Gain",
+      "title": "Efficiency Gain",
+      "front": "Efficiency Gain",
+      "back": "1. **Short I/O Wait:** Small improvement\n2. **Long I/O Wait:** Massive improvement (CPU can execute thousands of instructions)",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Program Timing with Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Multiple-Interrupts-Strategy-1--Disable-Interrupts",
+      "title": "Strategy 1: Disable Interrupts",
+      "front": "Strategy 1: Disable Interrupts",
+      "back": "1. **Approach:** Processor ignores further interrupts while processing one\n2. **Behavior:**\n3. Interrupts remain pending\n4. Checked after current interrupt is processed\n5. Handled in sequence as they occurred\n6. **Use Case:** Simple systems, low interrupt rates",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Multiple Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Multiple-Interrupts-Timeline",
+      "title": "Timeline",
+      "front": "Timeline",
+      "back": "Interrupt 1 arrives → Process Interrupt 1 Interrupt 2 arrives → [IGNORED, pending] Interrupt 3 arrives → [IGNORED, pending] Interrupt 1 complete → Check pending → Process Interrupt 2 Interrupt 2 complete → Check pending → Process Interrupt 3",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Multiple Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Multiple-Interrupts-Strategy-2--Priority-Based--Nested-Interrupts-",
+      "title": "Strategy 2: Priority-Based (Nested Interrupts)",
+      "front": "Strategy 2: Priority-Based (Nested Interrupts)",
+      "back": "1. **Approach:** Define interrupt priorities\n2. **Behavior:**\n3. Low priority interrupts can be interrupted by higher priority interrupts\n4. When high priority interrupt completes, return to previous interrupt\n5. Supports nested interrupt handling\n6. **Use Case:** Real-time systems, critical events",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Multiple Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Multiple-Interrupts-Priority-Levels--Example-",
+      "title": "Priority Levels (Example)",
+      "front": "Priority Levels (Example)",
+      "back": "1. **Highest:** Hardware failure (power failure, memory error)\n2. **High:** Timer interrupts (system scheduling)\n3. **Medium:** I/O interrupts (device ready)\n4. **Lowest:** Program interrupts (overflow, division by zero)",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Multiple Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Multiple-Interrupts-Timeline--Nested-",
+      "title": "Timeline (Nested)",
+      "front": "Timeline (Nested)",
+      "back": "Low Priority Interrupt 1 starts → High Priority Interrupt 2 arrives → Process Interrupt 2 (higher priority) → Interrupt 2 complete → Resume Interrupt 1 → Interrupt 1 complete",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Multiple Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Multiple-Interrupts-Timeline--Sequential-",
+      "title": "Timeline (Sequential)",
+      "front": "Timeline (Sequential)",
+      "back": "Interrupt 1 arrives → Process Interrupt 1 → Complete Interrupt 2 arrives → Process Interrupt 2 → Complete Interrupt 3 arrives → Process Interrupt 3 → Complete",
+      "type": "definition",
+      "section": "Interrupts",
+      "subsection": "Multiple Interrupts"
+    },
+    {
+      "id": "1-Interrupts-Interrupt-Performance-Impact-Overhead",
+      "title": "Overhead",
+      "front": "Overhead",
+      "back": "1. Context saving/restoring takes time\n2. Interrupt handler execution time\n3. Pipeline stalls (in pipelined processors)",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Interrupt Performance Impact"
+    },
+    {
+      "id": "1-Interrupts-Interrupt-Performance-Impact-Benefit",
+      "title": "Benefit",
+      "front": "Benefit",
+      "back": "1. Much greater than overhead for long I/O operations\n2. Enables multitasking and real-time response",
+      "type": "list",
+      "section": "Interrupts",
+      "subsection": "Interrupt Performance Impact"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-What-is-a-Bus--Definition",
+      "title": "Definition",
+      "front": "Definition",
+      "back": "A communication pathway connecting two or more devices.",
+      "type": "definition",
+      "section": "System Interconnection: The Bus",
+      "subsection": "What is a Bus?"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-What-is-a-Bus--Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. **Broadcast:** Signals sent on bus are received by all connected devices\n2. **Shared Resource:** Only one device can transmit at a time\n3. **Grouped Channels:** Multiple wires carrying related signals\n4. Example: 32-bit data bus = 32 separate wires (channels)",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "What is a Bus?"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-What-is-a-Bus--Examples",
+      "title": "Examples",
+      "front": "Examples",
+      "back": "1. **Control/Address/Data bus (PC):** Traditional PC architecture\n2. **Unibus (DEC-PDP):** DEC's unified bus system",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "What is a Bus?"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-Bus-Interconnection-Scheme-Key-Point",
+      "title": "Key Point",
+      "front": "Key Point",
+      "back": "All devices share the same bus. Only one can use it at a time.",
+      "type": "definition",
+      "section": "System Interconnection: The Bus",
+      "subsection": "Bus Interconnection Scheme"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-1--Data-Bus",
+      "title": "1. Data Bus",
+      "front": "1. Data Bus",
+      "back": "",
+      "type": "concept",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Function",
+      "title": "Function",
+      "front": "Function",
+      "back": "Carries data and instructions between components.",
+      "type": "definition",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Key-Characteristics",
+      "title": "Key Characteristics",
+      "front": "Key Characteristics",
+      "back": "1. **Bidirectional:** Data can flow in both directions\n2. **Width Matters:**\n3. 8-bit bus: Transfer 1 byte at a time\n4. 16-bit bus: Transfer 2 bytes at a time\n5. 32-bit bus: Transfer 4 bytes at a time\n6. 64-bit bus: Transfer 8 bytes at a time\n7. **Performance Impact:** Wider bus = faster data transfer",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Important-Note",
+      "title": "Important Note",
+      "front": "Important Note",
+      "back": "At the bus level, there is **no difference between \"data\" and \"instructions\"**. Both are just binary patterns traveling on the data bus.",
+      "type": "definition",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "1. 32-bit data bus can transfer a 32-bit instruction in one cycle\n2. Or transfer a 32-bit data value in one cycle",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-2--Address-Bus",
+      "title": "2. Address Bus",
+      "front": "2. Address Bus",
+      "back": "",
+      "type": "concept",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Function",
+      "title": "Function",
+      "front": "Function",
+      "back": "Identifies the source or destination of data.",
+      "type": "definition",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Key-Characteristics",
+      "title": "Key Characteristics",
+      "front": "Key Characteristics",
+      "back": "1. **Unidirectional:** Typically CPU → Memory/I/O (CPU specifies address)\n2. **Width Determines Memory Capacity:**\n3. n-bit address bus = 2^n addressable locations\n4. Example: 16-bit address bus = 2^16 = 65,536 locations = 64 KB\n5. Example: 32-bit address bus = 2^32 = 4,294,967,296 locations = 4 GB",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Memory-Addressing-Example",
+      "title": "Memory Addressing Example",
+      "front": "Memory Addressing Example",
+      "back": "1. CPU places 1000 on address bus\n2. Memory module sees address 1000\n3. Memory module places contents of location 1000 on data bus\n4. CPU reads data from data bus",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Historical-Example",
+      "title": "Historical Example",
+      "front": "Historical Example",
+      "back": "1. Intel 8080: 16-bit address bus → 64 KB maximum memory\n2. Modern processors: 64-bit address bus → 16 exabytes theoretical maximum",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-3--Control-Bus",
+      "title": "3. Control Bus",
+      "front": "3. Control Bus",
+      "back": "",
+      "type": "concept",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Function",
+      "title": "Function",
+      "front": "Function",
+      "back": "Carries control and timing information.",
+      "type": "definition",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Key-Signals",
+      "title": "Key Signals",
+      "front": "Key Signals",
+      "back": "1. **Memory Read:** Signal to read from memory\n2. **Memory Write:** Signal to write to memory\n3. **I/O Read:** Signal to read from I/O device\n4. **I/O Write:** Signal to write to I/O device\n5. **Interrupt Request (IRQ):** Device requesting interrupt\n6. **Interrupt Acknowledge:** CPU acknowledging interrupt\n7. **Bus Request:** Device requesting bus control\n8. **Bus Grant:** CPU granting bus control\n9. **Clock:** Synchronization signal\n10. **Reset:** System reset signal",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Control-Bus-Operations",
+      "title": "Control Bus Operations",
+      "front": "Control Bus Operations",
+      "back": "",
+      "type": "definition",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Sending-Data",
+      "title": "Sending Data",
+      "front": "Sending Data",
+      "back": "1. Obtain use of the bus (bus arbitration)\n2. Place address on address bus\n3. Place data on data bus\n4. Assert appropriate control signal (e.g., Write)\n5. Wait for acknowledgment\n6. Release bus",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-The-Three-Types-of-Buses-Requesting-Data",
+      "title": "Requesting Data",
+      "front": "Requesting Data",
+      "back": "1. Obtain use of the bus\n2. Place address on address bus\n3. Assert appropriate control signal (e.g., Read)\n4. Wait for data on data bus\n5. Read data from data bus\n6. Release bus",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "The Three Types of Buses"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-Bus-Width-and-Performance-Data-Bus-Width",
+      "title": "Data Bus Width",
+      "front": "Data Bus Width",
+      "back": "1. Determines how much data can be transferred per cycle\n2. Wider = fewer cycles needed for large transfers\n3. Trade-off: More wires = higher cost",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "Bus Width and Performance"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-Bus-Width-and-Performance-Address-Bus-Width",
+      "title": "Address Bus Width",
+      "front": "Address Bus Width",
+      "back": "1. Determines maximum addressable memory\n2. Wider = more memory can be addressed\n3. Trade-off: More wires = higher cost",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "Bus Width and Performance"
+    },
+    {
+      "id": "1-System-Interconnection--The-Bus-Bus-Width-and-Performance-Example-Calculation",
+      "title": "Example Calculation",
+      "front": "Example Calculation",
+      "back": "1. 32-bit data bus: Can transfer 4 bytes per cycle\n2. 32-bit address bus: Can address 4 GB of memory\n3. Number of transfers needed: 1 MB / 4 bytes = 262,144 transfers\n4. If each transfer takes 1 cycle: 262,144 cycles",
+      "type": "list",
+      "section": "System Interconnection: The Bus",
+      "subsection": "Bus Width and Performance"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Single-Bus-Problems-Issues-with-Single-Bus-Architecture",
+      "title": "Issues with Single Bus Architecture",
+      "front": "Issues with Single Bus Architecture",
+      "back": "1. **Propagation Delays:**\n2. Long bus = longer signal travel time\n3. Limits maximum bus speed\n4. Becomes worse with more devices\n5. **Bus Contention:**\n6. Many devices competing for bus access\n7. Coordination overhead increases\n8. Performance degrades as more devices added\n9. **Bandwidth Limitations:**\n10. Single bus has fixed bandwidth\n11. Aggregate data transfer approaches bus capacity\n12. Becomes bottleneck for high-performance systems",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Single Bus Problems"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Single-Bus-Problems-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "Use **multiple buses** organized hierarchically.",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Single Bus Problems"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Traditional-Bus-Architecture-Structure",
+      "title": "Structure",
+      "front": "Structure",
+      "back": "├──► System Bus (High Speed) ├──► Memory Bus ──► Main Memory └──► Expansion Bus ──► I/O Devices",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Traditional Bus Architecture"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Traditional-Bus-Architecture-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. **System Bus:** Fast, connects CPU and cache\n2. **Memory Bus:** Connects to main memory\n3. **Expansion Bus:** Slower, connects to I/O devices\n4. **Hierarchical:** Different speeds for different purposes",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Traditional Bus Architecture"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-High-Performance-Bus-Architecture-Structure",
+      "title": "Structure",
+      "front": "Structure",
+      "back": "├──► Local Bus (Very Fast) ──► Cache └──► System Bus (Fast) ──► Main Memory └──► Expansion Bus (Slower) ──► I/O Devices",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "High Performance Bus Architecture"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-High-Performance-Bus-Architecture-Benefits",
+      "title": "Benefits",
+      "front": "Benefits",
+      "back": "1. **Local Bus:** Ultra-fast for CPU-cache communication\n2. **System Bus:** Fast for CPU-memory communication\n3. **Expansion Bus:** Adequate speed for I/O devices\n4. **Reduced Contention:** Different buses for different purposes",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "High Performance Bus Architecture"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Types-1--Dedicated-Bus",
+      "title": "1. Dedicated Bus",
+      "front": "1. Dedicated Bus",
+      "back": "1. **Separate lines** for data and address\n2. **Advantages:**\n3. Simpler control logic\n4. Can transfer address and data simultaneously (in some cases)\n5. Better performance\n6. **Disadvantages:**\n7. More wires = higher cost\n8. More complex physical layout",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Types"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Types-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "Data Bus: 32 wires (D0-D31) Address Bus: 32 wires (A0-A31) Control Bus: Various control signals Total: 64+ wires",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Types"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Types-2--Multiplexed-Bus",
+      "title": "2. Multiplexed Bus",
+      "front": "2. Multiplexed Bus",
+      "back": "1. **Shared lines** for address and data\n2. **Control signal** indicates whether address or data is on bus\n3. **Advantages:**\n4. Fewer wires = lower cost\n5. Simpler physical layout\n6. **Disadvantages:**\n7. More complex control logic\n8. Requires two cycles (address, then data)\n9. Lower performance",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Types"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Types-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "1. ALE=1: Bus carries address\n2. ALE=0: Bus carries data",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Types"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Types-Operation",
+      "title": "Operation",
+      "front": "Operation",
+      "back": "Cycle 1: Place address on bus, assert ALE Cycle 2: Place data on bus, deassert ALE",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Types"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Problem",
+      "title": "Problem",
+      "front": "Problem",
+      "back": "Multiple devices may want to use the bus simultaneously.",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "**Bus Arbitration** - mechanism to determine which device gets bus access.",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Requirements",
+      "title": "Requirements",
+      "front": "Requirements",
+      "back": "1. Only **one device** can control bus at a time\n2. Fair access to all devices\n3. Priority for time-critical operations\n4. Efficient arbitration (minimal overhead)",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Centralized-Arbitration",
+      "title": "Centralized Arbitration",
+      "front": "Centralized Arbitration",
+      "back": "",
+      "type": "concept",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Structure",
+      "title": "Structure",
+      "front": "Structure",
+      "back": "1. **Single hardware device** (bus controller/arbiter) controls bus access\n2. May be part of CPU or separate chip\n3. All devices request bus from arbiter\n4. Arbiter grants bus to one device at a time",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. Simple logic in each device\n2. Centralized control\n3. Easy to implement priority schemes",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. Single point of failure\n2. May become bottleneck\n3. Centralized logic complexity",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "Device 1 ──┐ Device 2 ──┼──► Bus Arbiter ──► Bus Control Device 3 ──┘",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Distributed-Arbitration",
+      "title": "Distributed Arbitration",
+      "front": "Distributed Arbitration",
+      "back": "",
+      "type": "concept",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Structure",
+      "title": "Structure",
+      "front": "Structure",
+      "back": "1. **Each device** has arbitration logic\n2. Devices compete directly\n3. No central arbiter\n4. Self-selecting based on priority",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. No single point of failure\n2. Scalable\n3. Can be faster (parallel arbitration)",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. More complex logic in each device\n2. More expensive per device\n3. Harder to debug",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Arbitration-Example",
+      "title": "Example",
+      "front": "Example",
+      "back": "Device 1 (Priority 3) ──┐ Device 2 (Priority 2) ──┼──► Bus (winner takes control) Device 3 (Priority 1) ──┘ (Device 3 wins - highest priority)",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Arbitration"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Problem",
+      "title": "Problem",
+      "front": "Problem",
+      "back": "Devices must coordinate when to read/write data.",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "**Timing protocols** ensure proper synchronization.",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Synchronous-Timing",
+      "title": "Synchronous Timing",
+      "front": "Synchronous Timing",
+      "back": "",
+      "type": "concept",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. Events determined by **clock signals**\n2. Control bus includes **clock line**\n3. All devices read same clock\n4. Single clock cycle (1-0 transition) = one bus cycle\n5. Usually synchronize on **leading edge** (rising edge) of clock\n6. Usually one cycle per event",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. Simple to implement\n2. Predictable timing\n3. Easy to design for",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. Limited by slowest device\n2. Clock skew problems at high speeds\n3. Inflexible (all devices must use same clock)",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Timing-Diagram",
+      "title": "Timing Diagram",
+      "front": "Timing Diagram",
+      "back": "Clock: ──┐ ┐ ┐ ┐ └─────┘ └─────┘ Address: ──[A]─────────────── Data: └──[D]─────────── Read: └────────────────",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Operation",
+      "title": "Operation",
+      "front": "Operation",
+      "back": "1. **T1:** Address placed on address bus\n2. **T2:** Read signal asserted\n3. **T3:** Data available on data bus (memory responds)\n4. **T4:** Data read, signals deasserted",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Asynchronous-Timing",
+      "title": "Asynchronous Timing",
+      "front": "Asynchronous Timing",
+      "back": "",
+      "type": "concept",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Characteristics",
+      "title": "Characteristics",
+      "front": "Characteristics",
+      "back": "1. **No common clock**\n2. Devices use **handshaking signals**\n3. **Request-Acknowledge** protocol\n4. Timing determined by device speeds, not fixed clock",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Signals",
+      "title": "Signals",
+      "front": "Signals",
+      "back": "1. **Request (REQ):** Initiator requests operation\n2. **Acknowledge (ACK):** Target acknowledges completion\n3. **Ready:** Data ready signal",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. Works with devices of different speeds\n2. No clock skew issues\n3. More flexible",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Disadvantages",
+      "title": "Disadvantages",
+      "front": "Disadvantages",
+      "back": "1. More complex control logic\n2. Harder to design\n3. Variable timing (harder to predict)",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Read-Operation-Timing",
+      "title": "Read Operation Timing",
+      "front": "Read Operation Timing",
+      "back": "Initiator places address on bus Initiator asserts REQ Target sees REQ, places data on bus Target asserts ACK Initiator reads data, deasserts REQ Target deasserts ACK",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Bus-Timing-Write-Operation-Timing",
+      "title": "Write Operation Timing",
+      "front": "Write Operation Timing",
+      "back": "Initiator places address and data on bus Initiator asserts REQ Target reads data, asserts ACK Initiator deasserts REQ Target deasserts ACK",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Bus Timing"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Concept",
+      "title": "Concept",
+      "front": "Concept",
+      "back": "Allow I/O modules to exchange data directly with memory, bypassing the CPU.",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Direct Memory Access (DMA) Fundamentals"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Traditional-Approach--Programmed-I-O-",
+      "title": "Traditional Approach (Programmed I/O)",
+      "front": "Traditional Approach (Programmed I/O)",
+      "back": "CPU reads from I/O → CPU writes to Memory CPU reads from Memory → CPU writes to I/O",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Direct Memory Access (DMA) Fundamentals"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Problem",
+      "title": "Problem",
+      "front": "Problem",
+      "back": "CPU is involved in every data transfer, wasting CPU cycles.",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Direct Memory Access (DMA) Fundamentals"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-DMA-Approach",
+      "title": "DMA Approach",
+      "front": "DMA Approach",
+      "back": "I/O Module ──► Memory (direct transfer, CPU not involved)",
+      "type": "definition",
+      "section": "Bus Architecture and Design",
+      "subsection": "Direct Memory Access (DMA) Fundamentals"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Process",
+      "title": "Process",
+      "front": "Process",
+      "back": "1. CPU grants DMA authority to I/O module\n2. I/O module issues read/write commands directly to memory\n3. CPU is free to do other work\n4. I/O module notifies CPU when transfer complete (interrupt)",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Direct Memory Access (DMA) Fundamentals"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Benefits",
+      "title": "Benefits",
+      "front": "Benefits",
+      "back": "1. CPU not tied up during data transfer\n2. Much faster for large transfers\n3. Better overall system performance",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Direct Memory Access (DMA) Fundamentals"
+    },
+    {
+      "id": "1-Bus-Architecture-and-Design-Direct-Memory-Access--DMA--Fundamentals-Use-Cases",
+      "title": "Use Cases",
+      "front": "Use Cases",
+      "back": "1. Disk I/O (reading/writing files)\n2. Network I/O (receiving/sending packets)\n3. Graphics (transferring frame buffers)\n4. Audio (streaming audio data)",
+      "type": "list",
+      "section": "Bus Architecture and Design",
+      "subsection": "Direct Memory Access (DMA) Fundamentals"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Evolution-from-Bus-to-Point-to-Point-Problems-with-Traditional-Buses",
+      "title": "Problems with Traditional Buses",
+      "front": "Problems with Traditional Buses",
+      "back": "1. **Electrical Constraints:**\n2. Increasing frequency causes signal integrity issues\n3. Wide synchronous buses become difficult at high speeds\n4. Clock distribution becomes problematic\n5. **Synchronization and Arbitration:**\n6. Hard to perform in timely fashion at high data rates\n7. Arbitration overhead increases\n8. Becomes bottleneck\n9. **Multicore Challenges:**\n10. Multiple processors on single chip\n11. Shared bus on chip magnifies problems\n12. Need to keep up with processor speeds",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Evolution from Bus to Point-to-Point"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Evolution-from-Bus-to-Point-to-Point-Advantages",
+      "title": "Advantages",
+      "front": "Advantages",
+      "back": "1. **Lower Latency:** Direct connections, no bus arbitration\n2. **Higher Data Rate:** Can achieve much higher speeds\n3. **Better Scalability:** Add more connections without degrading performance\n4. **No Arbitration Overhead:** Direct connections eliminate contention",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Evolution from Bus to Point-to-Point"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Introduction",
+      "title": "Introduction",
+      "front": "Introduction",
+      "back": "Intel introduced QPI in 2008 for high-performance systems.",
+      "type": "definition",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Quick Path Interconnect (QPI)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Key-Features",
+      "title": "Key Features",
+      "front": "Key Features",
+      "back": "1. **Multiple Direct Connections:** Pairwise connections between components\n2. **No Arbitration:** Eliminates need for bus arbitration\n3. **Layered Protocol:** Similar to network protocols\n4. **Packetized Transfer:** Data sent as packets with headers and error codes",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Quick Path Interconnect (QPI)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--QPI-Architecture-Layers",
+      "title": "QPI Architecture Layers",
+      "front": "QPI Architecture Layers",
+      "back": "1. **Function:** Actual wires and circuitry for signal transmission\n2. **Unit:** **Phit (Physical Unit)** = 20 bits\n3. **Implementation:**\n4. 20 data lanes in each direction (transmit and receive)\n5. Plus clock lane in each direction\n6. **Differential Signaling:** Two wires per lane (balanced transmission)\n7. Current travels down one conductor, returns on other\n8. Binary value depends on voltage difference\n9. More noise-resistant than single-ended signaling\n10. **Function:** Reliable transmission and flow control\n11. **Unit:** **Flit (Flow Control Unit)** = 80 bits\n12. 72-bit message payload\n13. 8-bit error control code (CRC - Cyclic Redundancy Check)\n14. **Responsibilities:**\n15. **Flow Control:** Prevents sender from overwhelming receiver\n16. **Error Control:** Detects and recovers from bit errors\n17. **Function:** Determines packet path through system\n18. **Implementation:** Defined by firmware\n19. **Purpose:** Describes possible paths packets can follow\n20. **Function:** High-level rules for packet exchange\n21. **Unit:** **Packet** (comprised of integral number of Flits)\n22. **Key Feature:** Cache coherency protocol\n23. Ensures main memory values in multiple caches remain consistent\n24. Critical for multiprocessor systems",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Quick Path Interconnect (QPI)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--QPI-Physical-Interface",
+      "title": "QPI Physical Interface",
+      "front": "QPI Physical Interface",
+      "back": "",
+      "type": "concept",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Quick Path Interconnect (QPI)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Structure",
+      "title": "Structure",
+      "front": "Structure",
+      "back": "1. **84 individual links** per QPI port\n2. **20 data lanes** in each direction (40 total)\n3. **1 clock lane** in each direction (2 total)\n4. **Multilane Distribution:** 80-bit flits distributed across 20 lanes in round-robin fashion",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Quick Path Interconnect (QPI)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Quick-Path-Interconnect--QPI--Performance",
+      "title": "Performance",
+      "front": "Performance",
+      "back": "1. Can transmit 20 bits in parallel in each direction\n2. Very high data rates achieved through parallel channels",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Quick Path Interconnect (QPI)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Evolution",
+      "title": "Evolution",
+      "front": "Evolution",
+      "back": "1. **PCI (Peripheral Component Interconnect):** Traditional bus-based scheme\n2. **PCIe (PCI Express):** Point-to-point interconnect replacing PCI",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Peripheral Component Interconnect Express (PCIe)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Key-Requirements",
+      "title": "Key Requirements",
+      "front": "Key Requirements",
+      "back": "1. High capacity for high data rate I/O devices\n2. Support for Gigabit Ethernet and faster\n3. Support time-dependent data streams (real-time audio/video)",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Peripheral Component Interconnect Express (PCIe)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--PCIe-Architecture-Layers",
+      "title": "PCIe Architecture Layers",
+      "front": "PCIe Architecture Layers",
+      "back": "1. **Function:** Physical wires and transmission circuitry\n2. **Characteristics:**\n3. **Bidirectional Lanes:** Unlike QPI, lanes work both directions\n4. **Configurable Lanes:** 1, 4, 8, 16, or 32 lanes per port\n5. **Round-Robin Distribution:** Bits sent to lanes in round-robin\n6. **128-bit Processing:** Each lane processes 16 bytes (128 bits) at a time\n7. **130-bit Encoding:** Each 128-bit block encoded into 130-bit codeword\n8. **No Common Clock:** Receiver uses data transitions for synchronization\n9. **Transition Guarantee:** Extra 2 bits ensure transitions in long sequences of 1s\n10. **Function:** Reliable transmission and flow control\n11. **Unit:** **DLLP (Data Link Layer Packet)**\n12. **Responsibilities:**\n13. **Flow Control:** Regulates transmission rate\n14. **Power Management:** Manages power budgeting\n15. **ACK/NAK:** Acknowledges valid packets, requests retransmission of invalid packets\n16. **Function:** Generates and consumes data packets, manages flow\n17. **Unit:** **TLP (Transaction Layer Packet)**\n18. **Responsibilities:**\n19. Receives read/write requests from software\n20. Creates request packets for transmission\n21. **Split Transactions:** Most transactions use request-response pattern\n22. **Posted Transactions:** Some writes and messages don't expect response\n23. Supports 32-bit and 64-bit memory addressing",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Peripheral Component Interconnect Express (PCIe)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--PCIe-Configuration",
+      "title": "PCIe Configuration",
+      "front": "PCIe Configuration",
+      "back": "",
+      "type": "concept",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Peripheral Component Interconnect Express (PCIe)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Typical-Setup",
+      "title": "Typical Setup",
+      "front": "Typical Setup",
+      "back": "CPU ──► QPI ──► Memory Controller Hub ├──► PCIe ──► Graphics Card (x16) ├──► PCIe ──► Network Card (x1) └──► PCIe ──► Storage Controller (x4)",
+      "type": "definition",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Peripheral Component Interconnect Express (PCIe)"
+    },
+    {
+      "id": "1-Modern-Interconnect-Technologies-Peripheral-Component-Interconnect-Express--PCIe--Lane-Configurations",
+      "title": "Lane Configurations",
+      "front": "Lane Configurations",
+      "back": "1. **x1:** 1 lane (low bandwidth devices)\n2. **x4:** 4 lanes (moderate bandwidth)\n3. **x8:** 8 lanes (high bandwidth)\n4. **x16:** 16 lanes (graphics cards, high-performance devices)",
+      "type": "list",
+      "section": "Modern Interconnect Technologies",
+      "subsection": "Peripheral Component Interconnect Express (PCIe)"
+    },
+    {
+      "id": "1-Key-Concepts-Summary-Fundamental-Principles-Fundamental-Principles",
+      "title": "Fundamental Principles",
+      "front": "Fundamental Principles",
+      "back": "1. **Programmable Hardware:**\n2. Same hardware executes different programs\n3. Programs are sequences of instructions\n4. Instructions generate control signals\n5. **Component Communication:**\n6. All components communicate via system bus\n7. Bus is shared resource\n8. Only one device can use bus at a time\n9. **Instruction Execution:**\n10. Fetch-Execute cycle repeats\n11. Each instruction may require multiple memory accesses\n12. Interrupts can suspend normal execution\n13. **Performance Optimization:**\n14. Interrupts improve efficiency (CPU doesn't wait for I/O)\n15. Multiple buses reduce contention\n16. Point-to-point interconnects eliminate bus bottlenecks",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Fundamental Principles"
+    },
+    {
+      "id": "1-Key-Concepts-Summary-Memory-Hierarchy-Concept-Levels--Fastest-to-Slowest-",
+      "title": "Levels (Fastest to Slowest)",
+      "front": "Levels (Fastest to Slowest)",
+      "back": "1. **CPU Registers:** Fastest, smallest, most expensive\n2. **Cache Memory:** Very fast, small, expensive\n3. **Main Memory (RAM):** Fast, medium size, moderate cost\n4. **Secondary Storage (Disk):** Slow, large, cheap",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Memory Hierarchy Concept"
+    },
+    {
+      "id": "1-Key-Concepts-Summary-Memory-Hierarchy-Concept-Principle",
+      "title": "Principle",
+      "front": "Principle",
+      "back": "Use fast, expensive memory for frequently accessed data; use slow, cheap memory for bulk storage.",
+      "type": "definition",
+      "section": "Key Concepts Summary",
+      "subsection": "Memory Hierarchy Concept"
+    },
+    {
+      "id": "1-Key-Concepts-Summary-Bus-Design-Trade-offs-Dedicated-vs--Multiplexed",
+      "title": "Dedicated vs. Multiplexed",
+      "front": "Dedicated vs. Multiplexed",
+      "back": "1. **Dedicated:** Better performance, more expensive\n2. **Multiplexed:** Lower cost, lower performance",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Bus Design Trade-offs"
+    },
+    {
+      "id": "1-Key-Concepts-Summary-Bus-Design-Trade-offs-Synchronous-vs--Asynchronous",
+      "title": "Synchronous vs. Asynchronous",
+      "front": "Synchronous vs. Asynchronous",
+      "back": "1. **Synchronous:** Simpler, predictable, limited by slowest device\n2. **Asynchronous:** More flexible, works with different speeds, more complex",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Bus Design Trade-offs"
+    },
+    {
+      "id": "1-Key-Concepts-Summary-Bus-Design-Trade-offs-Single-vs--Multiple-Buses",
+      "title": "Single vs. Multiple Buses",
+      "front": "Single vs. Multiple Buses",
+      "back": "1. **Single:** Simple, but becomes bottleneck\n2. **Multiple:** Better performance, more complex",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Bus Design Trade-offs"
+    },
+    {
+      "id": "1-Key-Concepts-Summary-Interrupt-System-Benefits-Interrupt-System-Benefits",
+      "title": "Interrupt System Benefits",
+      "front": "Interrupt System Benefits",
+      "back": "1. **Efficiency:** CPU doesn't waste time waiting for I/O\n2. **Responsiveness:** System can respond to events immediately\n3. **Multitasking:** Enables time-sharing and pre-emptive scheduling\n4. **Error Handling:** Graceful error recovery",
+      "type": "list",
+      "section": "Key Concepts Summary",
+      "subsection": "Interrupt System Benefits"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-1--Address-Bus-Calculation-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "A microprocessor has a 20-bit address bus. What is the maximum directly addressable memory capacity?",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 1: Address Bus Calculation"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-1--Address-Bus-Calculation-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "1. Address bus width: 20 bits\n2. Maximum addressable locations: 2^20 = 1,048,576 locations\n3. If each location stores 1 byte: 1,048,576 bytes = 1 MB\n4. If each location stores 1 word (4 bytes): 4 MB",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 1: Address Bus Calculation"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-1--Address-Bus-Calculation-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "1 MB (assuming byte-addressable memory)",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 1: Address Bus Calculation"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-2--Data-Bus-Performance-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "A system has a 32-bit data bus running at 100 MHz. What is the theoretical maximum data transfer rate?",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 2: Data Bus Performance"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-2--Data-Bus-Performance-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "1. Bus width: 32 bits = 4 bytes\n2. Bus frequency: 100 MHz = 100 million cycles per second\n3. Maximum transfer rate: 4 bytes × 100,000,000 cycles/sec = 400,000,000 bytes/sec\n4. = 400 MB/s",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 2: Data Bus Performance"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-2--Data-Bus-Performance-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "400 MB/s",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 2: Data Bus Performance"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-3--Instruction-Cycle-Analysis-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "For the instruction `ADD B, A` (add value at B to value at A, store result in A), how many memory accesses occur during the execute cycle?",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 3: Instruction Cycle Analysis"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-3--Instruction-Cycle-Analysis-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "1. Read memory location A → 1 access\n2. Read memory location B → 1 access\n3. Add values (in CPU, no memory access)\n4. Write result to memory location A → 1 access",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 3: Instruction Cycle Analysis"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-3--Instruction-Cycle-Analysis-Total",
+      "title": "Total",
+      "front": "Total",
+      "back": "3 memory accesses (2 reads, 1 write)",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 3: Instruction Cycle Analysis"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "An I/O operation takes 10 ms. The CPU can execute 1 billion instructions per second. How many instructions can the CPU execute during the I/O operation if interrupts are used?",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 4: Interrupt Efficiency"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "1. I/O operation time: 10 ms = 0.01 seconds\n2. CPU speed: 1 billion instructions/second\n3. Instructions during I/O: 1,000,000,000 × 0.01 = 10,000,000 instructions",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 4: Interrupt Efficiency"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Answer",
+      "title": "Answer",
+      "front": "Answer",
+      "back": "10 million instructions",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 4: Interrupt Efficiency"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-4--Interrupt-Efficiency-Without-interrupts",
+      "title": "Without interrupts",
+      "front": "Without interrupts",
+      "back": "CPU would wait idle, executing 0 instructions.",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 4: Interrupt Efficiency"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-5--Bus-Arbitration-Question",
+      "title": "Question",
+      "front": "Question",
+      "back": "In a system with 4 devices requesting bus access, how does centralized arbitration work?",
+      "type": "definition",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 5: Bus Arbitration"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-5--Bus-Arbitration-Solution",
+      "title": "Solution",
+      "front": "Solution",
+      "back": "1. All 4 devices send bus request to arbiter\n2. Arbiter determines priority (e.g., Device 1 = highest, Device 4 = lowest)\n3. Arbiter grants bus to Device 1\n4. Device 1 uses bus, completes operation, releases bus\n5. Arbiter grants bus to next device in priority order\n6. Process repeats",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 5: Bus Arbitration"
+    },
+    {
+      "id": "1-Practice-Problems-and-Examples-Problem-5--Bus-Arbitration-Key-Point",
+      "title": "Key Point",
+      "front": "Key Point",
+      "back": "1. **Understand the Big Picture:**\n2. Start with the overall system architecture\n3. Understand how components connect and communicate\n4. Then dive into details of each component\n5. **Visualize the Data Flow:**\n6. Draw diagrams of instruction execution\n7. Trace data through the system\n8. Understand bus operations step-by-step\n9. **Practice Calculations:**\n10. Address bus width → memory capacity\n11. Data bus width → transfer rates\n12. Interrupt timing and efficiency\n13. **Compare and Contrast:**\n14. Dedicated vs. multiplexed buses\n15. Synchronous vs. asynchronous timing\n16. Centralized vs. distributed arbitration\n17. Traditional bus vs. point-to-point interconnect\n18. **Understand Trade-offs:**\n19. Performance vs. cost\n20. Complexity vs. simplicity\n21. Flexibility vs. speed\n22. **Relate to Real Systems:**\n23. Think about how these concepts apply to actual computers\n24. Consider modern systems (QPI, PCIe) vs. traditional systems\n25. Understand why systems evolved\n26. **Computers are programmable:** Same hardware, different programs\n27. **Components communicate via buses:** Shared communication pathways\n28. **Instructions execute in cycles:** Fetch, then execute\n29. **Interrupts improve efficiency:** CPU doesn't wait for slow devices\n30. **Bus design affects performance:** Width, timing, and architecture matter\n31. **Modern systems use point-to-point:** Better performance than shared buses\n32. CPU architecture (Group 2) builds on instruction execution\n33. Instruction sets (Group 3) define what instructions look like\n34. Memory systems (Group 4) connect via buses\n35. I/O systems (Group 6) use interrupts and DMA",
+      "type": "list",
+      "section": "Practice Problems and Examples",
+      "subsection": "Problem 5: Bus Arbitration"
+    }
+  ]
+}
